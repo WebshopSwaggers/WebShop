@@ -13,7 +13,7 @@
 
     <title>Vlambeer</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./web-gallery/styles/style.css" />
 </head>
 
 
@@ -56,7 +56,7 @@
 
         <div class="articleBody clear">
 
-       <img src="img/header-510x186.png" alt="">
+       <img src="./web-gallery/images/header-510x186.png" alt="">
             <p> Hier komen de laatste games van Vlambeer</p>
 
 
