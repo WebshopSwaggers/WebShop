@@ -48,13 +48,13 @@ nav ul li a:visited{
     text-transform:uppercase;
 }
 
+/*de kleur als je over de buttons gaat */
 nav ul li a:hover{
     text-decoration:none;
     background-color:#f0f0f0;
 }
 
 nav, article, nav ul li a,figure{
-    /* Applying CSS3 rounded corners: */
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
     border-radius:10px;
@@ -62,6 +62,6 @@ nav, article, nav ul li a,figure{
 
 body {
 
-background-color:
+background-color:#FAC846;
 
 }
