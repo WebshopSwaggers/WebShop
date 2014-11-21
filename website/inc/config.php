@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 Session_start();
 
 
-require($_SERVER['DOCUMENT_ROOT']."/toets/config/classes/class.mysqli.php");
+require("/inc/classes/class.mysqli.php");
 
 
 //Hostname, bijvoorbeeld: localhost of 127.0.0.1
@@ -26,9 +26,9 @@ if (mysqli_connect_error($con))
 
 
 //Functies
-require($_SERVER['DOCUMENT_ROOT']."/webshop/webroot/inc/functions.php");
+require("/inc/functions.php");
 //Users class
-require($_SERVER['DOCUMENT_ROOT']."/webshop/webroot/inc/classes/class.users.php");
+require("/inc/classes/class.users.php");
 
 
 ?>
