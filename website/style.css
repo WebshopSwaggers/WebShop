@@ -1,0 +1,28 @@
+body {
+
+background-color:#FAC846;
+}
+
+
+.menu {
+
+	width:50%;
+	height:50px;	
+	display:inline;
+
+}
+
+
+.titel {
+
+		width:50%;
+		height:50px;
+	display:inline;
+
+}
+
+.banner {
+
+background-color:red;
+
+}
