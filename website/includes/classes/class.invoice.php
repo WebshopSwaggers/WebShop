@@ -39,7 +39,7 @@ Class Invoice
        $itemDesc = $invItem->getItemDesc();
        $itemPrice = $invItem->getItemPrice();
        $itemImage = $invItem->getItemImage();
-       $items = array($itemid,$itemName,$itemDesc,$itemPrice,$itemImage);
+       $items = array("item_id" => $itemid, "item_name" => $itemName, "item_description" => $itemDesc, "item_price" => $itemPrice, "item_image" => $itemImage);
        array_push($array, $items);
 
     }
