@@ -9,14 +9,20 @@
 
 <section id="page"> <!-- Defining the #page section with the section tag -->
 
-<header> <!-- Defining the header section of the page with the appropriate tag -->
-<nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
-    <ul>
-        <li><a href="#article1">Home</a></li>
-        <li><a href="#article2">Contact</a></li>
-        <li><a href="#article3">Store</a></li>
-    </ul>
-</nav>
-</header>
+<div class="header">
+	<div class="header_logo">
+		<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
+	</div>
+	<nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
+	    <ul>
+	        <li><a href="#article1">Home</a></li>
+	        <li><a href="#article2">Contact</a></li>
+	        <li><a href="#article3">Store</a></li>
+	    </ul>
+	</nav>
+</div>
+<div class="image_slider">
+	<h1>Image slider</h1>
+</div>
 
 <div class="container">
