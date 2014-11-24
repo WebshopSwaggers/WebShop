@@ -26,7 +26,7 @@ if (mysqli_connect_error($con))
 //Functies
 require 'functions.php';
 //Users class
-require 'classes/class.users.php';
+require 'classes/class.user.php';
 //Item class
-require 'classes/class.items.php';
+require 'classes/class.item.php';
 ?>
