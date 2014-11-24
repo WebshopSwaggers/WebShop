@@ -16,6 +16,9 @@
 	<div class="header_title">
 		<h1>VLAMBEER</h1>
 	</div>
+	<div class="header_slogan">
+		<p id="headerSlogan"></p>
+	</div>
 	<nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
 	    <ul>
 	        <li><a href="#article1">Home</a></li>

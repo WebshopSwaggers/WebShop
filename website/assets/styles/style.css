@@ -14,8 +14,12 @@ header, footer, article, section, hgroup, nav, figure{
     margin-left: 50px;
 }
 .header_title{
-    font: "Century Gothic";
     margin-top: -100px;
+    margin-left: 250px;
+    color: white;
+}
+.header_slogan{
+    margin-top: 0px;
     margin-left: 250px;
     color: white;
 }
