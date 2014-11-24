@@ -4,26 +4,17 @@ hgroup,nav,
 figure{
     /* Giving a display value to the HTML5 rendered elements: */
     display:block;
+	
 }
 
-article .line{
-    /* The dividing line inside of the article is darker: */
-    background-color:#15242a;
-    border-bottom-color:#204656;
-    margin:1.3em 0;
-}
 
-footer .line{
-    margin:2em 0;
-}
 
 nav{
-    background:url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+    background: #f8f8f8;
     padding:0 5px;
-    position:absolute;
     right:0;
     top:4em;
-
+position:fixed; top:0; left:50;
     border:1px solid #FCFCFC;
 
     -moz-box-shadow:0 1px 1px #333333;
@@ -65,3 +56,5 @@ body {
 background-color:#FAC846;
 
 }
+
+

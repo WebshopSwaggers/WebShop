@@ -21,13 +21,12 @@
  <section id="page"> <!-- Defining the #page section with the section tag -->
 	<header> <!-- Defining the header section of the page with the appropriate tag -->
 
-        <h1> Logo</h1>
 
         <nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
 
             <ul>
-
-                <li><a href="#article1">News</a></li>
+		
+                <li><a href="#article1">Home</a></li>
                 <li><a href="#article2">Contact</a></li>
                 <li><a href="#article3">Store</a></li>
 
@@ -38,13 +37,11 @@
     </header>
     
       
-       
-        
+      <div class="container">
          
            <!-- Article 1 start -->
 
     <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
-<br><br><br><br>
         <h2>News</h2>
 
 
@@ -113,9 +110,10 @@
 
     <!-- JavaScript Includes -->
 
-   
-    <script src="script.js"></script>
-
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script src="./web-gallery/js/jquery.scrollTo-min.js"></script>
+    <script src="./web-gallery/js/script.js"></script>
+</div>
     </body>
 
 </html>
