@@ -27,7 +27,7 @@ Class Invoice
     return $this->user_id;
   }
 
-  public function GetItems()
+  public function GetItemsForInvoice()
   {
     $sql = DB::query("SELECT inv_item_id FROM cms_invoice_items WHERE inv_id = '".$this->inv_id."'");
     $array = array();

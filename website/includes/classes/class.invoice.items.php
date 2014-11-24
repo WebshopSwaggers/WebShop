@@ -5,6 +5,7 @@ Class InvoiceItem
    //variables
    private $inv_id;
    private $item_id;
+   private $item;
 
    // De contructor
     public function __construct($inv_item_id)
@@ -14,6 +15,7 @@ Class InvoiceItem
 
 	   $this->inv_id = $row->inv_id;
 	   $this->item_id = $row->item_id;
+     $this->item = new Item($this->item_id);
 	}
 
 	// Get functies
@@ -28,26 +30,22 @@ Class InvoiceItem
 
   public function getItemName()
   {
-    $item = new Item($this->item_id);
-    return $item->getName();
+    return $this->item->getName();
   }
 
   function getItemPrice()
   {
-    $item = new Item($this->item_id);
-    return $item->getPrice();
+    return $this->item->getPrice();
   }
 
   public function getItemDesc()
   {
-    $item = new Item($this->item_id);
-    return $item->getDescription();
+    return $this->item->getDescription();
   }
 
   public function getItemImage()
   {
-    $item = new Item($this->item_id);
-    return $item->getName();
+    return $this->item->getImage();
   }
 
 
