@@ -29,4 +29,8 @@ require 'functions.php';
 require 'classes/class.user.php';
 //Item class
 require 'classes/class.item.php';
+//Invoice items class
+require 'classes/class.invoice.items.php';
+//Invoice class
+require 'classes/class.invoice.php';
 ?>

@@ -9,10 +9,10 @@ Class Item
    private $image;
 
    // De contructor
-    public function __construct($id)
+    public function __construct($item_id)
     {
 
-     $sql = DB::query("SELECT name,price,description,image FROM items WHERE item_id = '".$id."' LIMIT 1");
+     $sql = DB::query("SELECT name,price,description,image FROM cms_items WHERE item_id = '".$item_id."' LIMIT 1");
      $row = DB::fetch($sql);
 
 	   $this->name = $row->name;
@@ -22,19 +22,19 @@ Class Item
 	}
 
 	// Get functies
-  public function getName($sql)
+  public function getName()
   {
     return $this->name;
   }
-  public function getPrice($sql)
+  public function getPrice()
   {
     return $this->price;
   }
-  public function geDescription($sql)
+  public function getDescription()
   {
     return $this->description;
   }
-  public function getImage($sql)
+  public function getImage()
   {
     return $this->image;
   }
