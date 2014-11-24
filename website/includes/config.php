@@ -1,10 +1,8 @@
 <?php
 error_reporting(E_ALL);
-Session_start();
+session_start();
 
-
-require("/inc/classes/class.mysqli.php");
-
+require("classes/MySQLi.php");
 
 //Hostname, bijvoorbeeld: localhost of 127.0.0.1
 $host = "127.0.0.1";
@@ -26,9 +24,7 @@ if (mysqli_connect_error($con))
 
 
 //Functies
-require("/inc/functions.php");
+require 'functions.php';
 //Users class
-require("/inc/classes/class.users.php");
-
-
+require 'classes/Users.php';
 ?>

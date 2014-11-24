@@ -1,22 +1,17 @@
-header,footer,
-article,section,
-hgroup,nav,
-figure{
+*{padding: 0px; margin: 0px;}
+
+header, footer, article, section, hgroup, nav, figure{
     /* Giving a display value to the HTML5 rendered elements: */
     display:block;
-	
 }
-
-
 
 nav{
     background: #f8f8f8;
     padding:0 5px;
     right:0;
     top:4em;
-position:fixed; top:0; left:50;
+    position:fixed; top:0; left:50;
     border:1px solid #FCFCFC;
-
     -moz-box-shadow:0 1px 1px #333333;
     -webkit-box-shadow:0 1px 1px #333333;
     box-shadow:0 1px 1px #333333;
@@ -26,8 +21,7 @@ nav ul li{
     display:inline;
 }
 
-nav ul li a,
-nav ul li a:visited{
+nav ul li a, nav ul li a:visited{
     color:#565656;
     display:block;
     float:left;
@@ -52,9 +46,7 @@ nav, article, nav ul li a,figure{
 }
 
 body {
-
-background-color:#FAC846;
-
+    background-color:#FAC846;
 }
 
 
