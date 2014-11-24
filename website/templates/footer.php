@@ -1,7 +1,3 @@
-		<footer> <!-- Marking the footer section -->
-			<a href="#" class="up">Go UP</a>
-		</footer>
-
 		</section> <!-- Closing the #page section -->
 
 		<!-- JavaScript Includes -->
@@ -10,4 +6,7 @@
 		<script src="assets/js/script.js"></script>
 	</div>
 </body>
+<div class="footer">
+	<a href="#" class="up">Go UP</a>
+</div>
 </html>

@@ -4,11 +4,15 @@ header, footer, article, section, hgroup, nav, figure{
     /* Giving a display value to the HTML5 rendered elements: */
     display:block;
 }
+body{
+    background-color: #FAC846;
+}
 .header{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15%;
+    margin-right: 15%;
     height: 175px;
     background-color: black;
+    border: 1px solid black;
 }
 .header_logo{
     margin-left: 50px;
@@ -24,26 +28,30 @@ header, footer, article, section, hgroup, nav, figure{
     color: white;
 }
 .image_slider{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15%;
+    margin-right: 15%;
     height: 400px;
     background-color: white;
+    border: 1px solid black;
 }
 .container{
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: -15px;
+    margin-left: 15%;
+    margin-right: 15%;
     height: auto;
-    background-color: #FAC846;
+    background-color: white;
+    border: 1px solid black;
 }
 .news{
     margin: 15px;
     height: auto;
 }
 .footer{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15%;
+    margin-right: 15%;
     height: 100px;
-    background-color: black;
+    background-color: blue;
+    border: 1px solid black;
 }
 
 nav{

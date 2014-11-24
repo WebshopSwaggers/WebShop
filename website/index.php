@@ -4,18 +4,18 @@ require 'templates/header.php';
 ?>
 
 <div class="news">
-	<!-- Article 1 start -->
-	<article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+	<!-- Article 2 start -->
+	<article id="article2"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
 	<h2>News</h2>
 
 	<img src="assets/images/header-510x186.png" alt="Header">
 	<p> Hier komen de laatste games van Vlambeer</p>
 
 	</article>
-	<!-- Article 1 end -->
+	<!-- Article 2 end -->
 
-	<!-- Article 2 start -->
-	<article id="article2">
+	<!-- Article 3 start -->
+	<article id="article3">
 
 	<h2>Contact</h2>
 
@@ -54,7 +54,7 @@ require 'templates/header.php';
 	</p>
 
 	</article>
-	<!-- Article 2 end -->
+	<!-- Article 3 end -->
 </div>
 
 <?php require 'templates/footer.php'; ?>

@@ -9,6 +9,7 @@
 
 <section id="page"> <!-- Defining the #page section with the section tag -->
 
+<article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
 <div class="header">
 	<div class="header_logo">
 		<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
@@ -22,11 +23,15 @@
 	<nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
 	    <ul>
 	        <li><a href="#article1">Home</a></li>
-	        <li><a href="#article2">Contact</a></li>
-	        <li><a href="#article3">Store</a></li>
+	        <li><a href="#article2">News</a></li>
+	        <li><a href="#article3">Contact</a></li>
+	        <li><a href="store.php">Store</a></li>
 	    </ul>
 	</nav>
 </div>
+</article>
+<!-- Article 1 end -->
+
 <div class="image_slider">
 	<h1>Image slider</h1>
 </div>
