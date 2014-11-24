@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 session_start();
 
-require("classes/MySQLi.php");
+require("classes/class.mysqli.php");
 
 //Hostname, bijvoorbeeld: localhost of 127.0.0.1
 $host = "127.0.0.1";
@@ -11,7 +11,7 @@ $dbuser = "root";
 //Database wachtwoord
 $dbpass = "";
 //Database naam
-$dbname = "car-models";
+$dbname = "webshop";
 
 $con = new DB($host,$dbuser,$dbpass,$dbname);
 
@@ -26,5 +26,7 @@ if (mysqli_connect_error($con))
 //Functies
 require 'functions.php';
 //Users class
-require 'classes/Users.php';
+require 'classes/class.users.php';
+//Item class
+require 'classes/class.items.php';
 ?>

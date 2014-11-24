@@ -12,7 +12,7 @@ Class Item
     public function __construct($id)
     {
 
-     sql = DB::query("SELECT name,price,description,image FROM items WHERE item_id = '".$id."' LIMIT 1");
+     $sql = DB::query("SELECT name,price,description,image FROM items WHERE item_id = '".$id."' LIMIT 1");
      $row = DB::fetch($sql);
 
 	   $this->name = $row->name;
