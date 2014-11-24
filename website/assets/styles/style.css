@@ -4,12 +4,20 @@ header, footer, article, section, hgroup, nav, figure{
     /* Giving a display value to the HTML5 rendered elements: */
     display:block;
 }
-
 .header{
     margin-left: auto;
     margin-right: auto;
-    height: 200px;
+    height: 175px;
     background-color: black;
+}
+.header_logo{
+    margin-left: 50px;
+}
+.header_title{
+    font: "Century Gothic";
+    margin-top: -100px;
+    margin-left: 250px;
+    color: white;
 }
 .image_slider{
     margin-left: auto;

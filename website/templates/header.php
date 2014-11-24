@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Vlambeer</title>
-    <link rel="stylesheet" type="text/css" href="styles/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
 </head>
 <body>
 
@@ -12,6 +12,9 @@
 <div class="header">
 	<div class="header_logo">
 		<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
+	</div>
+	<div class="header_title">
+		<h1>VLAMBEER</h1>
 	</div>
 	<nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
 	    <ul>
