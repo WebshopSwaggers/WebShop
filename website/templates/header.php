@@ -33,7 +33,15 @@
 <!-- Article 1 end -->
 
 <div class="image_slider">
-	<h1>Image slider</h1>
+	<figure id="slideshow">
+            
+                <img src="assets/images/header-510x186.png" class="active" alt="banner-radius">
+                <img src="assets/images/Logo600x4001.png" alt="banner-radius">
+                <img src="assets/images/header-510x186.png" alt="banner-radius">
+                <img src="assets/images/Logo600x4001.png" alt="banner-radius">
+               
+            </figure>
+
 </div>
 
 <div class="container">

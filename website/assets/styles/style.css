@@ -101,3 +101,29 @@ nav, article, nav ul li a,figure{
     -webkit-border-radius:10px;
     border-radius:10px;
 }*/
+
+
+
+  #slideshow {
+    position:relative;
+    height:133px;
+    width: 100px;
+	
+    }
+
+    #slideshow IMG {
+        position:absolute;
+        margin-top:0px;
+        left:0;
+        z-index:8;
+        height: 386px;
+        width: 943px;
+    }
+
+    #slideshow IMG.active {
+        z-index:10;
+    }
+
+    #slideshow IMG.last-active {
+        z-index:9;
+    }
