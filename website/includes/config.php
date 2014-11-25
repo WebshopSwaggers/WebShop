@@ -9,7 +9,7 @@ $host = "127.0.0.1";
 //Database gebruikersnaam
 $dbuser = "root";
 //Database wachtwoord
-$dbpass = "1234";
+$dbpass = "";
 //Database naam
 $dbname = "webshop";
 
