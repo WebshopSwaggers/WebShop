@@ -11,37 +11,32 @@
 
 <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
 <div class="header">
-	<div class="header_logo">
-		<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
-	</div>
-	<div class="header_title">
-		<h1>VLAMBEER</h1>
-	</div>
-	<div class="header_slogan">
-		<p id="headerSlogan"></p>
-	</div>
+	<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
+	<h1>Vlambeer</h1>
+	<p id="headerSlogan"></p>
 </div>
-<div class="nav">
+<!-- <div class="nav">
 	<ul>
 		<li><a href="#article1">Home</a></li>
 		<li><a href="#article2">News</a></li>
 		<li><a href="#article3">Contact</a></li>
 		<li><a href="store.php">Store</a></li>
 	</ul>
-</div>
+</div> -->
 </article>
 <!-- Article 1 end -->
-
+<div class="nav">
+	<p>Placeholder button bar</p>
+</div>
 <div class="image_slider">
 	<figure id="slideshow">
             
-                <img src="assets/images/header-510x186.png" class="active" alt="banner-radius">
-                <img src="assets/images/Logo600x4001.png" alt="banner-radius">
-                <img src="assets/images/header-510x186.png" alt="banner-radius">
-                <img src="assets/images/Logo600x4001.png" alt="banner-radius">
-               
-            </figure>
-
+    <img src="assets/images/header-510x186.png" class="active" alt="banner-radius">
+    <img src="assets/images/Logo600x4001.png" alt="banner-radius">
+    <img src="assets/images/header-510x186.png" alt="banner-radius">
+    <img src="assets/images/Logo600x4001.png" alt="banner-radius">
+   
+	</figure>
 </div>
 
 <div class="container">
