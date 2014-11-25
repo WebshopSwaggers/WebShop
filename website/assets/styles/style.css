@@ -54,7 +54,7 @@ body{
     border: 1px solid black;
 }
 
-nav{
+/*nav{
     background: #f8f8f8;
     padding:0 5px;
     right:0;
@@ -82,7 +82,7 @@ nav ul li a, nav ul li a:visited{
     text-transform:uppercase;
 }
 
-/*de kleur als je over de buttons gaat */
+de kleur als je over de buttons gaat 
 nav ul li a:hover{
     text-decoration:none;
     background-color:#f0f0f0;
@@ -92,4 +92,21 @@ nav, article, nav ul li a,figure{
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
     border-radius:10px;
+}*/
+
+.nav{
+    background-color: blue;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 40px;
+}
+.nav ul{
+    text-align: center;
+}
+.nav ul li{
+    display: inline;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px; 
+    background-color: white;
 }

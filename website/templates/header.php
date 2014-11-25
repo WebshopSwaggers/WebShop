@@ -20,14 +20,14 @@
 	<div class="header_slogan">
 		<p id="headerSlogan"></p>
 	</div>
-	<nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
-	    <ul>
-	        <li><a href="#article1">Home</a></li>
-	        <li><a href="#article2">News</a></li>
-	        <li><a href="#article3">Contact</a></li>
-	        <li><a href="store.php">Store</a></li>
-	    </ul>
-	</nav>
+</div>
+<div class="nav">
+    <ul>
+        <li><a href="#article1">Home</a></li>
+        <li><a href="#article2">News</a></li>
+        <li><a href="#article3">Contact</a></li>
+        <li><a href="store.php">Store</a></li>
+    </ul>
 </div>
 </article>
 <!-- Article 1 end -->

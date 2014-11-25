@@ -10,7 +10,7 @@ require 'templates/header.php';
 
 	<img src="assets/images/header-510x186.png" alt="Header">
 	<p> Hier komen de laatste games van Vlambeer</p>
-
+	
 	</article>
 	<!-- Article 2 end -->
 
