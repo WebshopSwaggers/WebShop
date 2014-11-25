@@ -57,11 +57,13 @@ body{
 .footer{
     margin-left: 15%;
     margin-right: 15%;
-    height: 100px;
-    background-color: blue;
+    height: 270px;
+    background-color: black;
     border: 1px solid black;
+    color: #999;
+    text-align: center;
+    font-size: 13.5px;
 }
-
 /*nav{
     background: #f8f8f8;
     padding:0 5px;
@@ -127,3 +129,40 @@ nav, article, nav ul li a,figure{
     #slideshow IMG.last-active {
         z-index:9;
     }
+
+.footer strong{
+    color: white;
+}
+.footer .owners a{
+    color: #FEE37A;
+    text-decoration: none;
+}
+.footer .friends a{
+    color: #999;
+    text-decoration: none;
+}
+.footer .contact{
+    float: left;
+    width: 220px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.footer .owners .teamRami{
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.footer .owners .teamJw{
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.footer .friends{
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.footer .friends ul li{
+    list-style-type: none;
+}

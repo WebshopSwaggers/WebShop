@@ -17,42 +17,6 @@ require 'templates/header.php';
 	<!-- Article 3 start -->
 	<article id="article3">
 
-	<h2>Contact</h2>
-
-	<p>
-		<br>VLAMBEER IS A DUTCH INDEPENDENT GAME STUDIO made up of Rami Ismail and Jan Willem Nijman, bringing back arcade games since 1764.
-		<br>Rami Ismail
-		<br>Business and Development
-		<br>rami@vlambeer.com
-		<br>@tha_rami
-		<br>Jan Willem Nijman
-		<br>Game Design
-		<br>jw@vlambeer.com
-		<br>@jwaaaap
-		<br>info@vlambeer.com | Neude 5, 3512 AD, Utrecht, the Netherlands | +31621206363
-		<br>FRIENDS OF VLAMBEER
-		<br>Roy Nathan de Groot
-		<br>KOZILEK
-		<br>Zach Gage
-		<br>Greg Wohlwend
-		<br>Kert Gartner
-		<br>Phlogiston
-		<br>Devolver Digital
-		<br>Sparpweed
-		<br> Mauer
-		<br>The Poppenkast
-		<br>Venus Patrol
-		<br> Magazine
-		<br>Pause music
-		<br>Adam Atomic
-		<br>Halfbot
-		<br>Dutch Game Garden
-		<br>Brandon Boyer
-		<br>Bram Ruiter
-		<br>Bit Collective
-		<br>Aardbever
-	</p>
-
 	</article>
 	<!-- Article 3 end -->
 </div>
