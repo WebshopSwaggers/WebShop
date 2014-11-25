@@ -5,17 +5,21 @@ Class Invoice
    //variables
    private $inv_id;
    private $user_id;
+   private $start_date;
+   private $end_date;
 
    // De contructor
     public function __construct($inv_id)
     {
 
-     $sql = DB::query("SELECT inv_id,user_id FROM cms_invoice_templates WHERE inv_id = '".$inv_id."' LIMIT 1");
+     $sql = DB::query("SELECT inv_id,user_id,start_date,end_date FROM cms_invoice_templates WHERE inv_id = '".$inv_id."' LIMIT 1");
      if(DB::num_rows($sql) > 0)
      {
         $row = DB::fetch($sql);
         $this->inv_id = $row->inv_id;
-	      $this->user_id = $row->user_id;
+        $this->user_id = $row->user_id;
+        $this->start_date = $row->start_date;
+        $this->end_date = $row->end_date;
 	   }
      else
      {
@@ -31,6 +35,14 @@ Class Invoice
   public function getUserId()
   {
     return $this->user_id;
+  }
+  public function getStartDate()
+  {
+    return $this->start_date;
+  }
+  public function getEndDate()
+  {
+    return $this->end_date;
   }
 
   public static function getUserInvoices($user_id)

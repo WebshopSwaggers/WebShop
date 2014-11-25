@@ -29,7 +29,7 @@ require 'includes/config.php';
     echo "<br>";
     echo "Aantal: ". $row[$i]['count'];
     echo "<br>";
-    echo "<img style='height:100px; width:100px;' src='".$row[$i]['item_image']."'>";
+    echo "<img style='height:100px; width:70px;' src='".$row[$i]['item_image']."'>";
     echo "<br>";
     echo "<br>";
     $bedrag += $row[$i]['item_price'] * $row[$i]['count'];

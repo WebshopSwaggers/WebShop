@@ -1,0 +1,20 @@
+ErrorDocument 404 /error.php
+Options +FollowSymlinks
+Options -Indexes
+<Files .htaccess>
+deny from all
+</Files>
+
+<ifModule mod_php5.c>
+	php_value zlib.output_compression 16386
+	php_value register_globals off
+	php_value session.use_trans_sid 0
+</ifModule>
+<ifModule mod_rewrite.c>
+RewriteEngine on
+# Uncomment the line below if the site doesn't work and you have mod_rewrite installed.
+# RewriteBase /
+
+RewriteRule ^invoice/(.*).pdf$ ./invoice/invoice.php?invoice=$1
+
+</ifModule>
