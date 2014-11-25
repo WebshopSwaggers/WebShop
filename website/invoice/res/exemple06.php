@@ -4,7 +4,7 @@
 	body,div,dl,dt,dd,ul,ol,li,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td,header { margin: 0; padding: 0; }
 
 	a {
-	color: #35a5df;
+	color: #FAC846;
 	}
 
 	table {	border-collapse: collapse; border-spacing: 0; }
@@ -29,11 +29,11 @@
 
 /* ======================== Text Color ===================== */
 
-.color, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, a, a:focus, .top_header a:hover, .top-bar ul > li a.active, .caption.big_color, .service:hover .service-main, .work-item-content h5, .footer a:hover, .footer_bottom a:hover, .type1 a:hover, .type1 li:hover:before, .type2 a:hover, .type2 li:hover:before, .type3 a:hover, .type3 li:hover:before, .type4 a:hover, .type4 li:hover:before, .toggle-view li:hover h2, .article_meta a:hover, .article_meta_type1 a:hover, .article_meta_type2 a:hover, .sidebar-widget a:hover, dl.tabs dd a:hover, dl.tabs dd a:focus, ul.breadcrumbs li.current a, .member-social a:hover, blockquote cite {color : #55bb11}
+.color, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, a, a:focus, .top_header a:hover, .top-bar ul > li a.active, .caption.big_color, .service:hover .service-main, .work-item-content h5, .footer a:hover, .footer_bottom a:hover, .type1 a:hover, .type1 li:hover:before, .type2 a:hover, .type2 li:hover:before, .type3 a:hover, .type3 li:hover:before, .type4 a:hover, .type4 li:hover:before, .toggle-view li:hover h2, .article_meta a:hover, .article_meta_type1 a:hover, .article_meta_type2 a:hover, .sidebar-widget a:hover, dl.tabs dd a:hover, dl.tabs dd a:focus, ul.breadcrumbs li.current a, .member-social a:hover, blockquote cite {color : #FAC846}
 
 /* ======================== Border Color ===================== */
 
-.maincontent h3, .top-bar ul > li a.active, .top-bar ul > li:hover a,.work-item:hover, .post-item:hover, .footer h4, ul.tabs-content, .portfolio-item:hover, blockquote{border-color:#55bb11}
+.maincontent h3, .top-bar ul > li a.active, .top-bar ul > li:hover a,.work-item:hover, .post-item:hover, .footer h4, ul.tabs-content, .portfolio-item:hover, blockquote{border-color:#FAC846}
 
 *::selection      {background-color: #55bb11 ;}
 *::-moz-selection {background-color: #55bb11 ;}
@@ -42,7 +42,7 @@ background-color: #E5E5E5;
 }
 h3{
 font-size: 20px;
-color: #77AD72;
+color: #FAC846;
 }
 
 p{
@@ -75,7 +75,7 @@ padding-bottom: 40px;
 padding-right: 40px;
 margin-left: -60px;
 padding-left: 20px;
-background-color: #77AD72;
+background-color: #FAC846;
 color: white;
 font-size: 15px;
 }
@@ -134,7 +134,7 @@ $user = new UserData($inv->getUserId());
 		<br />
 
 		<br />
-		<h3 style="margin-top: 30px;" color="green"> FACTUUR </h3>
+		<h3 style="margin-top: 30px;" color=""> FACTUUR </h3>
 		<br />
 		<br />
 		<b style="margin-top: 4px;"> CLIENT: </b><i style="color: #B9B9B9;"><?php echo $user->getFirstName() . " " . $user->getLastName(); ?></i> <br />
@@ -149,12 +149,12 @@ $user = new UserData($inv->getUserId());
 		<br />
 		<h1><b>Vlam<span>beer</span></b></h1>
 		<div style="margin-right: 10px; margin-top: 5px;" align="right" id="greenpart">
-	<i style="color: #CCD9CD;">
-		Yor-Game<br />
+	<i style="color: #000000;">
+		Vlambeer<br />
 		Sluisakker 24<br />
 		Raamsdonk, 4944BW<br />
 		Nederland<br />
-		support@yor-game.nl<br /><br />
+		Contact@Vlambeer.nl<br /><br />
 		BTW-nummer: NL226260471B01<br />
 	</i>
 		</div>
@@ -191,9 +191,9 @@ while($i < $count)
 	<?php if ($i % 2 == 0){ echo"
 	background-color: #DDDDDD; ";}?>">
 
-  <td><b  style="color: #77AD72;"><?php echo "<img style='height:100px; width:70px;' src='".$row[$i]['item_image']."'>"; ?></b></td>
+  <td><b  style="color: #FAC846;"><?php echo "<img style='height:100px; width:70px;' src='".$row[$i]['item_image']."'>"; ?></b></td>
 
-  <td><b  style="color: #77AD72;"><?php echo $row[$i]['item_name']; ?></b></td>
+  <td><b  style="color: #FAC846;"><?php echo $row[$i]['item_name']; ?></b></td>
 
   <td>
 	<i style=" font-size: 12px; color: #A7A7A7">
