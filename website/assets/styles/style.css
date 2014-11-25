@@ -1,33 +1,41 @@
 *{padding: 0px; margin: 0px;}
 
 header, footer, article, section, hgroup, nav, figure{
-    /* Giving a display value to the HTML5 rendered elements: */
     display:block;
 }
 body{
     background-color: #FAC846;
 }
 .header{
+    margin-top: -115px;
+    position: fixed;
     margin-left: 15%;
     margin-right: 15%;
-    height: 175px;
+    width: 945px;
+    height: 115px;
     background-color: black;
-    border: 1px solid black;
 }
 .header_logo{
     margin-left: 50px;
 }
 .header_title{
-    margin-top: -100px;
-    margin-left: 250px;
+    margin-top: -80px;
+    margin-left: 200px;
     color: white;
 }
 .header_slogan{
     margin-top: 0px;
-    margin-left: 250px;
+    margin-left: 200px;
     color: white;
 }
+.nav{
+    position: fixed;
+    margin-top: -95px;
+    margin-left: 75%;
+    margin-right: 15%;
+}
 .image_slider{
+    margin-top: 115px;
     margin-left: 15%;
     margin-right: 15%;
     height: 400px;
@@ -93,20 +101,3 @@ nav, article, nav ul li a,figure{
     -webkit-border-radius:10px;
     border-radius:10px;
 }*/
-
-.nav{
-    background-color: blue;
-    margin-left: 15%;
-    margin-right: 15%;
-    height: 40px;
-}
-.nav ul{
-    text-align: center;
-}
-.nav ul li{
-    display: inline;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-left: 10px; 
-    background-color: white;
-}

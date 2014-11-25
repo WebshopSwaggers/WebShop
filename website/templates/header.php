@@ -22,12 +22,12 @@
 	</div>
 </div>
 <div class="nav">
-    <ul>
-        <li><a href="#article1">Home</a></li>
-        <li><a href="#article2">News</a></li>
-        <li><a href="#article3">Contact</a></li>
-        <li><a href="store.php">Store</a></li>
-    </ul>
+	<ul>
+		<li><a href="#article1">Home</a></li>
+		<li><a href="#article2">News</a></li>
+		<li><a href="#article3">Contact</a></li>
+		<li><a href="store.php">Store</a></li>
+	</ul>
 </div>
 </article>
 <!-- Article 1 end -->
