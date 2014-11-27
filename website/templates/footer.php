@@ -62,7 +62,6 @@
 	    </ul>
 	</div>
 	<div class="friends">
-		<strong>FRIENDS OF VLAMBEER</strong>
 		<ul>
 			<li>
 				<a href="http://www.alexmauer.com/"><li>Alex Mauer</li></a>
