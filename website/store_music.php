@@ -4,7 +4,7 @@ require 'includes/config.php';
 require 'templates/header.php';
 //DB require
 ?>
-
+<div class="container">
 <div class="musicStoreContainer">
 
 <?php
@@ -30,3 +30,5 @@ for($count; $i < $count; $i++)
 </div>
 
 <?php require 'templates/footer.php';
+?>
+</div>

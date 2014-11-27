@@ -4,6 +4,7 @@ require 'templates/header.php';
 ?>
 
 
+<div class="container">
 <div class="vlambeergames">
 <h1>Games</h1>
 
@@ -20,3 +21,7 @@ require 'templates/header.php';
 
 
 <?php require 'templates/footer.php';
+?>
+
+</div>
+
