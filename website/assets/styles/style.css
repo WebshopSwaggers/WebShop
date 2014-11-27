@@ -45,14 +45,12 @@ body{
     width: 1000px;
     height: 400px;
     background-color: white;
-    margin-bottom: 15px;
 }
 .container{
     margin: 0 auto;
     width: 1000px;
     height: 700px;
     background-color: white;
-    margin-bottom: 15px;
 }
 .container h2{
     margin: 10px 20px 10px 20px;

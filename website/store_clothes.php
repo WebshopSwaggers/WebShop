@@ -1,6 +1,6 @@
 <?php
 $title = "Clothes";
-require 'templates/store_header.php';
+require 'templates/header.php';
 //DB require
 ?>
 
@@ -44,4 +44,4 @@ require 'templates/store_header.php';
 	</div>
 </div>
 
-<?php require 'templates/store_footer.php';
+<?php require 'templates/footer.php';
