@@ -10,6 +10,7 @@
  * isset($_GET['vuehtml']) is not mandatory
  * it allow to display the result in the HTML format
  */
+ ini_set("display_errors","On");
  require '../includes/config.php';
 $invoiceid = Security($_GET["invoice"]);
 
