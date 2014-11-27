@@ -87,6 +87,22 @@ body{
     margin: 0 auto;
     margin-top: 20px;
 }
+.clothes{
+    position: absolute;
+    margin: 50 auto;
+    width: 1000px;
+}
+.clothes_sidecontent{
+    position: absolute;
+    margin: 0 auto;
+    height: 500px;
+    width: 200px;
+    border: 1px solid black;
+}
+.clothes_sidecontent h2{
+    font: normal 23px 'DejaVu Sans', sans-serif;
+    border-bottom: 1px solid black;
+}
 
 /*nav{
     background: #f8f8f8;
