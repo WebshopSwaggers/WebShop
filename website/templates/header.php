@@ -30,9 +30,9 @@
   <div class="menuit">
     <div style="float:left;
     padding: 11px;">Vlambeer Webshop</div>
-    <div class="menuitems"><a class="menut" href="#">Home</a></div>
-    <div class="menuitems"><a class="menut" href="#">Products</a></div>
-    <div class="menuitems"><a class="menut" href="#">Info</a></div>
+    <div class="menuitems"><a class="menut" href="./index.php">Home</a></div>
+    <div class="menuitems"><a class="menut" href="./store.php">Store</a></div>
+    <div class="menuitems"><a class="menut" href="./store_music.php">Music Store</a></div>
     <div class="menuitems"><a class="menut" href="#">Contact</a></div>
     <div class="menuitems right"><a class="menut" href="/logout">Logout</a></div>
   </div>
