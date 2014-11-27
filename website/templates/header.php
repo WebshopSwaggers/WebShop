@@ -25,17 +25,26 @@
 </div> -->
 </article>
 <!-- Article 1 end -->
-<div class="nav">
-	<p>Placeholder button bar</p>
+<div class="menu">
+  <div class="menuit">
+    <div style="float:left;
+    padding: 11px;">Vlambeer Webshop</div>
+    <div class="menuitems"><a class="menut" href="#">Home</a></div>
+    <div class="menuitems"><a class="menut" href="#">Products</a></div>
+    <div class="menuitems"><a class="menut" href="#">Info</a></div>
+    <div class="menuitems"><a class="menut" href="#">Contact</a></div>
+    <div class="menuitems right"><a class="menut" href="/logout">Logout</a></div>
+  </div>
 </div>
+
 <div class="image_slider">
 	<figure id="slideshow">
-            
+
     <img src="assets/images/header-510x186.png" class="active" alt="banner-radius">
     <img src="assets/images/Logo600x4001.png" alt="banner-radius">
     <img src="assets/images/header-510x186.png" alt="banner-radius">
     <img src="assets/images/Logo600x4001.png" alt="banner-radius">
-   
+
 	</figure>
 </div>
 

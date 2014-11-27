@@ -1,0 +1,317 @@
+*{padding: 0px; margin: 0px;}
+
+header, footer, article, section, hgroup, nav, figure{
+    display:block;
+}
+
+body{
+    font-family: 'DejaVu Sans', sans-serif;
+    background-color: #FAC846;
+}
+.header{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15px;
+    height: 115px;
+    background-color: black;
+}
+.header img{
+    margin-left: 20px;
+}
+.header h1{
+    margin-top: -80px;
+    margin-left: 170px;
+    color: white;
+}
+.header p{
+    margin-left: 170px;
+    color: white;
+}
+.nav{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+.image_slider{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 386px;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+.container{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: auto;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.news{
+    margin: 15px;
+    height: auto;
+}
+.footer{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+/*nav{
+    background: #f8f8f8;
+    padding:0 5px;
+    right:0;
+    top:4em;
+    position:fixed; top:0; left:50;
+    border:1px solid #FCFCFC;
+    -moz-box-shadow:0 1px 1px #333333;
+    -webkit-box-shadow:0 1px 1px #333333;
+    box-shadow:0 1px 1px #333333;
+}
+
+nav ul li{
+    display:inline;
+}
+
+nav ul li a, nav ul li a:visited{
+    color:#565656;
+    display:block;
+    float:left;
+    font-size:1.25em;
+    font-weight:bold;
+    margin:5px 2px;
+    padding:7px 10px 4px;
+    text-shadow:0 1px 1px white;
+    text-transform:uppercase;
+}
+
+de kleur als je over de buttons gaat
+nav ul li a:hover{
+    text-decoration:none;
+    background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}*/
+
+
+
+  #slideshow {
+    position:relative;
+    height:133px;
+    width: 100px;
+
+    }
+
+    #slideshow IMG {
+        position:absolute;
+        margin-top:0px;
+        left:0;
+        z-index:8;
+        height: 386px;
+        width: 943px;
+    }
+
+    #slideshow IMG.active {
+        z-index:10;
+    }
+
+    #slideshow IMG.last-active {
+        z-index:9;
+    }
+
+
+
+
+
+
+    .logo{
+      margin-top:-120px;
+    }
+    .menu{
+      background:#353535;
+      width:99.9%;
+      height:40px;
+      border:1px solid #2a2a2a;
+      margin-top:-15px;
+      width: 1108px;
+      margin-left: auto;
+      margin-right: auto;
+      color:#e6e6e6;
+      font-family:'Roboto',sans-serif;
+      -webkit-box-shadow: 0px 3px 30px 0px rgba(69, 50, 50, 0.78);
+      -moz-box-shadow:    0px 3px 30px 0px rgba(69, 50, 50, 0.78);
+      box-shadow:         0px 3px 30px 0px rgba(69, 50, 50, 0.78);
+    }
+    .menuitems{
+      padding:11px;
+      font-size:14px;
+      border-left:1px solid #2a2a2a;
+      float:left;
+      border-right:1px solid #2a2a2a;
+      margin-left:-1px;
+      height:22px;
+      transition: background 0.5s ease-out;
+    }
+    .menuitems.rightmenu{
+      float:right;
+      margin-right:20px;
+      color:#efefef;
+    }
+    .menuit{
+      margin-left:10px;
+      margin-right:auto;
+      width:830px;
+    }
+    .menuitems:hover{
+      background:#2a2a2a;
+      cursor:pointer;
+    }
+    .select{
+      padding:11px;
+      font-size:14px;
+      float:left;
+      border-bottom:2px solid #2e628c;
+      margin-left:-1px;
+      margin-top:0px;
+      height:22px;
+      background:#2a2a2a;
+    }
+    .selected{
+      text-decoration:none;
+      color:#e6e6e6;
+      float:left;
+    }
+    a.menut{
+      text-decoration:none;
+      color:#e6e6e6;
+      float:left;
+    }
+    a.menut:hover{
+      text-decoration:underline;
+    }
+    .drpmenu{
+      width:100%;
+      height:auto;
+      background:#f5f5f5;
+      border-left:1px solid #d8d8d8;
+      border-right:1px solid #d8d8d8;
+      border-bottom:1px solid #d8d8d8;
+      float:left;
+      font-family:'Roboto',sans-serif;
+    }
+    .drpmenuitems{
+      padding:6px;
+      margin-left:auto;
+      margin-right:auto;
+      width:850px;
+    }
+    .hotspot{
+      float:left;
+      margin-right:-15px;
+      margin-top:-11px;
+    }
+    .hotspot:hover{
+      position: relative;
+    }
+    a[title]:hover:after {
+      content: attr(title);
+      font-family:verdana;
+      padding: 4px 8px;
+      color: white;
+      position: absolute;
+      left: 0;
+      top:-2px;
+      border-radius:5px;
+      font-size:12px;
+      background:#363636;
+    }
+    a.drpbieste{
+      text-decoration:none;
+      color:#4a4a4a;
+      margin-left:13px;
+      font-size:15px;
+      margin-top:3px;
+    }
+    a.drpbieste:hover{
+      text-decoration:underline;
+    }
+    .line{
+      width:730px;
+      margin:auto;
+      margin-bottom:10px;
+      height:1px;
+      background:#ceccd0;
+    }
+    .sterren{
+      margin-right:37px;
+    }
+
+    .red{
+      background:#dd1b1b;
+      color:#fbfbfb;
+      border:1px solid #921212;
+    }
+    .pink{
+      background:#9b59b6;
+      color:#fbfbfb;
+      border-top:1px solid #8e44ad;
+      border:1px solid #8e44ad;
+    }
+    .yellow{
+      background:#004a95;
+      color:#fbfbfb;
+      border-top:1px solid #0061c1;
+      border:1px solid #002e5b;
+    }
+    .green{
+      background:#118d4f;
+      color:#fbfbfb;
+      border:1px solid #0d683a;
+    }
+    .blue{
+      background:#004a95;
+      color:#fbfbfb;
+      border-top:1px solid #0061c1;
+      border:1px solid #002e5b;
+    }
+    .text{margin-left:5px;margin-right:5px;}
+    .footer{
+      width:100%;
+      bottom:-0px;
+      height:auto;
+      position:fixed;
+      background:#eeeeee;
+      padding:10px;
+      font-family:'Ubuntu',sans-serif;
+      font-size:14px;
+      margin-top:  100px;
+
+    }
+    .input{
+      height:30px;
+      font-size:15px;
+      font-family:'Ubuntu',sans-serif;
+      border-radius:3px;
+      border:1px solid #939393;
+      text-align:center;
+      outline-color:#3838cb;
+    }
+    .submit{
+      height:30px;
+      outline:none;
+      font-size:15px;
+      font-family:'Ubuntu',sans-serif;
+      color:white;
+      border-radius:3px;
+      text-align:center;
+      cursor:pointer;
+    }
