@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title><?= "Vlambeer | " . $title?></title>
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles/header.css"/>
 </head>
 <body>
 
