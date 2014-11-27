@@ -71,7 +71,8 @@ Class Invoice
        $itemDesc = $invItem->getItemDesc();
        $itemPrice = $invItem->getItemPrice();
        $itemImage = $invItem->getItemImage();
-       $items = array("item_id" => $itemid, "item_name" => $itemName, "item_description" => $itemDesc, "item_price" => $itemPrice, "item_image" => $itemImage, "count" => $count);
+       $itemCatagory = $invItem->getItemCatagory();
+       $items = array("item_id" => $itemid, "item_name" => $itemName, "item_description" => $itemDesc, "item_price" => $itemPrice, "items_catagory" => $itemCatagory, "item_image" => $itemImage, "count" => $count);
        array_push($array, $items);
 
     }
