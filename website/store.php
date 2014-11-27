@@ -1,4 +1,5 @@
 <?php
+$title = "Games";
 require 'templates/header.php';
 //DB require
 ?>
