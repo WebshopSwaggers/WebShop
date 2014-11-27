@@ -37,7 +37,7 @@
     <div class="menuitems right"><a class="menut" href="/logout">Logout</a></div>
   </div>
 </div>
-
+<div class="container-img">
 <div class="image_slider">
 	<figure id="slideshow">
 
@@ -49,4 +49,6 @@
 	</figure>
 </div>
 
-<div class="container">
+
+</div>
+

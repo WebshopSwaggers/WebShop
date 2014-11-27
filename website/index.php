@@ -4,6 +4,7 @@ require 'includes/config.php';
 require 'templates/header.php';
 ?>
 
+<div class="container">
 <div class="news">
 	<div class="news_header">
 		<h2>You can now reach the Nuclear Throne</h2>
@@ -22,4 +23,4 @@ As a little thank-you, we want to show you some of the things that we hid from y
 </div>
 
 
-<?php require 'templates/footer.php'; ?>
+<?php require 'templates/footer.php'; ?></div>

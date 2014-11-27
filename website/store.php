@@ -19,4 +19,4 @@ require 'templates/header.php';
 
 
 
-<?php require 'templates/store_footer.php';
+<?php require 'templates/footer.php';
