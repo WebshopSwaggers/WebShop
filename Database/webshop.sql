@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50620
 File Encoding         : 65001
 
-Date: 2014-11-28 09:13:34
+Date: 2014-11-28 13:59:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -95,4 +95,4 @@ CREATE TABLE `cms_users` (
 -- ----------------------------
 -- Records of cms_users
 -- ----------------------------
-INSERT INTO `cms_users` VALUES ('1', 'jiojio@ge.nl', 'llllll', 'jordy', 'visser', 'jiojo', '989', '89', 'jiojjio', 'jiojio');
+INSERT INTO `cms_users` VALUES ('1', 'jordy@hotmail.nl', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'jordy', 'visser', 'jiojo', '989', '89', 'jiojjio', 'jiojio');

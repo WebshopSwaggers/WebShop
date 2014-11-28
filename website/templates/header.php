@@ -16,14 +16,19 @@
 	<h1>Vlambeer</h1>
 	<p id="headerSlogan"></p>
 <?php
-
 if(!isset($_SESSION['userdata']))
 {
   echo'<div class="coming-soon">';
-    echo'<form>';
-      echo'<input type="email" placeholder="E-mail">';
-      echo'<input type="password" placeholder="password">';
-      echo'<input type="submit" value="Sign In">';
+    if(isset($_SESSION['error']))
+    {
+      echo "<FONT color='white'>".$_SESSION['error']."</FONT>";
+      unset($_SESSION['error']);
+    }
+    echo'<form action="includes/controllers/authcontroller.php" METHOD="POST">';
+      echo'<input type="email" name="email" placeholder="E-mail">';
+      echo'<input type="password" name="password" placeholder="password" required>';
+      echo'<input type="hidden" name="link" value="'.$_SERVER['REQUEST_URI'].'">';
+      echo'<input type="submit" name="login" value="Sign In">';
     echo'</form>';
   echo'</div>';
 }
@@ -57,7 +62,7 @@ else
     <?php
     if(isset($_SESSION['userdata']))
     {
-       echo'<div class="menuitems right"><a class="menut" href="/logout">Logout</a></div>';
+       echo'<div class="menuitems right"><a class="menut" href="includes/controllers/authcontroller.php?logout">Logout</a></div>';
     }
     ?>
   </div>
