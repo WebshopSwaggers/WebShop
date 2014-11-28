@@ -18,6 +18,9 @@ body{
     width: 1000px;
     height: 115px;
     background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 20px;
 }
 .header img{
     margin-left: 250px;
@@ -185,7 +188,7 @@ nav ul li a, nav ul li a:visited{
     text-transform:uppercase;
 }
 
-de kleur als je over de buttons gaat 
+de kleur als je over de buttons gaat
 nav ul li a:hover{
     text-decoration:none;
     background-color:#f0f0f0;
