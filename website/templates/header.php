@@ -14,14 +14,27 @@
 <div class="header">
 	<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
 	<h1>Vlambeer</h1>
-	<p id="headerSlogan"></p><div class="coming-soon">
-    <form>
-      <input type="email" placeholder="E-mail">
-      <input type="password" placeholder="password">
-      <input type="submit" value="Sign In">
-    </form>
-  </div>
-
+	<p id="headerSlogan"></p>
+<?php
+$_SESSION['userdata'] = "1";
+  if(!isset($_SESSION['userdata']))
+{
+  echo'<div class="coming-soon">';
+    echo'<form>';
+      echo'<input type="email" placeholder="E-mail">';
+      echo'<input type="password" placeholder="password">';
+      echo'<input type="submit" value="Sign In">';
+    echo'</form>';
+  echo'</div>';
+}
+else
+{
+  echo "<div class='header-login'>";
+  echo "<FONT color='white'>Hallo klant, <br></font>";
+  echo "<FONT color='white'>U heeft 0 items in uw winkelwagen</font>";
+  echo "</div>";
+}
+?>
 </div>
 <!-- <div class="nav">
 	<ul>
