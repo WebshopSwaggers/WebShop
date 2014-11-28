@@ -21,13 +21,16 @@ for($count; $i < $count; $i++)
 			echo'<img class="bottom" src="'.$item[$i]['item_image'].'" alt="itemPlaceholder">';
 			echo'<img class="top" src="assets/images/buyme.png">';
 		echo'</div>';
+
 		echo'<div class="itemTitle">';
 			echo'<strong>'.$item[$i]['item_name'].'</strong>';
 		echo'<br>';
 		echo'</div>';
+
 		echo'<div class="itemDesc">';
 			echo'<i>'.$item[$i]['item_description'].'</i>';
 		echo'</div>';
+		
 		echo'<div class="itemPrice">';
 			echo'<i>Price: &euro;'.$item[$i]['item_price'].'</i>';
 		echo'</div>';
