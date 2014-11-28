@@ -1,22 +1,14 @@
 <?php
-/**
- * HTML2PDF Librairy - example
- *
- * HTML => PDF convertor
- * distributed under the LGPL License
- *
- * @author      Laurent MINGUET <webmaster@html2pdf.fr>
- *
- * isset($_GET['vuehtml']) is not mandatory
- * it allow to display the result in the HTML format
- */
+
  require '../includes/config.php';
 $invoiceid = Security($_GET["invoice"]);
 
-if ($invoiceid == ""){
-
-     header ('Location: Https://yor-game.nl/klanten/index.php');
-}elseif(is_numeric($invoiceid)){
+if ($invoiceid == "")
+{
+    header ('Location: ../index.php');
+}
+elseif(is_numeric($invoiceid))
+{
     // get the HTML
     ob_start();
     include(dirname(__FILE__).'./res/exemple06.php');
@@ -26,14 +18,16 @@ if ($invoiceid == ""){
     require_once(dirname(__FILE__).'./html2pdf.class.php');
     try
     {
-        $html2pdf = new HTML2PDF('P', 'A4', 'fr');
+        $html2pdf = new HTML2PDF('P', 'A4', 'nl');
         $html2pdf->pdf->SetDisplayMode('fullpage');
         $html2pdf->writeHTML($content, isset($_GET['vuehtml']));
-        $html2pdf->Output('exemple06.pdf');
+        $html2pdf->Output('Invoice-'.$invoiceid.'.pdf');
     }
     catch(HTML2PDF_exception $e) {
     die($e);
     }
-}else{
-     header ('Location: Https://yor-game.nl/klanten/index.php');
+}
+else
+{
+     header ('Location: ../index.php');
 }

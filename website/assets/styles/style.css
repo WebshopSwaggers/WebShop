@@ -12,25 +12,28 @@ body{
 
 /* DIVS */
 
-.header{
+.header{box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
     margin: 0 auto;
     margin-bottom: 15px;
     width: 1000px;
     height: 115px;
     background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 20px;
 }
 .header img{
-    margin-left: 250px;
+    margin-left: 40px;
 }
 .header h1{
     font: bold 40px 'DejaVu Sans', sans-serif;
     margin-top: -90px;
-    margin-left: 400px;
+    margin-left: 180px;
     color: white;
 }
 .header p{
     font: normal 14px 'DejaVu Sans', sans-serif;
-    margin-left: 400px;
+    margin-left: 180px;
     color: white;
 }
 .nav{
@@ -45,14 +48,33 @@ body{
     width: 1000px;
     height: 400px;
     background-color: white;
-    margin-bottom: 15px;
+
+}
+.container-img{
+
+margin: 0 auto;
+position: relative;
+ width: 1000px;
+background: URL(../bjorncms/images/js_reception_backdrop_left.png), #ffffff;
+background-repeat: no-repeat;
+background-position: left bottom;
+
+
+box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
+
 }
 .container{
-    margin: 0 auto;
-    width: 1000px;
-    height: 700px;
-    background-color: white;
-    margin-bottom: 15px;
+
+ height: 700px;
+margin: 0 auto;
+       position: relative;
+ width: 1000px;
+background: URL(../bjorncms/images/js_reception_backdrop_left.png), #ffffff;
+background-repeat: no-repeat;
+background-position: left bottom;
+
+box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
+
 }
 .container h2{
     margin: 10px 20px 10px 20px;
@@ -67,6 +89,8 @@ body{
     position: absolute;
     margin: 50 auto;
     width: 1000px;
+
+
 }
 .news_header h2{
     display: block;
@@ -104,6 +128,38 @@ body{
     border-bottom: 1px solid black;
 }
 
+.musicStoreContainer{
+    background-color: white;
+    height: 300px;
+}
+.musicStoreContainer .itemHolder{
+    float: left;
+    width: 150px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background: white;
+    border: 1px solid #D6D9E0;
+    border-right: 4px solid #D5D8DD;
+    border-bottom: 4px solid #D5D8DD;
+    border-radius: 10px;
+}
+.itemPic img{
+    height: 100px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+.itemHolder strong{
+    margin-left: 32px;
+    font-size: 16px;
+}
+.itemHolder i{
+    margin-left: 10px;
+    font-size: 12px;
+    color: #B8BDCB;
+}
 /*nav{
     background: #f8f8f8;
     padding:0 5px;
@@ -132,7 +188,7 @@ nav ul li a, nav ul li a:visited{
     text-transform:uppercase;
 }
 
-de kleur als je over de buttons gaat 
+de kleur als je over de buttons gaat
 nav ul li a:hover{
     text-decoration:none;
     background-color:#f0f0f0;
@@ -160,6 +216,7 @@ width: 100px;
     z-index:8;
     height: 400px;
     width: 1000px;
+
 }
 
 #slideshow IMG.active {
@@ -171,12 +228,17 @@ width: 100px;
 }
 .footer{
     margin: 0 auto;
-    width: 1000px;;
+    width: 1001px;;
     height: 230px;
     background-color: black;
     color: #999;
     text-align: center;
+    margin-bottom: 50px;
     font-size: 13.5px;
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
 }
 .footer strong{
     color: white;
@@ -221,7 +283,6 @@ width: 100px;
     width: 1000px;
     height: 500px;
     background-color: white;
-    border: 1px solid black;
 }
 
 

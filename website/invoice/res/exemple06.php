@@ -1,4 +1,4 @@
-<link href="./res/style.css" type="script/css" rel="stylesheet">
+
 <style type="text/css">
 /** Reset to default **/
 	body,div,dl,dt,dd,ul,ol,li,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td,header { margin: 0; padding: 0; }

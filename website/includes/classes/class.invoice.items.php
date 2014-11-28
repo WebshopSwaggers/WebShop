@@ -54,6 +54,11 @@ Class InvoiceItem
     return $this->item->getImage();
   }
 
+  public function getItemCatagory()
+  {
+    return $this->item->getCatagory();
+  }
+
 
 }
 

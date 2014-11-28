@@ -1,5 +1,5 @@
 <?php
-$title = "games";
+$title = "Music";
 require 'includes/config.php';
 require 'templates/header.php';
 //DB require
@@ -8,7 +8,7 @@ require 'templates/header.php';
 <div class="musicStoreContainer">
 
 <?php
-$item = Item::getItems("games");
+$item = Item::getItems("music");
 $count = count($item);
 $i= 0;
 //while loop om het bedrag te bepalen

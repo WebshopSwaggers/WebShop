@@ -3,25 +3,51 @@
 Class Item
 {
    //variables
+   private $item_id;
    private $name;
    private $price;
    private $description;
    private $image;
+   private $catagory;
 
    // De contructor
-    public function __construct($item_id)
-    {
-
-     $sql = DB::query("SELECT name,price,description,image FROM cms_items WHERE item_id = '".$item_id."' LIMIT 1");
+  public function __construct($item_id)
+  {
+     $sql = DB::query("SELECT item_id,name,price,description,image,catagory FROM cms_items WHERE item_id = '".$item_id."' LIMIT 1");
      $row = DB::fetch($sql);
 
+     $this->item_id = $row->item_id;
 	   $this->name = $row->name;
 	   $this->price = $row->price;
 	   $this->description = $row->description;
-	   $this->image = $row->image;
-	}
+     $this->image = $row->image;
+     $this->catagory = $row->image;
+  }
 
+  public static function getItems($cat)
+  {
+    $sql = DB::query("SELECT item_id,name,price,description,image,catagory FROM cms_items WHERE catagory = '".$cat."'");
+    $array = array();
+    while($row = DB::fetch($sql))
+    {
+       $Item = new Item($row->item_id);
+       $itemid = $Item->getId();
+       $itemName = $Item->getName();
+       $itemDesc = $Item->getDescription();
+       $itemPrice = $Item->getPrice();
+       $itemImage = $Item->getImage();
+       $itemCatagory = $Item->getCatagory();
+       $items = array("item_id" => $itemid, "item_name" => $itemName, "item_description" => $itemDesc, "item_price" => $itemPrice, "items_catagory" => $itemCatagory, "item_image" => $itemImage);
+       array_push($array,$items);
+    }
+    return $array;
+  }
+   
 	// Get functies
+  public function getId()
+  {
+    return $this->item_id;
+  }
   public function getName()
   {
     return $this->name;
@@ -38,7 +64,10 @@ Class Item
   {
     return $this->image;
   }
-
+   public function getCatagory()
+  {
+    return $this->catagory;
+  }
 
 }
 

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title><?= "Vlambeer | " . $title?></title>
+    <title><?php echo "Vlambeer | " . $title; ?></title>
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/header.css"/>
 </head>
@@ -15,6 +15,31 @@
 	<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
 	<h1>Vlambeer</h1>
 	<p id="headerSlogan"></p>
+<?php
+if(!isset($_SESSION['userdata']))
+{
+  echo'<div class="coming-soon">';
+    if(isset($_SESSION['error']))
+    {
+      echo "<FONT color='white'>".$_SESSION['error']."</FONT>";
+      unset($_SESSION['error']);
+    }
+    echo'<form action="includes/controllers/authcontroller.php" METHOD="POST">';
+      echo'<input type="email" name="email" placeholder="E-mail">';
+      echo'<input type="password" name="password" placeholder="password" required>';
+      echo'<input type="hidden" name="link" value="'.$_SERVER['REQUEST_URI'].'">';
+      echo'<input type="submit" name="login" value="Sign In">';
+    echo'</form>';
+  echo'</div>';
+}
+else
+{
+  echo "<div class='header-login'>";
+  echo "<FONT color='white'>Hello ".User::GetUserData("firstname").", <br></font>";
+  echo "<FONT color='white'>You have 0 items in your shopping car</font>";
+  echo "</div>";
+}
+?>
 </div>
 <!-- <div class="nav">
 	<ul>
@@ -30,14 +55,19 @@
   <div class="menuit">
     <div style="float:left;
     padding: 11px;">Vlambeer Webshop</div>
-    <div class="menuitems"><a class="menut" href="#">Home</a></div>
-    <div class="menuitems"><a class="menut" href="#">Products</a></div>
-    <div class="menuitems"><a class="menut" href="#">Info</a></div>
+    <div class="menuitems"><a class="menut" href="./index.php">Home</a></div>
+    <div class="menuitems"><a class="menut" href="./store.php">Store</a></div>
+    <div class="menuitems"><a class="menut" href="./store_music.php">Music Store</a></div>
     <div class="menuitems"><a class="menut" href="#">Contact</a></div>
-    <div class="menuitems right"><a class="menut" href="/logout">Logout</a></div>
+    <?php
+    if(isset($_SESSION['userdata']))
+    {
+       echo'<div class="menuitems right"><a class="menut" href="includes/controllers/authcontroller.php?logout">Logout</a></div>';
+    }
+    ?>
   </div>
 </div>
-
+<div class="container-img">
 <div class="image_slider">
 	<figure id="slideshow">
 
@@ -49,4 +79,5 @@
 	</figure>
 </div>
 
-<div class="container">
+
+</div>
