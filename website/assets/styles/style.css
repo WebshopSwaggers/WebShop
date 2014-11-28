@@ -1,0 +1,235 @@
+*{padding: 0px; margin: 0px;}
+
+/* GENERAL */
+
+header, footer, article, section, hgroup, nav, figure{
+    display:block;
+}
+body{
+    font-family: 'DejaVu Sans', sans-serif;
+    background-color: #FAC846;
+}
+
+/* DIVS */
+
+.header{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 1000px;
+    height: 115px;
+    background-color: black;
+}
+.header img{
+    margin-left: 250px;
+}
+.header h1{
+    font: bold 40px 'DejaVu Sans', sans-serif;
+    margin-top: -90px;
+    margin-left: 400px;
+    color: white;
+}
+.header p{
+    font: normal 14px 'DejaVu Sans', sans-serif;
+    margin-left: 400px;
+    color: white;
+}
+.nav{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 1000px;
+    height: 50px;
+    background-color: white;
+}
+.image_slider{
+    margin: 0 auto;
+    width: 1000px;
+    height: 400px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    height: 700px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.container h2{
+    margin: 10px 20px 10px 20px;
+}
+.container p{
+    margin: 10px 20px 10px 20px;
+}
+.container img{
+    margin: 10px 20px 10px 20px;
+}
+.news{
+    position: absolute;
+    margin: 50 auto;
+    width: 1000px;
+}
+.news_header h2{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+}
+.news_content img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.news_content p{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.clothes{
+    position: absolute;
+    margin: 50 auto;
+    width: 1000px;
+}
+.clothes_sidecontent{
+    position: absolute;
+    margin: 0 auto;
+    height: 500px;
+    width: 200px;
+    border: 1px solid black;
+}
+.clothes_sidecontent h2{
+    font: normal 23px 'DejaVu Sans', sans-serif;
+    border-bottom: 1px solid black;
+}
+
+/*nav{
+    background: #f8f8f8;
+    padding:0 5px;
+    right:0;
+    top:4em;
+    position:fixed; top:0; left:50;
+    border:1px solid #FCFCFC;
+    -moz-box-shadow:0 1px 1px #333333;
+    -webkit-box-shadow:0 1px 1px #333333;
+    box-shadow:0 1px 1px #333333;
+}
+
+nav ul li{
+    display:inline;
+}
+
+nav ul li a, nav ul li a:visited{
+    color:#565656;
+    display:block;
+    float:left;
+    font-size:1.25em;
+    font-weight:bold;
+    margin:5px 2px;
+    padding:7px 10px 4px;
+    text-shadow:0 1px 1px white;
+    text-transform:uppercase;
+}
+
+de kleur als je over de buttons gaat 
+nav ul li a:hover{
+    text-decoration:none;
+    background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}*/
+
+
+
+#slideshow {
+position:relative;
+height:133px;
+width: 100px;
+
+}
+
+#slideshow IMG {
+    position:absolute;
+    margin-top:0px;
+    left:0;
+    z-index:8;
+    height: 400px;
+    width: 1000px;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+.footer{
+    margin: 0 auto;
+    width: 1000px;;
+    height: 230px;
+    background-color: black;
+    color: #999;
+    text-align: center;
+    font-size: 13.5px;
+}
+.footer strong{
+    color: white;
+}
+.footer .owners a{
+    color: #FEE37A;
+    text-decoration: none;
+}
+.footer .friends a{
+    color: #999;
+    text-decoration: none;
+}
+.footer .contact{
+    float: left;
+    width: 220px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.footer .owners .teamRami{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.footer .owners .teamJw{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.footer .friends{
+    float: left;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.footer .friends ul li{
+    list-style-type: none;
+}
+
+.vlambeergames{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.gameslider {
+display:inline-block;
+	float:left;
+	position:relative;
+
+margin-top:125px;
+
+}
