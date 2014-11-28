@@ -14,7 +14,13 @@
 <div class="header">
 	<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
 	<h1>Vlambeer</h1>
-	<p id="headerSlogan"></p>
+	<p id="headerSlogan"></p><div class="coming-soon">
+    <form>
+      <input type="email" placeholder="E-mail">
+      <input type="password" placeholder="password">
+      <input type="submit" value="Sign In">
+    </form>
+  </div>
 
 </div>
 <!-- <div class="nav">
