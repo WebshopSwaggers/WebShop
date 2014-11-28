@@ -35,8 +35,8 @@ if(!isset($_SESSION['userdata']))
 else
 {
   echo "<div class='header-login'>";
-  echo "<FONT color='white'>Hallo klant, <br></font>";
-  echo "<FONT color='white'>U heeft 0 items in uw winkelwagen</font>";
+  echo "<FONT color='white'>Hello ".User::GetUserData("firstname").", <br></font>";
+  echo "<FONT color='white'>You have 0 items in your shopping car</font>";
   echo "</div>";
 }
 ?>
