@@ -16,8 +16,8 @@
 	<h1>Vlambeer</h1>
 	<p id="headerSlogan"></p>
 <?php
-$_SESSION['userdata'] = "1";
-  if(!isset($_SESSION['userdata']))
+
+if(!isset($_SESSION['userdata']))
 {
   echo'<div class="coming-soon">';
     echo'<form>';
@@ -54,7 +54,12 @@ else
     <div class="menuitems"><a class="menut" href="./store.php">Store</a></div>
     <div class="menuitems"><a class="menut" href="./store_music.php">Music Store</a></div>
     <div class="menuitems"><a class="menut" href="#">Contact</a></div>
-    <div class="menuitems right"><a class="menut" href="/logout">Logout</a></div>
+    <?php
+    if(isset($_SESSION['userdata']))
+    {
+       echo'<div class="menuitems right"><a class="menut" href="/logout">Logout</a></div>';
+    }
+    ?>
   </div>
 </div>
 <div class="container-img">
