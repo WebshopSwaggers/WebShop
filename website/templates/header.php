@@ -15,6 +15,7 @@
 	<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
 	<h1>Vlambeer</h1>
 	<p id="headerSlogan"></p>
+
 </div>
 <!-- <div class="nav">
 	<ul>
@@ -51,4 +52,3 @@
 
 
 </div>
-

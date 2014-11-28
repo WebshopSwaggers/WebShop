@@ -4,6 +4,11 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollTo-min.js"></script>
 		<script src="assets/js/script.js"></script>
+		<script>
+		$(function(){
+			$('input, textarea').placeholder();
+		});
+		</script>
 	</div>
 </body>
 <div class="footer">
@@ -57,7 +62,7 @@
 		        <a href="http://www.sparpweed.nl/"><li>Sparpweed</li></a>
 		        <a href="http://www.dutchgamegarden.nl/"><li>Dutch Game Garden</li></a>
                 <a href="http://brandonnn.tumblr.com/"><li>Brandon Boyer</li></a>
-            	<a href="http://www.bramruiter.nl/"><li>Bram Ruiter</li></a>	
+            	<a href="http://www.bramruiter.nl/"><li>Bram Ruiter</li></a>
 	    	</li>
 	    </ul>
 	</div>
@@ -72,7 +77,7 @@
 	    	 	<a href="http://www.iimusic.net/"><li>Pause music</li></a>
             	<a href="http://notch.tumblr.com/"><li>Notch</li></a>
                 <a href="http://adamatomic.com/"><li>Adam Atomic</li></a>
-            	<a href="http://halfbot.com/"><li>Halfbot</li></a>       	
+            	<a href="http://halfbot.com/"><li>Halfbot</li></a>
                 <a href="http://www.bitcollective.ca/"><li>Bit Collective</li></a>
             	<a href="http://www.glitchhiker.com/"><li>Aardbever</li></a>
            		<strong><a href="http://www.facebook.com/Vlambeer"><li style="color:#fff;">Become friends too?</li></a></strong>
