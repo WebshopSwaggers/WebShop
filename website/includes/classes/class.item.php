@@ -37,12 +37,13 @@ Class Item
        $itemPrice = $Item->getPrice();
        $itemImage = $Item->getImage();
        $itemCatagory = $Item->getCatagory();
+       //$itemCount = $item->GetCount();
        $items = array("item_id" => $itemid, "item_name" => $itemName, "item_description" => $itemDesc, "item_price" => $itemPrice, "items_catagory" => $itemCatagory, "item_image" => $itemImage);
        array_push($array,$items);
     }
     return $array;
   }
-   
+
 	// Get functies
   public function getId()
   {

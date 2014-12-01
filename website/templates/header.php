@@ -55,10 +55,11 @@ else
   <div class="menuit">
     <div style="float:left;
     padding: 11px;">Vlambeer Webshop</div>
-    <div class="menuitems"><a class="menut" href="./index.php">Home</a></div>
-    <div class="menuitems"><a class="menut" href="./store.php">Store</a></div>
-    <div class="menuitems"><a class="menut" href="./store_music.php">Music Store</a></div>
-    <div class="menuitems"><a class="menut" href="#">Contact</a></div>
+    <a class="menuitems" href="./index.php"><div class="menut">Home</div></a>
+    <a class="menuitems" href="./store.php"><div class="menut">Store</div></a>
+    <a class="menuitems" href="./store_music.php"><div class="menut">Music Store</div></a>
+    <a class="menuitems" href="#"><div class="menut">Contact</div></a>
+    <a class="menuitems" href="./invoice/1.pdf"><div class="menut">Invoice (test)</div></a>
     <?php
     if(isset($_SESSION['userdata']))
     {

@@ -27,6 +27,8 @@ box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
       border-right:1px solid #2a2a2a;
       margin-left:-1px;
       height:22px;
+      text-decorations: none;
+      -mozselectedsomethingorother: none;
       transition: background 0.5s ease-out;
     }
     .menuitems.rightmenu{
@@ -40,7 +42,7 @@ box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
       width:830px;
     }
     .menuitems:hover{
-      background:#2a2a2a;
+      background:#FAC846;
       cursor:pointer;
     }
     .select{
@@ -59,6 +61,11 @@ box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
       float:left;
     }
     a.menut{
+      text-decoration:none;
+      color:#e6e6e6;
+      float:left;
+    }
+    a.menuitems{
       text-decoration:none;
       color:#e6e6e6;
       float:left;

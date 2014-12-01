@@ -168,9 +168,9 @@ $user = new UserData($inv->getUserId());
 	<div id="table" >
 	<table style="margin-left: 0px; ">
 <tr>
-   <th width="100px;"><B>Afbeelding</B></th>
+
   <th width="120px;"><B>SERVICE</B></th>
-  <th width="260px;"><B>OMSCHRIJVING</B></th>
+  <th width="360px;"><B>OMSCHRIJVING</B></th>
   <th width="75px;"><B>PRIJS</B></th>
  <th width="50px;"><B>x</B></th>
   <th width="75px;"><B>TOTAAL</B></th>
@@ -191,7 +191,6 @@ while($i < $count)
 	<?php if ($i % 2 == 0){ echo"
 	background-color: #DDDDDD; ";}?>">
 
-  <td><b  style="color: #FAC846;"><?php echo "<img style='height:100px; width:70px;' src='".$row[$i]['item_image']."'>"; ?></b></td>
 
   <td><b  style="color: #FAC846;"><?php echo $row[$i]['item_name']; ?></b></td>
 
@@ -224,7 +223,6 @@ $btwinc = $bedrag * 1.21;
 <tr style="padding-bottom: 2px;">
 <td></td>
 <td></td>
-<td></td>
 
 <td>
 	<a style="color: #808080; margin-top: 3px; text-decoration: none;">SUBTOTAL<br /></a>
@@ -237,7 +235,6 @@ $btwinc = $bedrag * 1.21;
 </tr>
 
 <tr style="padding-bottom: 2px;">
-<td></td>
 <td></td>
 <td></td>
 
@@ -254,7 +251,6 @@ $btwinc = $bedrag * 1.21;
 
 
 <tr style="padding-bottom: 2px;">
-<td></td>
 <td></td>
 <td></td>
 
