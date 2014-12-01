@@ -54,7 +54,7 @@ else
 {
   echo "<div class='header-login'>";
   echo "<FONT color='white'>Hello ".User::GetUserData("firstname").", <br></font>";
-  echo "<FONT color='white'>You have 0 items in your shopping car</font>";
+  echo "<FONT color='white'>You have 0 items in your shopping cart</font>";
   echo "</div><br>";
 }
 

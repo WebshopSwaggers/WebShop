@@ -4,8 +4,8 @@ nav ul {
   list-style: none;
   position: relative;
   float: right;
-  background: #eee;
-  border-bottom: 1px solid #fff;
+  background: #353535;
+  border-bottom: 1px solid #525252;
   border-radius: 3px;
 }
 
@@ -14,10 +14,9 @@ nav li {
 }
 
 nav #login {
-  border-right: 1px solid #ddd;
-  box-shadow: 1px 0 0 #fff;
+  border-right: 1px solid #E4DEDE;
+  box-shadow: 1px 0 0 #767676;
 }
-
 nav
 {
   margin-top: -42px;
@@ -26,18 +25,18 @@ nav
   float: right;
 }
 
-nav #login-trigger,
-nav #signup a {
+
+nav #login-trigger, nav #signup a {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
   height: 25px;
   line-height: 25px;
   font-weight: bold;
+  *display: inline;
+  *zoom: 1;
   padding: 0 8px;
   text-decoration: none;
-  color: #444;
-  text-shadow: 0 1px 0 #fff;
+  color: #FFF;
+  /* text-shadow: 0 1px 0 #fff; */
 }
 
 nav #signup a {
@@ -51,7 +50,7 @@ nav #login-trigger {
 nav #login-trigger:hover,
 nav #login .active,
 nav #signup a:hover {
-  background: #fff;
+  background: #FAC846;
 }
 
 nav #login-content {

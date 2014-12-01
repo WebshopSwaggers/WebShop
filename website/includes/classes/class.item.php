@@ -21,7 +21,7 @@ Class Item
 	   $this->price = $row->price;
 	   $this->description = $row->description;
      $this->image = $row->image;
-     $this->catagory = $row->image;
+     $this->catagory = $row->catagory;
   }
 
   public static function getItems($cat)
