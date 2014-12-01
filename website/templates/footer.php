@@ -5,9 +5,17 @@
 		<script src="assets/js/jquery.scrollTo-min.js"></script>
 		<script src="assets/js/script.js"></script>
 		<script>
-		$(function(){
-			$('input, textarea').placeholder();
-		});
+	
+
+		$(document).ready(function(){
+			$('#login-trigger').click(function(){
+				$(this).next('#login-content').slideToggle();
+				$(this).toggleClass('active');
+
+				if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+					else $(this).find('span').html('&#x25BC;')
+					})
+				});
 		</script>
 	</div>
 </body>

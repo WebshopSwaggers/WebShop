@@ -18,19 +18,38 @@
 <?php
 if(!isset($_SESSION['userdata']))
 {
-  echo'<div class="coming-soon">';
+
+
+  echo'<nav>';
     if(isset($_SESSION['error']))
     {
-      echo "<FONT color='white'>".$_SESSION['error']."</FONT>";
+      echo "<FONT color='white'>".$_SESSION['error']."</FONT><br>";
       unset($_SESSION['error']);
     }
-    echo'<form action="includes/controllers/authcontroller.php" METHOD="POST">';
-      echo'<input type="email" name="email" placeholder="E-mail">';
-      echo'<input type="password" name="password" placeholder="password" required>';
-      echo'<input type="hidden" name="link" value="'.$_SERVER['REQUEST_URI'].'">';
-      echo'<input type="submit" name="login" value="Sign In">';
-    echo'</form>';
-  echo'</div>';
+    echo'<ul>';
+      echo'<li id="login">';
+        echo'<a id="login-trigger" href="#">';
+          echo'Log in <span>▼</span>';
+          echo'</a>';
+          echo'<div id="login-content">';
+            echo'<form action="includes/controllers/authcontroller.php" METHOD="POST">';
+              echo' <fieldset id="inputs">';
+                echo'<input id="username" type="email" name="email" placeholder="Your email address" required>';
+                echo'<input id="password" type="password" name="password" placeholder="Password" required>';
+                echo'<input type="hidden" name="link" value="'.$_SERVER['REQUEST_URI'].'">';
+                echo'</fieldset>';
+                echo'<fieldset id="actions">';
+                  echo'<input type="submit" id="submit" name="login" value="Log in">';
+                  echo'<label><input type="checkbox" checked="checked"> Keep me signed in</label>';
+                  echo'</fieldset>';
+                  echo'</form>';
+          echo'</div>';
+          echo'</li>';
+          echo'<li id="signup">';
+            echo'<a href="">Sign up FREE</a>';
+            echo'</li>';
+            echo'</ul>';
+            echo'</nav>';
 }
 else
 {
@@ -40,6 +59,7 @@ else
   echo "</div>";
 }
 ?>
+
 </div>
 <!-- <div class="nav">
 	<ul>
