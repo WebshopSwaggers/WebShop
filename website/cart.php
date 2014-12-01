@@ -9,7 +9,6 @@ require 'includes/config.php';
 
 $items = $_SESSION['cart'];
 $count = count($items);
-
 for($i = 0; $i < $count; $i++)
 {
   $item = new Item($items[$i]);
@@ -17,6 +16,5 @@ for($i = 0; $i < $count; $i++)
   echo "Item Price excl. btw: &euro;" . $item->getPrice() . "<br>";
   echo "Item Price incl. btw: &euro;" . (($item->getPrice() / 100 * 21) + $item->getPrice()) . "<br><br>";
 }
-
 
 ?>
