@@ -9,6 +9,8 @@ nav ul {
   border-radius: 3px;
 }
 
+
+
 nav li {
   float: left;
 }
@@ -30,6 +32,9 @@ nav #login-trigger, nav #signup a {
   display: inline-block;
   height: 25px;
   line-height: 25px;
+
+  font-size: 15px;
+  
   font-weight: bold;
   *display: inline;
   *zoom: 1;

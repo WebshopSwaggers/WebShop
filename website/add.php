@@ -2,6 +2,13 @@
 ini_Set("display_errors","On");
 $title = "Home";
 require 'includes/config.php';
+
+if(!isset($_SESSION['userdata']))
+{
+  header("location: ../login.php?add = '".Security($_GET['id']));
+  die();
+}
+
 $item = new Item(Security($_GET['id']));
 //echo 'Je wilt: '.$item->getDescription(). " kopen...";
 

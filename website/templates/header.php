@@ -15,8 +15,10 @@
 	<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
 	<h1>Vlambeer</h1>
 	<p id="headerSlogan"></p>
-  echo'<nav>';
+
+
 <?php
+echo'<nav>';
 if(!isset($_SESSION['userdata']))
 {
 
@@ -52,9 +54,20 @@ if(!isset($_SESSION['userdata']))
 }
 else
 {
+  $countsql = DB::query("SELECT user_id,item_id,count FROM cms_cart WHERE user_id = '".User::GetUserData("user_id")."'");
+  $superitems = 0;
+  $bedrag = 0;
+  while($count = DB::fetch($countsql))
+  {
+    $item = new Item($count->item_id);
+    $bedrag += ($item->getPrice() * $count->count);
+    $superitems += $count->count;
+  }
   echo "<div class='header-login'>";
   echo "<FONT color='white'>Hello ".User::GetUserData("firstname").", <br></font>";
-  echo "<FONT color='white'>You have 0 items in your shopping cart</font>";
+  echo "<FONT color='white'>You have ".$superitems." items in your shopping cart</font>";
+  echo "<br>";
+  echo "<FONT color='white'>A total of: &euro; ".number_format($bedrag, 2, ',', ' ')."</font>";
   echo "</div><br>";
 }
 

@@ -16,7 +16,7 @@ $dbname = "webshop";
 $con = new DB($host,$dbuser,$dbpass,$dbname);
 
 //connectie error?
-if (mysqli_connect_error($con))
+if (mysqli_connect_error(DB::$con))
 {
   // laat de error zien.
   die('Kan niet connecten: ' . mysqli_connect_error());
