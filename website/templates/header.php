@@ -3,8 +3,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title><?php echo "Vlambeer | " . $title; ?></title>
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/styles/header.css"/>
+    <link rel="stylesheet" href="assets/styles/style.css"/>
+    <link rel="stylesheet" href="assets/styles/header.css"/>
+    <link rel="stylesheet" href="assets/styles/popup.css">
+    <script src="assets/js/popup.js"></script>
 </head>
 <body>
 
