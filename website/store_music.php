@@ -56,13 +56,5 @@ for($count; $i < $count; $i++)
 <?php require 'templates/footer.php';
 ?>
 </div>
-<script>
-
-function realTime(itemid) {
-
-	$('#data').load('/webshop/website/includes/scripts/iteminfo.php?itemid=' + itemid);
-
-	popup('popUpDiv');
-};
 </script>
 </body>

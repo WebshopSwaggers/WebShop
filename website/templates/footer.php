@@ -7,6 +7,13 @@
 		<script>
 	
 
+		function realTime(itemid) {
+
+			$('#data').load('/webshop/website/includes/scripts/iteminfo.php?itemid=' + itemid);
+
+			popup('popUpDiv');
+		};
+
 		$(document).ready(function(){
 			$('#login-trigger').click(function(){
 				$(this).next('#login-content').slideToggle();
