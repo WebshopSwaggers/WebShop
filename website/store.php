@@ -1,5 +1,5 @@
 <?php
-$title = "games";
+$title = "Games";
 require 'includes/config.php';
 require 'templates/header.php';
 //DB require

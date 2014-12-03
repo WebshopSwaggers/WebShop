@@ -5,6 +5,7 @@
     <title><?php echo "Vlambeer | " . $title; ?></title>
     <link rel="stylesheet" href="assets/styles/style.css"/>
     <link rel="stylesheet" href="assets/styles/header.css"/>
+    <link rel="stylesheet" href="assets/styles/menu.css"/>
     <script src="assets/js/popup.js"></script>
 </head>
 <body>
@@ -86,23 +87,37 @@ echo'</nav>';
 </div> -->
 </article>
 <!-- Article 1 end -->
-<div class="menu">
-  <div class="menuit">
-    <div style="float:left;
-    padding: 11px;">Vlambeer Webshop</div>
-    <a class="menuitems" href="./index"><div class="menut">Home</div></a>
-    <a class="menuitems" href="./store"><div class="menut">Store</div></a>
-    <a class="menuitems" href="./store_music"><div class="menut">Music Store</div></a>
-    <a class="menuitems" href="#"><div class="menut">Contact</div></a>
-    <a class="menuitems" href="./invoice/1.pdf"><div class="menut">Invoice (test)</div></a>
+<div id='cssmenu'>
+  <ul>
+    <li class='<?php if($title == "Home") { echo "active"; } ?>'><a href='./index'><span>Home</span></a></li>
+    <li class='<?php if($title == "Games" || $title == "Music" || $title == "Clothes") { echo "active"; } ?> has-sub'><a href='#'><span>Products</span></a>
+      <ul>
+        <li><a href='./store'><span>Games</span></a></li>
+        <li><a href='./store_music'><span>Music</span></a></li>
+        <li class='last'><a href='./store_clothes'><span>Clothes</span></a></li>
+      </ul>
+    </li>
+    <li class='has-sub'><a href='#'><span>About</span></a>
+      <ul>
+        <li><a href='#'><span>Company</span></a></li>
+        <li class='last'><a href='#'><span>Contact</span></a></li>
+      </ul>
+    </li>
     <?php
     if(isset($_SESSION['userdata']))
     {
-       echo'<div class="menuitems right"><a class="menut" href="includes/controllers/authcontroller.php?logout">Logout</a></div>';
+       echo"<li><a href='#'><span>Contact</span></a></li>";
+       echo"<li class='last'><a href='includes/controllers/authcontroller.php?logout'><span>Log out</span></a></li>";
+    }
+    else
+    {
+      echo"<li class='last'><a href='#'><span>Contact</span></a></li>";
     }
     ?>
-  </div>
+  </ul>
 </div>
+
+
 <div class="container-img">
 <div class="image_slider">
 	<figure id="slideshow">
