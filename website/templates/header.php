@@ -30,29 +30,7 @@ if(!isset($_SESSION['userdata']))
       echo "<FONT color='white'>".$_SESSION['error']."</FONT><br>";
       unset($_SESSION['error']);
     }
-    echo'<ul>';
-      echo'<li id="login">';
-        echo'<a id="login-trigger" href="#">';
-          echo'Log in <span>▼</span>';
-          echo'</a>';
-          echo'<div id="login-content">';
-            echo'<form action="includes/controllers/authcontroller.php" METHOD="POST">';
-              echo' <fieldset id="inputs">';
-                echo'<input id="username" type="email" name="email" placeholder="Your email address" required>';
-                echo'<input id="password" type="password" name="password" placeholder="Password" required>';
-                echo'<input type="hidden" name="link" value="'.$_SERVER['REQUEST_URI'].'">';
-                echo'</fieldset>';
-                echo'<fieldset id="actions">';
-                  echo'<input type="submit" id="submit" name="login" value="Log in">';
-                  echo'<label><input type="checkbox" checked="checked"> Keep me signed in</label>';
-                  echo'</fieldset>';
-                  echo'</form>';
-          echo'</div>';
-          echo'</li>';
-          echo'<li id="signup">';
-            echo'<a href="">Sign up FREE</a>';
-            echo'</li>';
-            echo'</ul>';
+
 }
 else
 {
@@ -103,15 +81,42 @@ echo'</nav>';
         <li class='last'><a href='#'><span>Contact</span></a></li>
       </ul>
     </li>
+    <li class='last'><a href='#'><span>Contact</span></a></li>
     <?php
-    if(isset($_SESSION['userdata']))
+
+
+    if(!isset($_SESSION['userdata']))
     {
-       echo"<li><a href='#'><span>Contact</span></a></li>";
-       echo"<li class='last'><a href='includes/controllers/authcontroller.php?logout'><span>Log out</span></a></li>";
+      echo"<li style='float:right;' class='trigger has-sub'><a href='#'>Login <span>&#x25BC;</span></a></li>";
+
+      if(isset($_SESSION['error']))
+      {
+        echo "<FONT color='white'>".$_SESSION['error']."</FONT><br>";
+        unset($_SESSION['error']);
+      }
+
+      echo'<div id="login-content">';
+      echo'<form action="includes/controllers/authcontroller.php" METHOD="POST">';
+      echo' <fieldset id="inputs">';
+      echo'<input id="username" type="email" name="email" placeholder="Your email address" required>';
+      echo'<input id="password" type="password" name="password" placeholder="Password" required>';
+      echo'<input type="hidden" name="link" value="'.$_SERVER['REQUEST_URI'].'">';
+      echo'</fieldset>';
+      echo'<fieldset id="actions">';
+      echo'<input type="submit" id="submit2" name="login" value="Log in">';
+      echo'<label><input type="checkbox" checked="checked"> Keep me signed in</label>';
+      echo'</fieldset>';
+      echo'</form>';
+      echo'</div>';
     }
     else
     {
-      echo"<li class='last'><a href='#'><span>Contact</span></a></li>";
+      echo"<li style='float:right;right: 0px;position: absolute;' class='has-sub'><a href='#'><span>Welcome, ".User::GetUserData("firstname")."</span></a>";
+        echo"<ul>";
+          echo"<li><a href='#'><span>Settings</span></a></li>";
+          echo"<li class='last'><a href='includes/controllers/authcontroller.php?logout'><span>Log out</span></a></li>";
+        echo"</ul>";
+      echo"</li>";
     }
     ?>
   </ul>

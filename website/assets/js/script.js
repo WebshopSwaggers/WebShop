@@ -16,6 +16,12 @@ $(document).ready(function(){
 
 });
 
+function realTime(itemid) {
+
+	$('#data').load('/webshop/website/includes/scripts/iteminfo.php?itemid=' + itemid);
+
+	popup('popUpDiv');
+};
 
 function slideSwitch() {  //Functie is slideshow
     var active = $('#slideshow IMG.active');  //Eerste foto word actief
@@ -33,3 +39,9 @@ function slideSwitch() {  //Functie is slideshow
 }
 
 slideSwitch();
+function realTime(itemid) {
+
+	$('#data').load('/webshop/website/includes/scripts/iteminfo.php?itemid=' + itemid);
+
+	popup('popUpDiv');
+};

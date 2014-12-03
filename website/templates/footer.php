@@ -5,17 +5,10 @@
 		<script src="assets/js/jquery.scrollTo-min.js"></script>
 		<script src="assets/js/script.js"></script>
 		<script>
-	
 
-		function realTime(itemid) {
-
-			$('#data').load('/webshop/website/includes/scripts/iteminfo.php?itemid=' + itemid);
-
-			popup('popUpDiv');
-		};
 
 		$(document).ready(function(){
-			$('#login-trigger').click(function(){
+			$('.trigger').click(function(){
 				$(this).next('#login-content').slideToggle();
 				$(this).toggleClass('active');
 

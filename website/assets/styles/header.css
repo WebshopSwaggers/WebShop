@@ -15,7 +15,7 @@ nav li {
   float: left;
 }
 
-nav #login {
+#login {
   border-right: 1px solid #E4DEDE;
   box-shadow: 1px 0 0 #767676;
 }
@@ -28,13 +28,13 @@ nav
 }
 
 
-nav #login-trigger, nav #signup a {
+#login-trigger, #signup a {
   display: inline-block;
   height: 25px;
   line-height: 25px;
 
   font-size: 15px;
-  
+
   font-weight: bold;
   *display: inline;
   *zoom: 1;
@@ -44,24 +44,25 @@ nav #login-trigger, nav #signup a {
   /* text-shadow: 0 1px 0 #fff; */
 }
 
-nav #signup a {
+#signup a {
   border-radius: 0 3px 3px 0;
 }
 
-nav #login-trigger {
+#login-trigger {
   border-radius: 3px 0 0 3px;
 }
 
-nav #login-trigger:hover,
-nav #login .active,
-nav #signup a:hover {
+#login-trigger:hover,
+#login .active,
+#signup a:hover {
   background: #FAC846;
 }
 
-nav #login-content {
+#login-content {
   display: none;
-  position: absolute;
-  top: 24px;
+
+  width: 250px;
+  position: absolute;top: 38px;
   right: 0;
   z-index: 999;
   background: #fff;
@@ -101,7 +102,7 @@ nav li #login-content {
   margin: 10px 0 0 0;
 }
 
-#login #submit {
+#submit2 {
   background-color: #d14545;
   background-image: linear-gradient(top, #e97171, #d14545);
   -moz-border-radius: 3px;
@@ -119,32 +120,32 @@ nav li #login-content {
   color: #fff;
 }
 
-#login #submit:hover,
-#login #submit:focus {
+#submit2:hover,
+#submit2:focus {
   background-color: #e97171;
   background-image: linear-gradient(top, #d14545, #e97171);
 }
 
-#login #submit:active {
+#submit2:active {
   outline: none;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
 }
 
-#login #submit::-moz-focus-inner {
+#submit2::-moz-focus-inner {
   border: none;
 }
 fieldset {
   border: none;
   padding: 0;
 }
-#login label {
+label {
   float: right;
   line-height: 30px;
 
   font-size: 14px;
 }
 
-#login label input {
+label input {
   position: relative;
   top: 2px;
   right: 2px;
