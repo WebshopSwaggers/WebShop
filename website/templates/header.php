@@ -70,9 +70,9 @@ echo'</nav>';
     <li class='<?php if($title == "Home") { echo "active"; } ?>'><a href='./index'><span>Home</span></a></li>
     <li class='<?php if($title == "Games" || $title == "Music" || $title == "Clothes") { echo "active"; } ?> has-sub'><a href='#'><span>Products</span></a>
       <ul>
-        <li><a href='./store'><span>Games</span></a></li>
-        <li><a href='./store_music'><span>Music</span></a></li>
-        <li class='last'><a href='./store_clothes'><span>Clothes</span></a></li>
+        <li><a href='./store.php'><span>Games</span></a></li>
+        <li><a href='./store_music.php'><span>Music</span></a></li>
+        <li class='last'><a href='./store_clothes.php'><span>Clothes</span></a></li>
       </ul>
     </li>
     <li class='has-sub'><a href='#'><span>About</span></a>
