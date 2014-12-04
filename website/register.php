@@ -1,17 +1,27 @@
-<?php 
+<?php
 	$title = "Register";
+	require 'includes/config.php';
 	require 'templates/header.php';
+	if(isset($_SESSION['userdata']))
+	{
+		header("location: ./index");
+		die();
+	}
 ?>
 <body>
 	<div class="container">
 		<div class="message">
 			<?php
-			if(isset($_GET['msgError'])){
-				echo "<p id='msgError'>".$_GET['msgError']."</p>";
+			if(isset($_SESSION['regError']))
+			{
+				echo "<p id='msgError'>".$_SESSION['regError']."</p>";
+				unset($_SESSION['regError']);
 			}
-			elseif (isset($_GET['msgSuccess'])){
-			 	echo "<p id='msgSuccess'>".$_GET['msgSuccess']."</p>";
-			 } 
+			elseif (isset($_SESSION['regSucces']))
+			{
+			 	echo "<p id='msgSuccess'>".$_SESSION['regSucces']."</p>";
+				unset($_SESSION['regSucces']);
+			}
 			?>
 		</div>
 
@@ -35,6 +45,6 @@
 
 	</div>
 </form>
-	</div>	
+	</div>
 </body>
 <?php require 'templates/footer.php' ?>

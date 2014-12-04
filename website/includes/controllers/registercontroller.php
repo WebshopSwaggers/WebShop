@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require '../config.php';
 	if(isset($_POST['submit']) && !empty($_POST['password']) && !empty($_POST['email']))
 	{
@@ -6,22 +6,36 @@
 		{
 			if(trim($_POST['email']) == trim($_POST['emailConfirm']))
 			{
-				$password = Security($_POST['password']);
+				$password = sha1($_POST['password']);
 				$email = Security(trim($_POST['email']));
 
-				if($query = "INSERT INTO cms_users (email, password) VALUES ('$email', '$password')")
+        $sql = DB::query("SELECT user_id FROM cms_users WHERE email = '".$email."'");
+				if(DB::num_rows($sql) == 0)
 				{
-					$result = DB::query($query);
-					$msgSuccess = "You have successfully registered!";
-					header("location: ../../register.php?msgSuccess=".$msgSuccess);
+				  if($query = "INSERT INTO cms_users (email, password) VALUES ('$email', '$password')")
+			  	{
+					  $result = DB::query($query);
+				  	$_SESSION['regSucces'] = "You have successfully registered!";
+				 	  header("location: ../../register");
+				  }
+			  }
+				else
+				{
+					$_SESSION['regError'] = "Email is already registered!";
+					header("location: ../../register");
 				}
-			}else{
-				$msgError = "Passwords don't match";
-				header('location: ../../register.php?msgError='.$msgError);
 			}
-		}else{
-			$msgError = "Emails don't match";
-			header('location: ../../register.php?msgError='.$msgError);
+			else
+			{
+				$_SESSION['regError'] = "Passwords don't match";
+				header("location: ../../register");
+			}
 		}
+		else
+		{
+			$_SESSION['regError'] = "Emails don't match";
+			header("location: ../../register");
+		}
+		die();
 	}
 ?>

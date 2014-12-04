@@ -65,7 +65,7 @@
 }
 /* Theme Styles */
 #cssmenu > ul {
-  border-top: 4px solid #3fa338;
+  border-top: 4px solid #DF4612;
   font-family: Calibri, Tahoma, Arial, sans-serif;
   font-size: 14px;
   background: #1e1e1e;
@@ -91,7 +91,7 @@
 }
 #cssmenu > ul > li.active,
 #cssmenu > ul > li.active:hover {
-  background-color: #3fa338;
+  background-color: #DF4612;
 }
 #cssmenu > ul > li > a:link,
 #cssmenu > ul > li > a:active,
@@ -115,7 +115,7 @@
 }
 #cssmenu > ul > li.hover,
 #cssmenu > ul > li:hover {
-  background-color: #3fa338;
+  background-color: #DF4612;
   -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
