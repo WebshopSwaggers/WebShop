@@ -15,7 +15,7 @@
 <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
 <div class="header">
 	<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
-	<h1>Vlambeer</h1>
+	<h1>Vlambeer | <?php echo $title ?></h1>
 	<p id="headerSlogan"></p>
 
 

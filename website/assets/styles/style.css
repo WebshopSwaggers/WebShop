@@ -356,3 +356,70 @@ box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
 }
 
 #popUpDiv a {position:relative; top:20px; left:20px}
+
+/*Start of form*/
+.container .form{
+    position: absolute;
+    margin-left: 50%;   
+}
+.container .formTitle{
+    color: #F9A406;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+}
+.container .formInfo{
+    color: #B1B8C7;
+    font-size: 15px;
+    text-align: center;
+}
+.container .form .formLabel{
+    float: left;
+    margin-top: 25px;
+    margin-left: -225px;
+    padding-right: 20px;
+    font-size: 18px;
+    color: #8995A9;
+}
+.container .form .formInput{
+    background-color: #DBDFE6;
+    border: 1px solid #DEE0E7;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #ACB4C4 inset;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+}
+.container .form input:focus{
+    outline: none;
+    border-color: #FFC891;
+    background-color: white;
+    box-shadow: 0 0px 0px 1px #ACB4C4 inset;
+}
+.container .form #formSubmit{
+  margin-top: 10px;
+  margin-left: -150px;
+  background-color: #FF8000;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  border: 1px solid #7e1515;
+  float: left;
+  height: 30px;
+  padding: 0;
+  width: 300px;
+  cursor: pointer;
+  font: bold 14px Arial, Helvetica;
+  color: #fff;
+}
+.form #formSubmit:hover{
+    background-color: #FF9E3E;
+}
+.form #formSubmit:active{
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
