@@ -137,10 +137,10 @@ for($count; $i < $count; $i++)
 
 <div class="imgInfo">
 	<div class="imgInfoTitle">
-		<p><?php echo $item[$i]['item_name'] ?></p>
+		<p><?php echo $item[$i]['item_name']; ?></p>
 	</div>
 	<div class="imgInfoDesc">
-		<p><?php echo $item[$i]['item_description'] ?></p>
+		<p><?php echo $item[$i]['item_description']; ?></p>
 	</div>
 </div>
 <?php
