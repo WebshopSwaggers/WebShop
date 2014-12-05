@@ -296,18 +296,18 @@
 		</select>
 		<br>
 		<label class="formLabel" for="zip">City</label>
-		<input class="formInput" type="text" name="city" placehloder="City">
+		<input class="formInput" type="text" name="city" placeholder="City">
 		<br>
 		<label class="formLabel" for="street">Street</label>
 		<input class="formInput" type="text" name="street" placeholder="Street">
 		<br>
 		<label class="formLabel" for="number">Street number</label>
-		<input class="formInput" type="number" name="streetNumber" placehloder="Street number">
+		<input class="formInput" type="number" name="streetNumber" placeholder="Street number">
 		<br>
 		<label class="formLabel" for="zip">Zip code</label>
-		<input class="formInput" type="text" name="zip" placehloder="Zip">
+		<input class="formInput" type="text" name="zip" placeholder="Zip code">
 		<br>
-		<input type="formInput" id="formSubmit" name="submit" value="Submit">
+		<input type="submit" id="formSubmit" name="submit" value="Submit">
 		<br>
 	</div>
 </form>
