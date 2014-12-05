@@ -30,10 +30,10 @@
 		<div class="formInfo"><p>Registering will grant you access to our webshop, exclusive news and you will be the first to know about the deals</p></div>
 	<div class="form">
 		<label class="formLabel" for="email">E-mail address</label>
-		<input class="formInput" type="email" name="email" placeholder="Email address" required>
+		<input class="formInput" type="email" name="email" placeholder="E-mail address" required>
 		<br>
 		<label class="formLabel" for="emailConfirm">Confirm your email</label>
-		<input class="formInput" type="email" name="emailConfirm" placeholder="Confirm Email">
+		<input class="formInput" type="email" name="emailConfirm" placeholder="Confirm E-mail">
 		<br>
 		<label class="formLabel" for="password">Password</label>
 		<input class="formInput" type="password" name="password" placeholder="Password" required>

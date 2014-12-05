@@ -6,10 +6,13 @@ header, footer, article, section, hgroup, nav, figure{
     display:block;
 }
 body{
-    font-family: 'DejaVu Sans', sans-serif;
+    font-family: 'Duality';
     background-color: #FAC846;
 }
-
+@font-face{
+    font-family: 'Duality';
+    src: url(../fonts/Duality.ttf);
+}
 /* DIVS */
 /*Start of header*/
 .header{box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
@@ -26,13 +29,13 @@ body{
     margin-left: 40px;
 }
 .header h1{
-    font: bold 40px 'DejaVu Sans', sans-serif;
+    font: normal 35px 'Duality';
     margin-top: -90px;
     margin-left: 180px;
     color: white;
 }
 .header p{
-    font: normal 14px 'DejaVu Sans', sans-serif;
+    font: normal 17px 'Duality';
     margin-left: 180px;
     color: white;
 }
@@ -82,7 +85,7 @@ background-position: left bottom;
 box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
 
 }
-.container h2{
+.container h1{
     margin: 10px 20px 10px 20px;
 }
 .container p{
@@ -98,7 +101,9 @@ box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
     margin: 50 auto;
     width: 1000px;
 }
-.news_header h2{
+.news_header h1{
+    font: normal 30px 'Duality';
+    color: black;
     display: block;
     width: 80%;
     margin: 0 auto;
@@ -116,6 +121,7 @@ box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
+    font: normal 15px 'Calibri';
 }
 
 /*Start of clothes store*/
@@ -267,6 +273,7 @@ width: 100px;
 
 /*Start of footer*/
 .footer{
+    font: normal 15px 'DejaVu Sans';
     margin: 0 auto;
     width: 1001px;;
     height: 230px;
@@ -275,10 +282,9 @@ width: 100px;
     text-align: center;
     margin-bottom: 50px;
     font-size: 13.5px;
-
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
+    box-shadow: 0px 11px 25px 2px rgba(49, 50, 50, 0.69);
 }
 .footer strong{
     color: white;
@@ -363,10 +369,10 @@ box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
     margin-left: 50%;   
 }
 .container .formTitle{
-    color: #F9A406;
-    font-size: 25px;
+    color: #df4612;
+    font-size: 30px;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: center;
 }
 .container .formInfo{
@@ -399,9 +405,9 @@ box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
     box-shadow: 0 0px 0px 1px #ACB4C4 inset;
 }
 .container .form #formSubmit{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: -150px;
-    background-color: #FF8000;
+    background-color: #df4612;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -413,15 +419,25 @@ box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
     padding: 0;
     width: 300px;
     cursor: pointer;
-    font: bold 14px Arial, Helvetica;
+    font: bold 20px 'Duality';
     color: #fff;
 }
 .form #formSubmit:hover{
-    background-color: #FF9E3E;
+    background-color: #ff5e27;
 }
 .form #formSubmit:active{
     outline: none;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+.form .formInput[placeholder]{
+    font: normal 14px 'Duality';
+    padding-left: 10px;
+    color: #a9a9a9;
+}
+.form .formInput{
+    font: normal 14px 'Duality';
+    padding-left: 5px;
+    color: #a9a9a9;
 }
 
 /*Start img info*/
