@@ -12,7 +12,10 @@
         $sql = DB::query("SELECT user_id FROM cms_users WHERE email = '".$email."'");
 				if(DB::num_rows($sql) == 0)
 				{
-				  if($query = "INSERT INTO cms_users (email, password) VALUES ('$email', '$password')")
+				  if($query = "INSERT INTO cms_users 
+				  (email, password, firstName, lastName, country, city, street, streetNumber, zip) 
+				  VALUES 
+				  ('$email', '$password', '$firstName','$lastName', '$country', '$city', '$street', '$streetNumber', $zip)")
 			  	{
 					  $result = DB::query($query);
 				  	$_SESSION['regSucces'] = "You have successfully registered!";
