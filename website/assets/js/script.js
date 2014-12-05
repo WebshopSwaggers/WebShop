@@ -39,9 +39,3 @@ function slideSwitch() {  //Functie is slideshow
 }
 
 slideSwitch();
-function realTime(itemid) {
-
-	$('#data').load('/webshop/website/includes/scripts/iteminfo.php?itemid=' + itemid);
-
-	popup('popUpDiv');
-};
