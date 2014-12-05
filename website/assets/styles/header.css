@@ -64,7 +64,7 @@ nav
   width: 250px;
   position: absolute;top: 38px;
   right: 0;
-  z-index: 999;
+  z-index: 99999;
   background: #fff;
   background-image: linear-gradient(top, #fff, #eee);
   padding: 15px;
