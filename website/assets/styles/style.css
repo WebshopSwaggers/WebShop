@@ -366,7 +366,7 @@ width: 100px;
 /*Start of form*/
 .container .form{
     position: absolute;
-    margin-left: 50%;   
+    margin-left: 50%;
 }
 .container .formTitle{
     color: #df4612;
@@ -448,18 +448,18 @@ width: 100px;
 	height: 400px;
 	background-color: black;
 	opacity: 0.42;
-	z-index: 1000;
+	z-index: 10;
 }
 .imgInfo .imgInfoTitle {
 	z-index:2000;
-	color: white; 
+	color: white;
 	text-align: center;
 	margin-top:10px;
 	font-size:25px;
 }
 .imgInfo .imgInfoDesc{
 	z-index:2000;
-	color: #DF4612; 
+	color: #DF4612;
 	text-align: center;
 	margin-top:10px;
 	font-size:16px;
@@ -475,18 +475,18 @@ width: 100px;
 	height: 400px;
 	background-color: black;
 	opacity: 0.42;
-	z-index: 1000;
+	z-index: 10;
 }
 .imgInfo .imgInfoTitle {
 	z-index:2000;
-	color: white; 
+	color: white;
 	text-align: center;
 	margin-top:10px;
 	font-size:25px;
 }
 .imgInfo .imgInfoDesc{
 	z-index:2000;
-	color: #DF4612; 
+	color: #DF4612;
 	text-align: center;
 	margin-top:10px;
 	font-size:16px;
