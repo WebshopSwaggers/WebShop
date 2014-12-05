@@ -6,10 +6,9 @@ require 'templates/header.php';
 $item = Item::getItems("music");
 ?>
 <body>
-	<div id="blanket" style="display:none;"></div>
+	<div id="blanket" style="display:none;" onclick="popup('popUpDiv')"></div>
 	<div id="popUpDiv" style="display:none;">
 		<div id="data"></div>
-    	<a href="#" onclick="popup('popUpDiv')" >Close</a>
 	</div>
 
 <div class="container">
@@ -20,11 +19,6 @@ $count = count($item);
 $i= 0;
 //while loop om het bedrag te bepalen
 ?>
-<!--POPUP-->
-
-
-
-<!-- / POPUP-->
 <?php
 for($count; $i < $count; $i++)
 {
