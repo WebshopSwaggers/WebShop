@@ -151,11 +151,8 @@ for($count; $i < $count; $i++)
 
     <img src="assets/images/header-510x186.png" class="active" alt="banner-radius">
     <img src="assets/images/Logo600x4001.png" alt="banner-radius">
-    <img src="assets/images/header-510x186.png" alt="banner-radius">
-    <img src="assets/images/Logo600x4001.png" alt="banner-radius">
 
 	</figure>
+
 </div>
-
-
 </div>
