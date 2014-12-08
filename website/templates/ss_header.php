@@ -23,14 +23,11 @@
 echo'<nav>';
 if(!isset($_SESSION['userdata']))
 {
-
-
     if(isset($_SESSION['error']))
     {
       echo "<FONT color='white'>".$_SESSION['error']."</FONT><br>";
       unset($_SESSION['error']);
     }
-
 }
 else
 {
@@ -55,14 +52,6 @@ echo'</nav>';
 ?>
 
 </div>
-<!-- <div class="nav">
-	<ul>
-		<li><a href="#article1">Home</a></li>
-		<li><a href="#article2">News</a></li>
-		<li><a href="#article3">Contact</a></li>
-		<li><a href="store.php">Store</a></li>
-	</ul>
-</div> -->
 </article>
 <!-- Article 1 end -->
 <div id='cssmenu'>
@@ -124,35 +113,6 @@ echo'</nav>';
     ?>
   </ul>
 </div>
-
-
-<div class="container-img">
-<?php
-$item = Item::getItems("games");
-$count = count($item);
-$i= 0;
-for($count; $i < $count; $i++)
-{
-?>
-
-<div class="imgInfo">
-	<div class="imgInfoTitle">
-		<p><?php echo $item[$i]['item_name']; ?></p>
-	</div>
-	<div class="imgInfoDesc">
-		<p><?php echo $item[$i]['item_description']; ?></p>
-	</div>
-</div>
-<?php
-}
-?>
-<div class="image_slider">
-	<figure id="slideshow">
-
-    <img src="assets/images/header-510x186.png" class="active" alt="banner-radius">
-    <img src="assets/images/Logo600x4001.png" alt="banner-radius">
-
-	</figure>
-
-</div>
+<div class="image_ss">
+  <img src="assets/images/serious_sam.gif" alt="Serious Sam">
 </div>

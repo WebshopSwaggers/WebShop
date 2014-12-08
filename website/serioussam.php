@@ -1,7 +1,7 @@
 <?php
 $title = "Serious Sam";
 require 'includes/config.php';
-require 'templates/header.php';
+require 'templates/ss_header.php';
 ?>
 
 <div class="container">
