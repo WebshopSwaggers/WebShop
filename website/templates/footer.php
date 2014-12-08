@@ -2,8 +2,8 @@
 
 		<!-- JavaScript Includes -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollTo-min.js"></script>
-		<script src="assets/js/script.js"></script>
+		<script src="<?php echo $link; ?>/assets/js/jquery.scrollTo-min.js"></script>
+		<script src="<?php echo $link; ?>/assets/js/script.js"></script>
 		<script>
 
 
@@ -30,7 +30,7 @@
 	<div class="owners">
 		<div class="teamRami">
 			<div class="ramiPic">
-				<img src="assets\images\team_rami.png" alt="team_rami">
+				<img src="<?php echo $link; ?>/assets\images\team_rami.png" alt="team_rami">
 			</div>
 			<strong>Rami Ismail</strong>
 			<br>
@@ -43,7 +43,7 @@
 		</div>
 		<div class="teamJw">
 			<div class="jwPic">
-				<img src="assets\images\team_jw.png" alt="team_jw">
+				<img src="<?php echo $link; ?>/assets\images\team_jw.png" alt="team_jw">
 			</div>
 			<strong>Jan Willem Nijman</strong>
 			<br>

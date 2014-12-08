@@ -3,10 +3,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title><?php echo "Vlambeer | " . $title; ?></title>
-    <link rel="stylesheet" href="assets/styles/style.css"/>
-    <link rel="stylesheet" href="assets/styles/header.css"/>
-    <link rel="stylesheet" href="assets/styles/menu.css"/>
-    <script src="assets/js/popup.js"></script>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/style.css"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/header.css"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/menu.css"/>
+    <script src="<?php echo $link; ?>/assets/js/popup.js"></script>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 
 <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
 <div class="header">
-	<img src="assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
+	<img src="<?php echo $link; ?>/assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
 	<h1>Vlambeer | <?php echo $title ?></h1>
 	<p id="headerSlogan"></p>
 
@@ -67,12 +67,12 @@ echo'</nav>';
 <!-- Article 1 end -->
 <div id='cssmenu'>
   <ul>
-    <li class='<?php if($title == "Home") { echo "active"; } ?>'><a href='./index'><span>Home</span></a></li>
+    <li class='<?php if($title == "Home") { echo "active"; } ?>'><a href='<?php echo $link; ?>/index'><span>Home</span></a></li>
     <li class='<?php if($title == "Games" || $title == "Music" || $title == "Clothes") { echo "active"; } ?> has-sub'><a href='#'><span>Products</span></a>
       <ul>
-        <li><a href='./store'><span>Games</span></a></li>
-        <li><a href='./store_music'><span>Music</span></a></li>
-        <li class='last'><a href='./store_clothes'><span>Clothes</span></a></li>
+        <li><a href='<?php echo $link; ?>/store'><span>Games</span></a></li>
+        <li><a href='<?php echo $link; ?>/store_music'><span>Music</span></a></li>
+        <li class='last'><a href='<?php echo $link; ?>/store_clothes'><span>Clothes</span></a></li>
       </ul>
     </li>
     <li class='has-sub'><a href='#'><span>About</span></a>
@@ -88,7 +88,7 @@ echo'</nav>';
     if(!isset($_SESSION['userdata']))
     {
 
-       echo"<li style='float:right;'><a href='./register'>Register</a></li>";
+       echo"<li style='float:right;'><a href='<?php echo $link; ?>/register'>Register</a></li>";
        echo"<li style='float:right;' class='trigger has-sub'><a href='#'>Login <span>&#x25BC;</span></a></li>";
 
 
@@ -99,7 +99,7 @@ echo'</nav>';
       }
 
       echo'<div id="login-content">';
-      echo'<form action="includes/controllers/authcontroller.php" METHOD="POST">';
+      echo'<form action="<?php echo $link; ?>/includes/controllers/authcontroller.php" METHOD="POST">';
       echo' <fieldset id="inputs">';
       echo'<input id="username" type="email" name="email" placeholder="Your email address" required>';
       echo'<input id="password" type="password" name="password" placeholder="Password" required>';
@@ -117,7 +117,7 @@ echo'</nav>';
       echo"<li style='float:right;right: 0px;position: absolute;' class='has-sub'><a href='#'><span>Welcome, ".User::GetUserData("firstname")."</span></a>";
         echo"<ul>";
           echo"<li><a href='#'><span>Settings</span></a></li>";
-          echo"<li class='last'><a href='includes/controllers/authcontroller.php?logout'><span>Log out</span></a></li>";
+          echo"<li class='last'><a href='<?php echo $link; ?>/includes/controllers/authcontroller.php?logout'><span>Log out</span></a></li>";
         echo"</ul>";
       echo"</li>";
     }
@@ -149,8 +149,8 @@ for($count; $i < $count; $i++)
 <div class="image_slider">
 	<figure id="slideshow">
 
-    <img src="assets/images/header-510x186.png" class="active" alt="banner-radius">
-    <img src="assets/images/Logo600x4001.png" alt="banner-radius">
+    <img src="<?php echo $link; ?>/assets/images/header-510x186.png" class="active" alt="banner-radius">
+    <img src="<?php echo $link; ?>/assets/images/Logo600x4001.png" alt="banner-radius">
 
 	</figure>
 

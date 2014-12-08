@@ -1,5 +1,6 @@
 <?php
 $title = "Clothes";
+require 'includes/config.php';
 require 'templates/header.php';
 //DB require
 ?>

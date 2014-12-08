@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 session_start();
+$link = "http://127.0.0.1/webshop/website";
 
 require("classes/class.mysqli.php");
 
