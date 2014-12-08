@@ -1,25 +1,32 @@
-/*
-Navicat MySQL Data Transfer
+-- phpMyAdmin SQL Dump
+-- version 4.1.14
+-- http://www.phpmyadmin.net
+--
+-- Machine: 127.0.0.1
+-- Gegenereerd op: 08 dec 2014 om 14:07
+-- Serverversie: 5.6.17
+-- PHP-versie: 5.5.12
 
-Source Server         : locall
-Source Server Version : 50620
-Source Host           : 127.0.0.1:3306
-Source Database       : webshop
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
-Target Server Type    : MYSQL
-Target Server Version : 50620
-File Encoding         : 65001
 
-Date: 2014-11-28 13:59:07
-*/
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
 
-SET FOREIGN_KEY_CHECKS=0;
+--
+-- Databank: `webshop`
+--
 
--- ----------------------------
--- Table structure for cms_invoice_items
--- ----------------------------
-DROP TABLE IF EXISTS `cms_invoice_items`;
-CREATE TABLE `cms_invoice_items` (
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `cms_invoice_items`
+--
+
+CREATE TABLE IF NOT EXISTS `cms_invoice_items` (
   `inv_item_id` int(11) NOT NULL DEFAULT '0',
   `inv_id` int(11) DEFAULT '0',
   `item_id` int(11) DEFAULT '0',
@@ -27,19 +34,23 @@ CREATE TABLE `cms_invoice_items` (
   PRIMARY KEY (`inv_item_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- ----------------------------
--- Records of cms_invoice_items
--- ----------------------------
-INSERT INTO `cms_invoice_items` VALUES ('1', '1', '1', '3');
-INSERT INTO `cms_invoice_items` VALUES ('2', '1', '2', '5');
-INSERT INTO `cms_invoice_items` VALUES ('3', '2', '1', '2');
-INSERT INTO `cms_invoice_items` VALUES ('4', '1', '3', '2');
+--
+-- Gegevens worden geëxporteerd voor tabel `cms_invoice_items`
+--
 
--- ----------------------------
--- Table structure for cms_invoice_templates
--- ----------------------------
-DROP TABLE IF EXISTS `cms_invoice_templates`;
-CREATE TABLE `cms_invoice_templates` (
+INSERT INTO `cms_invoice_items` (`inv_item_id`, `inv_id`, `item_id`, `count`) VALUES
+(1, 1, 1, 3),
+(2, 1, 2, 5),
+(3, 2, 1, 2),
+(4, 1, 3, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `cms_invoice_templates`
+--
+
+CREATE TABLE IF NOT EXISTS `cms_invoice_templates` (
   `inv_id` int(11) NOT NULL DEFAULT '0',
   `user_id` int(11) DEFAULT '0',
   `start_date` varchar(255) DEFAULT '0',
@@ -47,17 +58,21 @@ CREATE TABLE `cms_invoice_templates` (
   PRIMARY KEY (`inv_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- ----------------------------
--- Records of cms_invoice_templates
--- ----------------------------
-INSERT INTO `cms_invoice_templates` VALUES ('1', '1', '0', '0');
-INSERT INTO `cms_invoice_templates` VALUES ('2', '1', '0', '0');
+--
+-- Gegevens worden geëxporteerd voor tabel `cms_invoice_templates`
+--
 
--- ----------------------------
--- Table structure for cms_items
--- ----------------------------
-DROP TABLE IF EXISTS `cms_items`;
-CREATE TABLE `cms_items` (
+INSERT INTO `cms_invoice_templates` (`inv_id`, `user_id`, `start_date`, `end_date`) VALUES
+(1, 1, '0', '0'),
+(2, 1, '0', '0');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `cms_items`
+--
+
+CREATE TABLE IF NOT EXISTS `cms_items` (
   `item_id` int(11) NOT NULL DEFAULT '0',
   `name` varchar(100) NOT NULL DEFAULT '',
   `price` int(11) NOT NULL DEFAULT '0',
@@ -67,18 +82,23 @@ CREATE TABLE `cms_items` (
   PRIMARY KEY (`item_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- ----------------------------
--- Records of cms_items
--- ----------------------------
-INSERT INTO `cms_items` VALUES ('1', 'COD MW2', '50', 'Call of duty MW2', 'http://upload.wikimedia.org/wikipedia/en/d/db/Modern_Warfare_2_cover.PNG', 'games');
-INSERT INTO `cms_items` VALUES ('2', 'SMB 3', '10', 'Super Mario Bros 3', 'http://upload.wikimedia.org/wikipedia/en/a/a5/Super_Mario_Bros._3_coverart.png', 'games');
-INSERT INTO `cms_items` VALUES ('3', 'BF 4', '60', 'muziekje', 'http://upload.wikimedia.org/wikipedia/en/e/ed/Battlefield_4.jpg', 'music');
+--
+-- Gegevens worden geëxporteerd voor tabel `cms_items`
+--
 
--- ----------------------------
--- Table structure for cms_users
--- ----------------------------
-DROP TABLE IF EXISTS `cms_users`;
-CREATE TABLE `cms_users` (
+INSERT INTO `cms_items` (`item_id`, `name`, `price`, `description`, `image`, `catagory`) VALUES
+(1, 'COD MW2', 50, 'Call of duty MW2', 'http://upload.wikimedia.org/wikipedia/en/d/db/Modern_Warfare_2_cover.PNG', 'games'),
+(2, 'SMB 3', 10, 'Super Mario Bros 3', 'http://upload.wikimedia.org/wikipedia/en/a/a5/Super_Mario_Bros._3_coverart.png', 'games'),
+(3, 'Transistor OST', 10, 'This pack contains all soundtracks out of Transistor', 'http://i.imgur.com/vmSCZzU.png', 'music'),
+(4, 'Bastion OST', 15, 'This pack contains all soundtracks out of Bastion.', 'http://i.imgur.com/fwLjweV.png', 'music');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `cms_users`
+--
+
+CREATE TABLE IF NOT EXISTS `cms_users` (
   `user_id` int(11) NOT NULL DEFAULT '0',
   `email` varchar(255) DEFAULT '',
   `password` varchar(255) DEFAULT '',
@@ -92,7 +112,14 @@ CREATE TABLE `cms_users` (
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- ----------------------------
--- Records of cms_users
--- ----------------------------
-INSERT INTO `cms_users` VALUES ('1', 'jordy@hotmail.nl', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'jordy', 'visser', 'jiojo', '989', '89', 'jiojjio', 'jiojio');
+--
+-- Gegevens worden geëxporteerd voor tabel `cms_users`
+--
+
+INSERT INTO `cms_users` (`user_id`, `email`, `password`, `firstname`, `lastname`, `street`, `zip`, `number`, `city`, `country`) VALUES
+(0, 'slawor4@live.nl', '123', '', '', '', '', 0, '', ''),
+(1, 'jiojio@ge.nl', 'llllll', 'jordy', 'visser', 'jiojo', '989', 89, 'jiojjio', 'jiojio');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
