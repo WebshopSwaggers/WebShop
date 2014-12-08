@@ -36,7 +36,7 @@ $item = new Item($item_id);
 	<div class="recomendTitle">
 		<p>Recomendations</p>
 	</div>
-	<div class="recomnedItems">
+	<div class="recomendItems">
 		<!-- Loopje waar eerste 4 items met zelfde tag wordeg weergeven -->
 	</div>
 </div>

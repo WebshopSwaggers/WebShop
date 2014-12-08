@@ -408,7 +408,7 @@ width: 100px;
     background-color: #df4612;
     width: 250px;
     height: 30px;
-    margin-top: -25px;
+    margin-top: -75px;
     margin-left: 310px;
     color: white;
     border: 1px solid #7e1515;
@@ -424,7 +424,21 @@ width: 100px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
 }
 .recomend{
-    font: normal 18px 'Duality';
+    font: normal 25px 'Duality';
+    margin-top: 25px;
+}
+.recomendTitle{
+    text-align: center;
+}
+.recomendItem{
+    border: 5px solid white;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 1);
+    box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 1);
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 /*Start of form*/
