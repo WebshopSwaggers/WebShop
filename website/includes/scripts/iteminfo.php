@@ -40,5 +40,4 @@ $item = new Item($item_id);
 		<!-- Loopje waar eerste 4 items met zelfde tag wordeg weergeven -->
 	</div>
 </div>
-<a href="/add/<?php echo $item->getId() ?>"><button id="popupAddToCart">Add to cart</button></a>
-
+<a href="./add/<?php echo $item->getId() ?>"><button id="popupAddToCart">Add to cart</button></a>
