@@ -10,12 +10,32 @@ if(empty($item_id))
 }
 
 $item = new Item($item_id);
-echo '<center><img style="height:150px;width:100px;" src="'.$item->getImage().'"></center>';
-echo "Product name: " . $item->getName();
-echo "<br>";
-echo "Product discription: ". $item->getDescription();
-echo "<br>";
-echo "Price: " . $item->getPrice();
-echo "<br>";
-echo '<a href="./add/'.$item->getId().'">Add to cart</a>';
 ?>
+	<div class="popupImg">
+		<img src="<?php echo $item->getImage()?>">
+	</div>
+
+<div class="popupInfo">
+	<div class="popupTitle">
+		<p><?php echo $item->getName()?></p>
+		<br>
+	</div>
+
+	<div class="popupDesc">
+		<p><?php echo $item->getDescription()?></p>
+		<br>
+	</div>
+
+	<div class="popupPrice">
+		<p>Price: € <?php echo $item->getPrice()?></p>
+		<br>
+	</div>
+</div>
+
+<div class="recomend">
+	<div class="recomendTitle">
+		<p>Recomendations</p>
+	</div>
+</div>
+<a href="/add/<?php echo $item->getId() ?>"><button id="popupAddToCart">Add to cart</button></a>
+
