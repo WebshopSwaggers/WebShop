@@ -4,11 +4,10 @@ require 'includes/config.php';
 require 'templates/header.php';
 //DB require
 ?>
-<div id="blanket" style="display:none;"></div>
-<div id="popUpDiv" style="display:none;">
-	<div id="data"></div>
-	<a href="#" onclick="popup('popUpDiv')" >Close</a>
-</div>
+	<div id="blanket" style="display:none;" onclick="popup('popUpDiv')"></div>
+	<div id="popUpDiv" style="display:none;">
+		<div id="data"></div>
+	</div>
 
 <div class="container">
 <div class="musicStoreContainer">
