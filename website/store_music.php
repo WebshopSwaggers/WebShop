@@ -26,8 +26,8 @@ for($count; $i < $count; $i++)
 		echo'<div class="itemHolder">';
 			echo'<div class="itemPic">';
 				echo'<img class="bottom" src="'.$item[$i]['item_image'].'" alt="itemPlaceholder">';
-				echo'<img class="top" onclick="realTime('.$item[$i]['item_id'].');" src="assets/images/buyme.png">';
-			echo'</div>';
+			echo'<img class="top" onclick="realTime('.$item[$i]['item_id'].', '.$dir.');" src="assets/images/buyme.png">';
+	echo'</div>';
 
 			echo'<div class="itemTitle">';
 				echo'<strong>'.$item[$i]['item_name'].'</strong>';

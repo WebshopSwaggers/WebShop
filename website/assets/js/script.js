@@ -16,9 +16,9 @@ document.getElementById('headerSlogan').innerHTML = "Bringing back arcade games 
 //
 //});
 
-function realTime(itemid) {
+function realTime(itemid, link) {
 
-	$('#data').load('/webshop/website/includes/scripts/iteminfo.php?itemid=' + itemid);
+	$('#data').load(link + '/includes/scripts/iteminfo.php?itemid=' + itemid);
 
 	popup('popUpDiv');
 };

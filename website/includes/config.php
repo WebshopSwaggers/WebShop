@@ -1,7 +1,10 @@
 <?php
 error_reporting(E_ALL);
 session_start();
-$link = "http://127.0.0.1/webshop/website";
+
+$url = "http://localhost";
+$dir = "/webshop/website";
+$link = $url.$dir;
 
 require("classes/class.mysqli.php");
 
