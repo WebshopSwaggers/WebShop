@@ -1,11 +1,12 @@
 <?php
 $title = "Gun Godz";
 require '../includes/config.php';
-require '../templates/header.php';
+require '../templates/gg_header.php';
 ?>
 
-<div class="container">
-	<!-- <iframe width="1000" height="600" src="//www.youtube.com/embed/H0-Oh-mhUBc?autoplay=1" frameborder="0" allowfullscreen></iframe> -->
+<div class="gg_container">
+	<h1>About This Game</h1>
+	<p>GUN GODZ is our upcoming polytheistic, hip-hop inspired first person shooter in the style of the classics. We’re making GUN GODZ as one of four games exclusively offered as incentive for the Kickstarter Brandon Boyer held for his website on culture and videogames, Venus Patrol.</p>
 </div>
 
 <?php
