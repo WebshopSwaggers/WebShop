@@ -82,13 +82,13 @@ echo'</nav>';
       </ul>
     </li>
     <li class='last'><a href='#'><span>Contact</span></a></li>
-    <?php
+   <?php
 
 
     if(!isset($_SESSION['userdata']))
     {
 
-       echo"<li style='float:right;'><a href='<?php echo $link; ?>/register'>Register</a></li>";
+       echo"<li style='float:right;'><a href='".$link."/register'>Register</a></li>";
        echo"<li style='float:right;' class='trigger has-sub'><a href='#'>Login <span>&#x25BC;</span></a></li>";
 
 
@@ -117,7 +117,7 @@ echo'</nav>';
       echo"<li style='float:right;right: 0px;position: absolute;' class='has-sub'><a href='#'><span>Welcome, ".User::GetUserData("firstname")."</span></a>";
         echo"<ul>";
           echo"<li><a href='#'><span>Settings</span></a></li>";
-          echo"<li class='last'><a href='<?php echo $link; ?>/includes/controllers/authcontroller.php?logout'><span>Log out</span></a></li>";
+          echo"<li class='last'><a href='".$link."/includes/controllers/authcontroller.php?logout'><span>Log out</span></a></li>";
         echo"</ul>";
       echo"</li>";
     }
