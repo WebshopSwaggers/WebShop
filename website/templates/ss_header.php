@@ -88,7 +88,7 @@ echo'</nav>';
       }
 
       echo'<div id="login-content">';
-      echo'<form action="<?php echo $link; ?>/includes/controllers/authcontroller.php" METHOD="POST">';
+      echo'<form action="'.$link.'/includes/controllers/authcontroller.php" METHOD="POST">';
       echo' <fieldset id="inputs">';
       echo'<input id="username" type="email" name="email" placeholder="Your email address" required>';
       echo'<input id="password" type="password" name="password" placeholder="Password" required>';
