@@ -30,6 +30,20 @@ $item = new Item($item_id);
 		<p>Price: € <?php echo $item->getPrice()?></p>
 		<br>
 	</div>
+
+	<div class="popupLeft">
+		<?php
+		if($item->getLeftOver() =! 0){
+			?>
+		<p>Still <?php echo $item->getLeftOver()?> over!!</p>
+		<?php
+	}else{
+		?>
+		<p>Sorry we're out of stock :(</p>
+		<?php
+	}
+	?>
+	</div>
 </div>
 
 <div class="recomend">
