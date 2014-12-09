@@ -51,7 +51,7 @@ $item = new Item($item_id);
 		<p>Recommendations</p>
 	</div>
 	<div class="recomendItems">
-		<!-- Loopje waar eerste 4 items met zelfde tag wordeg weergeven -->
+		<!-- Loopje waar eerste 4 items met zelfde tag worden weergeven -->
 	</div>
 </div>
 <a href="./add/<?php echo $item->getId() ?>"><button id="popupAddToCart">Add to cart</button></a>
