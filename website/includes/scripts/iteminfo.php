@@ -54,4 +54,14 @@ $item = new Item($item_id);
 		<!-- Loopje waar eerste 4 items met zelfde tag worden weergeven -->
 	</div>
 </div>
+<?php
+if($item->getLeftOver() != 0){
+	?>
 <a href="./add/<?php echo $item->getId() ?>"><button id="popupAddToCart">Add to cart</button></a>
+<?php
+}else{
+	?>
+	<a href="./add/<?php echo $item->getId() ?>"><button id="popupAddToCartDisabled" disabled>Add to cart</button></a>	
+	<?php
+}
+?>

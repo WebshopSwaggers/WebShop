@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: 127.0.0.1
--- Gegenereerd op: 08 dec 2014 om 14:07
+-- Gegenereerd op: 09 dec 2014 om 16:10
 -- Serverversie: 5.6.17
 -- PHP-versie: 5.5.12
 
@@ -79,6 +79,7 @@ CREATE TABLE IF NOT EXISTS `cms_items` (
   `description` text NOT NULL,
   `image` varchar(255) DEFAULT NULL,
   `catagory` varchar(100) DEFAULT 'games',
+  `leftover` int(10) NOT NULL,
   PRIMARY KEY (`item_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -86,11 +87,11 @@ CREATE TABLE IF NOT EXISTS `cms_items` (
 -- Gegevens worden geëxporteerd voor tabel `cms_items`
 --
 
-INSERT INTO `cms_items` (`item_id`, `name`, `price`, `description`, `image`, `catagory`) VALUES
-(1, 'COD MW2', 50, 'Call of duty MW2', 'http://upload.wikimedia.org/wikipedia/en/d/db/Modern_Warfare_2_cover.PNG', 'games'),
-(2, 'SMB 3', 10, 'Super Mario Bros 3', 'http://upload.wikimedia.org/wikipedia/en/a/a5/Super_Mario_Bros._3_coverart.png', 'games'),
-(3, 'Transistor OST', 10, 'This pack contains all soundtracks out of Transistor', 'http://i.imgur.com/vmSCZzU.png', 'music'),
-(4, 'Bastion OST', 15, 'This pack contains all soundtracks out of Bastion.', 'http://i.imgur.com/fwLjweV.png', 'music');
+INSERT INTO `cms_items` (`item_id`, `name`, `price`, `description`, `image`, `catagory`, `leftover`) VALUES
+(1, 'COD MW2', 50, 'Call of duty MW2', 'http://upload.wikimedia.org/wikipedia/en/d/db/Modern_Warfare_2_cover.PNG', 'games', 0),
+(2, 'SMB 3', 10, 'Super Mario Bros 3', 'http://upload.wikimedia.org/wikipedia/en/a/a5/Super_Mario_Bros._3_coverart.png', 'games', 0),
+(3, 'Transistor OST', 10, 'This pack contains all soundtracks out of Transistor', 'http://i.imgur.com/vmSCZzU.png', 'music', 0),
+(4, 'Bastion OST', 15, 'This pack contains all soundtracks out of Bastion.', 'http://i.imgur.com/fwLjweV.png', 'music', 1);
 
 -- --------------------------------------------------------
 
