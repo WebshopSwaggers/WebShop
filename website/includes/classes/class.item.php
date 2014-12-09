@@ -9,11 +9,12 @@ Class Item
    private $description;
    private $image;
    private $catagory;
+   private $leftover;
 
    // De contructor
   public function __construct($item_id)
   {
-     $sql = DB::query("SELECT item_id,name,price,description,image,catagory FROM cms_items WHERE item_id = '".$item_id."' LIMIT 1");
+     $sql = DB::query("SELECT item_id,name,price,description,image,catagory,leftover FROM cms_items WHERE item_id = '".$item_id."' LIMIT 1");
      $row = DB::fetch($sql);
 
      $this->item_id = $row->item_id;
@@ -22,11 +23,12 @@ Class Item
 	   $this->description = $row->description;
      $this->image = $row->image;
      $this->catagory = $row->catagory;
+     $this->leftover = $row->leftover;
   }
 
   public static function getItems($cat)
   {
-    $sql = DB::query("SELECT item_id,name,price,description,image,catagory FROM cms_items WHERE catagory = '".$cat."'");
+    $sql = DB::query("SELECT item_id,name,price,description,image,catagory,leftover FROM cms_items WHERE catagory = '".$cat."'");
     $array = array();
     while($row = DB::fetch($sql))
     {
@@ -37,8 +39,9 @@ Class Item
        $itemPrice = $Item->getPrice();
        $itemImage = $Item->getImage();
        $itemCatagory = $Item->getCatagory();
+       $leftover = $Item->getLeftOver();
        //$itemCount = $item->GetCount();
-       $items = array("item_id" => $itemid, "item_name" => $itemName, "item_description" => $itemDesc, "item_price" => $itemPrice, "items_catagory" => $itemCatagory, "item_image" => $itemImage);
+       $items = array("item_id" => $itemid, "item_name" => $itemName, "item_description" => $itemDesc, "item_price" => $itemPrice, "items_catagory" => $itemCatagory, "item_image" => $itemImage, "item_left_over" => $leftover);
        array_push($array,$items);
     }
     return $array;
@@ -68,6 +71,10 @@ Class Item
    public function getCatagory()
   {
     return $this->catagory;
+  }
+  public function getLeftOver()
+  {
+    return $this->leftover;
   }
 
 }
