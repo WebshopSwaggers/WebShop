@@ -33,7 +33,7 @@ $item = new Item($item_id);
 
 	<div class="popupLeft">
 		<?php
-		if($item->getLeftOver() =! 0){
+		if($item->getLeftOver() != 0){
 			?>
 		<p>Still <?php echo $item->getLeftOver()?> over!!</p>
 		<?php
@@ -48,7 +48,7 @@ $item = new Item($item_id);
 
 <div class="recomend">
 	<div class="recomendTitle">
-		<p>Recomendations</p>
+		<p>Recommendations</p>
 	</div>
 	<div class="recomendItems">
 		<!-- Loopje waar eerste 4 items met zelfde tag wordeg weergeven -->
