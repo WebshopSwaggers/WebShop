@@ -18,6 +18,7 @@ $dbpass = "";
 $dbname = "webshop";
 
 $con = new DB($host,$dbuser,$dbpass,$dbname);
+$con2 = mysqli_connect('localhost','root','','webshop');
 
 //connectie error?
 if (mysqli_connect_error(DB::$con))
