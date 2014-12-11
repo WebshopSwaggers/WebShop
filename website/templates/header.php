@@ -13,23 +13,36 @@
 
 <section id="page"> <!-- Defining the #page section with the section tag -->
 
+
 <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
 <div class="header">
 	<img src="<?php echo $link; ?>/assets/images/vlambeer_logo.gif" alt="Vlambeer logo">
 	<h1>Vlambeer | <?php echo $title ?></h1>
 	<p id="headerSlogan"></p>
 
-
 <?php
 echo'<nav>';
+
+
 if(!isset($_SESSION['userdata']))
 {
 
 
+
+
     if(isset($_SESSION['error']))
     {
-      echo "<FONT color='white'>".$_SESSION['error']."</FONT><br>";
+      echo "<FONT color='white' class='errorpass'>".$_SESSION['error']."</FONT><br>";
       unset($_SESSION['error']);
+    }
+    else
+    {
+      echo '  <div id="box" style="height:60px;width:500px;float: right;
+      margin-top: 0px;">
+      <div id="one"></div>
+      <div id="one2"></div>
+    </div>
+    ';
     }
 
 }
@@ -51,6 +64,7 @@ else
   echo "<FONT color='white'>A total of: &euro; ".number_format($bedrag, 2, ',', ' ')."</font>";
   echo "</div><br>";
 }
+
 
 echo'</nav>';
 ?>

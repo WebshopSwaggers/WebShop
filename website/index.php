@@ -8,10 +8,7 @@ require 'templates/header.php';
 <div class="news">
 
 	<div class="news_header">
-    <div id="box" style="height:60px;margin-top:10px;">
-			<a id="one"></a>
-			<a id="one2"></a>
-	</div>
+    
 
 		<h1>You can now reach the Nuclear Throne</h1>
 	</div>
