@@ -1,7 +1,8 @@
 <?php
 $title = "Serious Sam";
+$cat = "ss";
 require '../includes/config.php';
-require '../templates/ss_header.php';
+require '../templates/header.php';
 ?>
 
 <div class="ss_container">
@@ -19,7 +20,7 @@ position:relative
 <script language="JavaScript1.2">
 
 /*
-Shake image script (onMouseover)- 
+Shake image script (onMouseover)-
 © Dynamic Drive (www.dynamicdrive.com)
 For full source code, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
 */
@@ -28,7 +29,7 @@ For full source code, usage terms, and 100's more DHTML scripts, visit http://dy
 var rector=4
 
 ///////DONE EDITTING///////////
-var stopit=0 
+var stopit=0
 var a=1
 
 function init(which){
@@ -86,5 +87,5 @@ which.style.top=0
 </div>
 
 <?php
-require '../templates/footer.php'; 
+require '../templates/footer.php';
 ?>

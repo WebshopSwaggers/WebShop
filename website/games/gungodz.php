@@ -1,7 +1,8 @@
 <?php
 $title = "Gun Godz";
+$cat = "gg";
 require '../includes/config.php';
-require '../templates/gg_header.php';
+require '../templates/header.php';
 ?>
 
 <div class="gg_container">
@@ -10,5 +11,5 @@ require '../templates/gg_header.php';
 </div>
 
 <?php
-require '../templates/footer.php'; 
+require '../templates/footer.php';
 ?>
