@@ -32,6 +32,6 @@ if(isset($_GET['logout']))
   {
      unset($_SESSION['userdata']);
   }
-  header("location: ".$url."/index.php");
+  header("location: ".$link."/index.php");
 }
 ?>
