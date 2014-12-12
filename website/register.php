@@ -25,7 +25,7 @@
 			?>
 		</div>
 
-		<form action="includes/controllers/registercontroller.php" method="POST">
+		<form action="<?php echo $link; ?>/includes/controllers/registercontroller.php" method="POST">
 		<div class="formTitle"><h1>Register to vlambeer!</h1></div>
 		<div class="formInfo"><p>Registering will grant you access to our webshop, exclusive news and you will be the first to know about the deals</p></div>
 	<div class="form">

@@ -12,32 +12,32 @@
         $sql = DB::query("SELECT user_id FROM cms_users WHERE email = '".$email."'");
 				if(DB::num_rows($sql) == 0)
 				{
-				  if($query = "INSERT INTO cms_users 
-				  (email, password, firstName, lastName, country, city, street, streetNumber, zip) 
-				  VALUES 
+				  if($query = "INSERT INTO cms_users
+				  (email, password, firstName, lastName, country, city, street, streetNumber, zip)
+				  VALUES
 				  ('$email', '$password', '$firstName','$lastName', '$country', '$city', '$street', '$streetNumber', $zip)")
 			  	{
 					  $result = DB::query($query);
 				  	$_SESSION['regSucces'] = "You have successfully registered!";
-				 	  header("location: ../../register");
+				 	  header("location: ".$link."/register");
 				  }
 			  }
 				else
 				{
 					$_SESSION['regError'] = "Email is already registered!";
-					header("location: ../../register");
+					header("location: ".$link."/register");
 				}
 			}
 			else
 			{
 				$_SESSION['regError'] = "Passwords don't match";
-				header("location: ../../register");
+				header("location: ".$link."/register");
 			}
 		}
 		else
 		{
 			$_SESSION['regError'] = "Emails don't match";
-			header("location: ../../register");
+			header("location: ".$link."/register");
 		}
 		die();
 	}
