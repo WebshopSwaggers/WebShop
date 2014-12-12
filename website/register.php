@@ -41,11 +41,11 @@
 		<label class="formLabel" for="passwordConfirm">Confirm your password</label>
 		<input class="formInput" type="password" name="passwordConfirm" placeholder="Confirm password">
 		<br>
-		<label class="formLabel" for="firstName">First name</label>
-		<input class="formInput" type="text" name="firstName" placeholder="First name">
+		<label class="formLabel" for="firstname">First name</label>
+		<input class="formInput" type="text" name="firstname" placeholder="First name">
 		<br>
-		<label class="formLabel" for="lastName">Last name</label>
-		<input class="formInput" type="text" name="lastName" placeholder="Last name">
+		<label class="formLabel" for="lastname">Last name</label>
+		<input class="formInput" type="text" name="lastname" placeholder="Last name">
 		<br>
 		<label class="formLabel" for="zip">Country</label>
 		<select class="formInput" id="country" name="country">
