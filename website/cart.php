@@ -1,6 +1,7 @@
 <?php
 ini_Set("display_errors","On");
 $title = "Home";
+$noheader=1;
 require 'includes/config.php';
 require 'templates/header.php';
 

@@ -144,7 +144,7 @@ if(isset($cat))
 {
   include("../games/headers/header_".$cat.".php");
 }
-else
+elseif(!isset($noheader))
 {
   include("slider.php");
 }
