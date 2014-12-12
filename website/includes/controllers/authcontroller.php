@@ -7,7 +7,7 @@ if(isset($_POST['login']))
   if(empty($_POST['email']) || empty($_POST['password']))
   {
     $_SESSION['error'] = "Don't forget to fill all te fields";
-    header("location: http://localhost".$dir."/".Security($_POST['link']));
+    header("location: ".$url."/".Security($_POST['link']));
     die();
   }
 
@@ -18,12 +18,12 @@ if(isset($_POST['login']))
   if(DB::num_rows($sql) == 0)
   {
     $_SESSION['error'] = "Wrong username or password";
-    header("location: http://localhost".$dir."/".Security($_POST['link']));
+    header("location: ".$url."/".Security($_POST['link']));
     die();
   }
 
 $_SESSION['userdata'] = DB::fetch($sql);
-header("location: http://localhost".$dir."/".Security($_POST['link']));
+header("location: ".$url."/".Security($_POST['link']));
 }
 
 if(isset($_GET['logout']))
@@ -32,6 +32,6 @@ if(isset($_GET['logout']))
   {
      unset($_SESSION['userdata']);
   }
-  header("location: http://localhost".$dir."/index.php");
+  header("location: ".$url."/index.php");
 }
 ?>
