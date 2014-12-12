@@ -2,7 +2,12 @@
 ini_Set("display_errors","On");
 $title = "Home";
 require 'includes/config.php';
+require 'templates/header.php';
 
+?>
+<div class="container">
+
+<?php
 if(!isset($_SESSION['userdata']))
 {
   header("location: ./index.php");
@@ -52,3 +57,6 @@ echo "BTW (21%): ". number_format($btw, 2, ',', ' ');
 echo "<br>";
 echo "Totaal: ". number_format(($bedrag + $btw), 2, ',', ' ');
 ?>
+
+</div>
+<?php require 'templates/footer.php'; ?></div>
