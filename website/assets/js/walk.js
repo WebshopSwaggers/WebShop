@@ -2,7 +2,7 @@
 
 var i = 1;
 var x = 450;
-var width = 50;
+var width = 80;
 function imageSwitchNinja() {
 
   if(x < 50) {
