@@ -11,7 +11,7 @@ elseif(is_numeric($invoiceid))
 {
     // get the HTML
     ob_start();
-    include(dirname(__FILE__).'./res/invoice_template.php');
+    include(dirname(__FILE__).'./res/exemple06.php');
     $content = ob_get_clean();
 
     // convert to PDF
