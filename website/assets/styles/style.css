@@ -1,22 +1,29 @@
-*{padding: 0px; margin: 0px;}
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
-/* GENERAL */
+/* -- [ GENERAL ] -- */
 
 header, footer, article, section, hgroup, nav, figure{
     display:block;
 }
+
 body{
     font-family: 'Duality';
-    background-color: #FAC846;
+    background: url(../images/background.jpg) no-repeat 100% 0px;
+    background-size: cover;
 }
+
 @font-face{
     font-family: 'Duality';
     src: url(../fonts/Duality.ttf);
 }
-/* DIVS */
-/*Start of header*/
+
+/* -- [ DIVS ] -- */
+
+/* -- [ HEADER ] -- */
+
 .header{
-    box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
+    box-shadow: 0px 11px 25px 2px rgba(49, 50, 50, 0.69);
     margin: 0 auto;
     margin-bottom: 15px;
     width: 1000px;
@@ -26,22 +33,26 @@ body{
     border-top-right-radius: 10px;
     margin-top: 20px;
 }
+
 .header img{
     margin-left: 40px;
 }
+
 .header h1{
     font: normal 35px 'Duality';
     margin-top: -90px;
     margin-left: 180px;
     color: white;
 }
+
 .header p{
     font: normal 17px 'Duality';
     margin-left: 180px;
     color: white;
 }
 
-/*Nav*/
+/* -- [ NAVIGATION ] --*/
+
 .nav{
     margin: 0 auto;
     margin-bottom: 15px;
@@ -50,7 +61,8 @@ body{
     background-color: white;
 }
 
-/*Images slider*/
+/* --  [ IMAGE SLIDER ] --*/
+
 .image_slider{
     margin: 0 auto;
     width: 1000px;
@@ -76,7 +88,9 @@ body{
     height: 600px;
     background-color: white;
 }
-/*Start of containers*/
+
+/* -- [ START OF CONTAINERS ] -- */
+
 .container-img{
     margin: 0 auto;
     position: relative;
@@ -84,10 +98,11 @@ body{
     background: URL(../bjorncms/images/js_reception_backdrop_left.png), #ffffff;
     background-repeat: no-repeat;
     background-position: left bottom;
-    box-shadow:         0px 11px 25px 2px rgba(49, 50, 50, 0.69);
-
+    box-shadow: 0px 11px 25px 2px rgba(49, 50, 50, 0.69);
 }
-/* Container pages */
+
+/* -- [ CONTAINER PAGES ] -- */
+
 .container{
   height: 900px;
   margin: 0 auto;
@@ -116,7 +131,8 @@ body{
 }
 .containercart img{
   margin: 10px 20px 10px 20px;
-}.container h1{
+}
+.container h1{
   margin: 10px 20px 10px 20px;
 }
 .container p{
@@ -125,7 +141,9 @@ body{
 .container img{
   margin: 10px 20px 10px 20px;
 }
-/* Container of Serious Sam*/
+
+/* -- [ CONTAINER OF SERIOUS SAM ] -- */
+
 .ss_container{
     height: 650px;
     margin: 0 auto;
@@ -159,7 +177,8 @@ body{
     margin: 0px 20px 10px 20px;
 }
 
-/* Container of Gun Godz*/
+/* -- [ CONTAINER OF GUN GODZ ] -- */
+
 .gg_container{
     height: 650px;
     margin-top: -20px;
@@ -190,7 +209,8 @@ body{
     margin: 0px 20px 10px 20px;
 }
 
-/*Start of news section*/
+/* -- [ NEWS SECTION ] -- */
+
 .news{
     position: absolute;
     margin: 50 auto;
@@ -219,7 +239,8 @@ body{
     font: normal 15px 'Calibri';
 }
 
-/*Start of clothes store*/
+/* -- [ CLOTHES STORE ] -- */
+
 .clothes{
     position: absolute;
     margin: 50 auto;
@@ -237,7 +258,8 @@ body{
     border-bottom: 1px solid black;
 }
 
-/*Start of music store*/
+/* -- [ MUSIC SECTION ] -- */
+
 .musicStoreContainer{
     background-color: white;
     height: 300px;
@@ -256,7 +278,8 @@ body{
     box-shadow:         0px 0px 22px 3px rgba(50, 50, 50, 0.45);
 }
 
-/*Start of item holder*/
+/* -- [ ITEM HOLDER ] -- */
+
 .itemHolder .itemPic img{
     position: absolute;
     margin: 0px;
@@ -340,7 +363,8 @@ nav, article, nav ul li a,figure{
     border-radius:10px;
 }*/
 
-/*Start of slideshow*/
+/* -- [ SLIDESHOW ] -- */
+
 #slideshow {
     position:relative;
     height:133px;
@@ -366,7 +390,8 @@ nav, article, nav ul li a,figure{
     z-index:9;
 }
 
-/*Start of footer*/
+/* -- [ FOOTER ] -- */
+
 .footer{
     font: normal 15px 'DejaVu Sans';
     margin: 0 auto;
@@ -434,7 +459,8 @@ nav, article, nav ul li a,figure{
     margin-top:125px;
 }
 
-/*Start of popup*/
+/* -- [ POP UP ] -- */
+
 #blanket {
    background-color:#111;
    opacity: 0.65;
@@ -545,6 +571,7 @@ nav, article, nav ul li a,figure{
     padding-bottom: 10px;
 }
 
+
 .gallery-wrap {display: table; margin: 0 auto; overflow: hidden; width: 732px; }
 .gallery { position: relative; left: 0; top: 0;}
 .gallery__item { float: left; list-style: none; margin-right: 20px; }
@@ -555,6 +582,9 @@ nav, article, nav ul li a,figure{
 .gallery__controls-next { cursor: pointer; float: right; }
 
 /*Start of form*/
+
+/* -- [ FORM ] --*/
+
 .container .form{
     position: absolute;
     margin-left: 50%;
@@ -631,7 +661,7 @@ nav, article, nav ul li a,figure{
     color: #a9a9a9;
 }
 
-/*Start img info*/
+/* -- [ IMAGE INFO ] -- */
 .container-img .imgInfo{
 	position: absolute;
 	margin-left: 700px;
@@ -655,31 +685,31 @@ nav, article, nav ul li a,figure{
 	margin-top:10px;
 	font-size:16px;
 }
+.container-img .imgInfo{
+	position: absolute;
+	margin-left: 700px;
+	width: 300px;
+	height: 400px;
+	background-color: black;
+	opacity: 0.42;
+	z-index: 10;
+}
+.imgInfo .imgInfoTitle {
+	z-index:2000;
+	color: white;
+	text-align: center;
+	margin-top:10px;
+	font-size:25px;
+}
+.imgInfo .imgInfoDesc{
+	z-index:2000;
+	color: #DF4612;
+	text-align: center;
+	margin-top:10px;
+	font-size:16px;
+}
+/* -- [ SERIOUS SAM ANIMATION ] -- */
 
-/*Start img info*/
-.container-img .imgInfo{
-	position: absolute;
-	margin-left: 700px;
-	width: 300px;
-	height: 400px;
-	background-color: black;
-	opacity: 0.42;
-	z-index: 10;
-}
-.imgInfo .imgInfoTitle {
-	z-index:2000;
-	color: white;
-	text-align: center;
-	margin-top:10px;
-	font-size:25px;
-}
-.imgInfo .imgInfoDesc{
-	z-index:2000;
-	color: #DF4612;
-	text-align: center;
-	margin-top:10px;
-	font-size:16px;
-}
 .ss_bomb{
     margin-top: -563px;
     margin-left: 545px;
