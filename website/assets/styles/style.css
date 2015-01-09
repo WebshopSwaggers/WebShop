@@ -450,7 +450,7 @@ nav, article, nav ul li a,figure{
     width:700px;
     margin-top: -200px;
     margin-left: -150px;
-    height:400px;
+    height:450px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 23px 5px rgba(50, 50, 50, 1), inset 0px 0px 25px 0px rgba(223, 70, 18, 0.60);
     -moz-box-shadow:    0px 0px 23px 5px rgba(50, 50, 50, 1), inset 0px 0px 25px 0px rgba(223, 70, 18, 0.60);
@@ -503,7 +503,7 @@ nav, article, nav ul li a,figure{
     background-color: #df4612;
     width: 250px;
     height: 30px;
-    margin-top: -75px;
+    margin-top: -205px;
     margin-left: 310px;
     color: white;
     border: 1px solid #7e1515;
@@ -525,7 +525,7 @@ nav, article, nav ul li a,figure{
     background-color: #787878;
     width: 250px;
     height: 30px;
-    margin-top: -75px;
+    margin-top: -205px;
     margin-left: 310px;
     color: white;
     border: 1px solid #000000;
@@ -539,29 +539,20 @@ nav, article, nav ul li a,figure{
     outline: none;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
 }
-.recomend{
-    font: normal 25px 'Duality';
-    margin-top: 25px;
-}
+
 .recomendTitle{
-    text-align: center;
+    margin-left: 170px;
+    padding-bottom: 10px;
 }
-.recomendItem{
-    border: 5px solid white;
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 1);
-    -moz-box-shadow:    0px 0px 8px 0px rgba(50, 50, 50, 1);
-    box-shadow:         0px 0px 8px 0px rgba(50, 50, 50, 1);
-    height: 100px;
-    width: 100px;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-.popupLeft{
-    padding-bottom: 30px;
-    text-align: center;
-    margin-left: 180px;
-    margin-top: -35px;
-}
+
+.gallery-wrap {display: table; margin: 0 auto; overflow: hidden; width: 732px; }
+.gallery { position: relative; left: 0; top: 0;}
+.gallery__item { float: left; list-style: none; margin-right: 20px; }
+.gallery__img { display: block; border: 4px solid #40331b; height: 100px; width: 100px; }
+
+.gallery__controls { margin-top: 10px; }
+.gallery__controls-prev { cursor: pointer; float: left; }
+.gallery__controls-next { cursor: pointer; float: right; }
 
 /*Start of form*/
 .container .form{

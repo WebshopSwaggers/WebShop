@@ -3,8 +3,13 @@
 		<!-- JavaScript Includes -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 		<script src="<?php echo $link; ?>/assets/js/jquery.scrollTo-min.js"></script>
+		<script src="assets/js/recomendGaleryScript.js"></script>	
+		<script src="<?php echo $link; ?>/fancybox/jquery.fancybox-1.3.1.js"></script>
+		<link rel="stylesheet" href="<?php echo $link; ?>/fancybox/jquery.fancybox-1.3.1.css" media="screen">
 		<script src="<?php echo $link; ?>/assets/js/script.js"></script>
 		<script>
+
+		
 
 
 		$(document).ready(function(){

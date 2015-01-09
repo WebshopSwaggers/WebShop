@@ -48,6 +48,10 @@ Class DB
 	{
 	   return mysqli_fetch_assoc($sql); 
 	}
+	public static function fetch_array($sql)
+	{
+		return mysqli_fetch_array($sql);
+	}
 	//Tellen van alle rows
 	public static function num_rows($sql)
 	{

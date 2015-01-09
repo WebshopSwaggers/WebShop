@@ -42,10 +42,10 @@
 		<input class="formInput" type="password" name="passwordConfirm" placeholder="Confirm password">
 		<br>
 		<label class="formLabel" for="firstname">First name</label>
-		<input class="formInput" type="text" name="firstname" placeholder="First name">
+		<input class="formInput" type="text" name="firstname" placeholder="First name" pattern="[a-zA-Z]{1,30}" title="Alphabetic characters only">
 		<br>
 		<label class="formLabel" for="lastname">Last name</label>
-		<input class="formInput" type="text" name="lastname" placeholder="Last name">
+		<input class="formInput" type="text" name="lastname" placeholder="Last name" pattern="[a-zA-Z]{1,20}" title="Alphabetic characters only">
 		<br>
 		<label class="formLabel" for="zip">Country</label>
 		<select class="formInput" id="country" name="country">
@@ -203,7 +203,7 @@
 		<option value="NA">Namibia</option>
 		<option value="NR">Nauru</option>
 		<option value="NP">Nepal</option>
-		<option value="NL">Netherlands</option>
+		<option selected value="NL">Netherlands</option>
 		<option value="AN">Netherlands Antilles</option>
 		<option value="NC">New Caledonia</option>
 		<option value="NZ">New Zealand</option>
@@ -296,16 +296,16 @@
 		</select>
 		<br>
 		<label class="formLabel" for="zip">City</label>
-		<input class="formInput" type="text" name="city" placeholder="City">
+		<input class="formInput" type="text" name="city" placeholder="City" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
 		<br>
 		<label class="formLabel" for="street">Street</label>
-		<input class="formInput" type="text" name="street" placeholder="Street">
+		<input class="formInput" type="text" name="street" placeholder="Street" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
 		<br>
-		<label class="formLabel" for="number">Street number</label>
-		<input class="formInput" type="number" name="streetNumber" placeholder="Street number">
+		<label class="formLabel" for="number">House number</label>
+		<input class="formInput" type="text" name="houseNumber" placeholder="House number" pattern="[0-9]{1,}" title="Numeric characters only">
 		<br>
 		<label class="formLabel" for="zip">Zip code</label>
-		<input class="formInput" type="text" name="zip" placeholder="Zip code">
+		<input class="formInput" type="text" name="zip" placeholder="Zip code" pattern="[0-9]{4}\s[A-Z]{2}" title="e.g. 1111 AB">
 		<br>
 		<input type="submit" id="formSubmit" name="submit" value="Submit">
 		<br>
