@@ -1,7 +1,7 @@
-<manifest alg="2" build="10" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1420807164609">
+<manifest alg="2" build="10" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1420809505364">
   <folder name="css">
     <file name="site_global.css" crc="365011649"/>
-    <file name="index.css" crc="52720256" ref="index"/>
+    <file name="index.css" crc="3898132775" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="4164521501" ref="index"/>
@@ -13,13 +13,11 @@
     <file name="sunset.png" crc="333254963" ref="index"/>
     <file name="wave_licht.png" crc="89086489" ref="index"/>
     <file name="wave oranje.png" crc="3862977319" ref="index"/>
-    <file name="achtergrond.jpg" crc="4123364796" ref="index"/>
     <file name="boot.png" crc="221621147" ref="index"/>
     <file name="wave_geel.png" crc="410295342" ref="index"/>
     <file name="balk_rood.png" crc="422842978" ref="index"/>
     <file name="vlag.png" crc="4984943" ref="index"/>
-    <file name="u225-4.png" crc="391161443" ref="index"/>
-    <file name="omlijning wireframe-slim vectorobject.png" crc="459817838" ref="index"/>
+    <file name="u83-4.png" crc="141011475" ref="index"/>
   </folder>
-  <file name="index.html" crc="52675839" mt="1420807020329" redirect="true"/>
+  <file name="index.html" crc="4005302722" mt="1420809400569" redirect="true"/>
 </manifest>
