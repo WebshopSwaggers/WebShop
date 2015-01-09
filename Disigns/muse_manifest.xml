@@ -1,0 +1,23 @@
+<manifest alg="2" build="10" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1420797590049">
+  <folder name="css">
+    <file name="site_global.css" crc="365011649"/>
+    <file name="index.css" crc="423858606" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4164521501" ref="index"/>
+    <file name="museutils.js" crc="3777594392" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="117544926" ref="index"/>
+    <file name="jquery.watch.js" crc="4144919381" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="sunset.png" crc="333254963" ref="index"/>
+    <file name="wave_licht.png" crc="89086489" ref="index"/>
+    <file name="wave oranje.png" crc="3862977319" ref="index"/>
+    <file name="achtergrond.jpg" crc="4123364796" ref="index"/>
+    <file name="boot.png" crc="221621147" ref="index"/>
+    <file name="wave_geel.png" crc="410295342" ref="index"/>
+    <file name="balk_rood.png" crc="422842978" ref="index"/>
+    <file name="vlag.png" crc="4984943" ref="index"/>
+  </folder>
+  <file name="index.html" crc="121014887" mt="1420796858790" redirect="true"/>
+</manifest>
