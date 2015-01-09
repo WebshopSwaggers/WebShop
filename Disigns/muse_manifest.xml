@@ -1,7 +1,7 @@
-<manifest alg="2" build="10" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1420803045524">
+<manifest alg="2" build="10" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1420807164609">
   <folder name="css">
     <file name="site_global.css" crc="365011649"/>
-    <file name="index.css" crc="168180822" ref="index"/>
+    <file name="index.css" crc="52720256" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="4164521501" ref="index"/>
@@ -19,7 +19,7 @@
     <file name="balk_rood.png" crc="422842978" ref="index"/>
     <file name="vlag.png" crc="4984943" ref="index"/>
     <file name="u225-4.png" crc="391161443" ref="index"/>
-    <file name="omlijning_scb_1.png" crc="356758345" ref="index"/>
+    <file name="omlijning wireframe-slim vectorobject.png" crc="459817838" ref="index"/>
   </folder>
-  <file name="index.html" crc="388747301" mt="1420802477277" redirect="true"/>
+  <file name="index.html" crc="52675839" mt="1420807020329" redirect="true"/>
 </manifest>
