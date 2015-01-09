@@ -11,7 +11,7 @@
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?365011649"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?423858606" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?377538972" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
@@ -31,7 +31,7 @@
      <img class="block" id="u182_img" src="images/wave%20oranje.png" alt="" width="1480" height="3468"/>
     </div>
     <div class="clip_frame grpelem" id="u156"><!-- image -->
-     <img class="block" id="u156_img" src="images/achtergrond.jpg" alt="" width="1480" height="3468"/>
+     <img class="block" id="u156_img" src="images/achtergrond.jpg" alt="" width="1481" height="3470"/>
     </div>
     <div class="clip_frame grpelem" id="u167"><!-- image -->
      <img class="block" id="u167_img" src="images/boot.png" alt="" width="1480" height="3468"/>
@@ -43,8 +43,11 @@
      <img class="block" id="u162_img" src="images/balk_rood.png" alt="" width="1515" height="606"/>
     </div>
    </div>
-   <div class="clip_frame mse_pre_init" id="u177"><!-- image -->
-    <img class="block" id="u177_img" src="images/vlag.png" alt="" width="1480" height="3468"/>
+   <div class="clearfix grpelem" id="pu177"><!-- group -->
+    <div class="clip_frame mse_pre_init" id="u177"><!-- image -->
+     <img class="block" id="u177_img" src="images/vlag.png" alt="" width="1480" height="3468"/>
+    </div>
+    <img class="mse_pre_init" id="u225-4" alt="VLAMBEER" width="667" height="117" src="images/u225-4.png"/><!-- rasterized frame -->
    </div>
    <div class="verticalspacer"></div>
   </div>
@@ -66,7 +69,8 @@ for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.re
 typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();if(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Sommige bestanden op de server ontbreken of zijn beschadigd. Wis de cache van de browser en probeer het opnieuw. Als het probleem zich blijft voordoen, kunt u het beste contact opnemen met de auteur van de website.",(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
-$('#u177').registerPositionScrollEffect([{"in":[-Infinity,-14],"speed":[0,0]},{"in":[-14,Infinity],"speed":[0,-1.5]}]);/* scroll effect */
+$('#u177').registerPositionScrollEffect([{"in":[-Infinity,-14],"speed":[0,0]},{"in":[-14,Infinity],"speed":[0,-1]}]);/* scroll effect */
+$('#u225-4').registerPositionScrollEffect([{"in":[-Infinity,-14],"speed":[0,0]},{"in":[-14,Infinity],"speed":[0,-0.5]}]);/* scroll effect */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
