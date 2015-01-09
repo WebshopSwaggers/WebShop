@@ -9,7 +9,7 @@ header, footer, article, section, hgroup, nav, figure{
 
 body{
     font-family: 'ChampLimo';
-    background: url(../images/background.jpg) no-repeat 100% 0px;
+    background: url(../images/background.png) no-repeat 100% 0px;
     background-size: cover;
     color: black;
 }
