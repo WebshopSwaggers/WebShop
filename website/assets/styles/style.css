@@ -8,14 +8,19 @@ header, footer, article, section, hgroup, nav, figure{
 }
 
 body{
-    font-family: 'Duality';
+    font-family: 'ChampLimo';
     background: url(../images/background.jpg) no-repeat 100% 0px;
     background-size: cover;
+    color: black;
 }
 
 @font-face{
-    font-family: 'Duality';
-    src: url(../fonts/Duality.ttf);
+    font-family: 'ka1';
+    src: url(../fonts/ka1.ttf);
+}
+@font-face{
+    font-family: 'ChampLimo';
+    src: url(../fonts/ChampLimo.ttf);
 }
 
 /* -- [ DIVS ] -- */
@@ -39,14 +44,14 @@ body{
 }
 
 .header h1{
-    font: normal 35px 'Duality';
+    font: normal 35px 'ka1';
     margin-top: -90px;
     margin-left: 180px;
     color: white;
 }
 
 .header p{
-    font: normal 17px 'Duality';
+    font: normal 17px 'ka1';
     margin-left: 180px;
     color: white;
 }
@@ -87,6 +92,24 @@ body{
     width: 1000px;
     height: 600px;
     background-color: white;
+}
+
+/* -- [ H1 TITLE DESIGN ] -- */
+
+.h1Title {
+    background: url(../images/frame2.png) no-repeat center;
+    margin: 0px auto 10px auto;
+    width: 659px;
+    height: 89px;
+    text-align: center;
+}
+
+.h1Title h1{ 
+    font-family: 'ka1';
+    color: #db9b5c;
+    margin: auto;
+    line-height: 90px;
+    font-size: 23px;
 }
 
 /* -- [ START OF CONTAINERS ] -- */
@@ -142,6 +165,22 @@ body{
   margin: 10px 20px 10px 20px;
 }
 
+/* -- [ CONTAINER DESIGN ] -- */
+
+.contentContainer {
+    background: url(../images/frame1.png);
+    width: 736px;
+    height: 382px;
+    margin: auto auto 10px auto;
+    text-align: left;
+}
+
+.contentContainer p {
+    padding-top: 50px;
+    margin: 0px 45px 0px 45px;
+    font-size: 18px;
+}
+
 /* -- [ CONTAINER OF SERIOUS SAM ] -- */
 
 .ss_container{
@@ -154,23 +193,23 @@ body{
     background-position: left bottom;
 }
 .ss_container h1{
-    font: normal 35px 'Duality';
+    font: normal 35px 'ka1';
     margin: 0px 20px 10px 20px;
     border-bottom: 1px solid black;
 }
 .ss_container h2{
-    font: normal 25px 'Duality';
+    font: normal 25px 'ka1';
     margin: 0px 20px 10px 20px;
 }
 .ss_container p{
-    font: normal 17px 'Duality';
+    font: normal 17px 'ka1';
     margin: 0px 20px 10px 20px;
 }
 .ss_container ul{
     margin: 0px 20px 10px 20px;
 }
 .ss_container li{
-    font: normal 17px 'Duality';
+    font: normal 17px 'ka1';
     margin: 0px 20px 10px 20px;
 }
 .ss_container img{
@@ -190,18 +229,18 @@ body{
     background-position: left bottom;
 }
 .gg_container h1{
-    font: normal 35px 'Duality';
+    font: normal 35px 'ka1';
     color: white;
     margin: 0px 20px 10px 20px;
     border-bottom: 1px solid white;
 }
 .gg_container h2{
-    font: normal 25px 'Duality';
+    font: normal 25px 'ka1';
     color: white;
     margin: 0px 20px 10px 20px;
 }
 .gg_container p{
-    font: normal 17px 'Duality';
+    font: normal 17px 'ka1';
     color: white;
     margin: 0px 20px 10px 20px;
 }
@@ -217,7 +256,7 @@ body{
     width: 1000px;
 }
 .news_header h1{
-    font: normal 30px 'Duality';
+    font: normal 30px 'ka1';
     color: black;
     display: block;
     width: 80%;
@@ -524,7 +563,7 @@ nav, article, nav ul li a,figure{
 }
 #popupAddToCart{
     position: absolute;
-    font: normal 18px 'Duality';
+    font: normal 18px 'ka1';
     text-align: center;
     background-color: #df4612;
     width: 250px;
@@ -546,7 +585,7 @@ nav, article, nav ul li a,figure{
 }
 #popupAddToCartDisabled{
     position: absolute;
-    font: normal 18px 'Duality';
+    font: normal 18px 'ka1';
     text-align: center;
     background-color: #787878;
     width: 250px;
@@ -640,7 +679,7 @@ nav, article, nav ul li a,figure{
     padding: 0;
     width: 300px;
     cursor: pointer;
-    font: bold 20px 'Duality';
+    font: bold 20px 'ka1';
     color: #fff;
 }
 .form #formSubmit:hover{
@@ -651,12 +690,12 @@ nav, article, nav ul li a,figure{
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
 }
 .form .formInput[placeholder]{
-    font: normal 14px 'Duality';
+    font: normal 14px 'ka1';
     padding-left: 10px;
     color: #a9a9a9;
 }
 .form .formInput{
-    font: normal 14px 'Duality';
+    font: normal 14px 'ka1';
     padding-left: 5px;
     color: #a9a9a9;
 }
