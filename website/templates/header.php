@@ -16,18 +16,12 @@
     </div> -->
 </div>
 <div class="navbar">
-    <div class="navbar-left">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="store.php">Games</a></li>
-            <li><a href="store_music.php">Music</a></li>
-            <li><a href="store_clothes.php">Clothes</a></li>
-        </ul>
-    </div>
-    <div class="navbar-right">
-        <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="register.php">Register</a></li>
-        </ul>
-    </div>
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="store.php">Games</a></li>
+        <li><a href="store_music.php">Music</a></li>
+        <li><a href="store_clothes.php">Clothes</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="register.php">Register</a></li>
+    </ul>
 </div>
