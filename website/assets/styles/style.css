@@ -91,16 +91,16 @@ body{
     margin-bottom: 20px;
 }
 
-.navbar-left ul {
-    float: left;
-    padding-top: 40px;
+/*.navbar-left ul {
+    font-family: 'ka1';
+    font-size: 20px;
+    padding-top: 42px;
+    padding-left: 200px;
 }
 
 .navbar-left li {
-    font-family: 'ka1';
-    font-size: 20px;
-    margin: 0px 20px 0px 20px;
     display: inline;
+    margin-right: 20px;
 }
 
 .navbar-left li:hover {
@@ -132,7 +132,8 @@ body{
 .navbar-right li:hover, a:hover {
     color: white;
     text-decoration: none;
-}
+}*/
+
 
 /* --  [ IMAGE SLIDER ] --*/
 
