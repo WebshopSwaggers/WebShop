@@ -11,7 +11,7 @@ body{
     font-family: 'ChampLimo';
     background: url(../images/background2.png) no-repeat;
     background-position: center;
-    background-color: red;
+    background-color: #dc9806;
     color: black;
 }
 
@@ -64,10 +64,14 @@ body{
     height: 404px;
     width: auto;
 }
-.header_animation {
+/*.header_animation {
     z-index: 10000;
 }
-
+.header_animation img {
+    margin-left: 75px;
+    width: auto
+}
+*/
 /* -- [ NAVIGATION ] --*/
 
 /*.nav{
@@ -83,8 +87,8 @@ body{
     background-position: center;
     height: 97px;
     width: auto;
-    margin-top: 0px;
-    margin-bottom: 70px;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 .navbar-left ul {

@@ -11,8 +11,9 @@
 </head>
 <body>
 <div class="header">
-    <div class="header_animation">
-    </div>
+    <!-- <div class="header_animation">
+        <img src="assets/images/waves.gif" alt="">
+    </div> -->
 </div>
 <div class="navbar">
     <div class="navbar-left">
