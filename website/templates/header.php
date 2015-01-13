@@ -23,3 +23,6 @@
         <li><a href="register.php">Register</a></li>
     </ul>
 </div>
+<div class="image_slider">
+    
+</div>

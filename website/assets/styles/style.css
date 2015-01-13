@@ -162,13 +162,22 @@ body{
 
 /* --  [ IMAGE SLIDER ] --*/
 
-.image_slider{
+.image_slider {
+    background: url(../images/frame2.png) no-repeat;
+    background-position: center;
+    height: 1000px;
+    width: auto;
+    margin-top: -250px;
+    margin-bottom: -240px;
+}
+
+/*.image_slider{
     margin: 0 auto;
     width: 1000px;
     height: 400px;
     background-color: white;
 
-}
+}*/
 .image_ss{
     margin: 0 auto;
     margin-top: 0px;
@@ -191,7 +200,7 @@ body{
 /* -- [ H1 TITLE DESIGN ] -- */
 
 .h1Title {
-    background: url(../images/frame2.png) no-repeat center;
+    background: url(../images/titleFrame.png) no-repeat center;
     margin: 0px auto 10px auto;
     width: 659px;
     height: 89px;
@@ -585,8 +594,8 @@ nav, article, nav ul li a,figure{
 
 .gameslider {
     display:inline-block;
-	float:left;
-	position:relative;
+    float:left;
+    position:relative;
     margin-top:125px;
 }
 
@@ -703,8 +712,7 @@ nav, article, nav ul li a,figure{
 }
 
 
-.formformy-wrap {display: table; margin: 0 auto; overflow: hidden; width: 732px; }
-.gallery { position: relative; left: 0; top: 0;}
+.formformy-wrap {display: table; margin: 0 auto; overflow: hidden; width: 732px; }.gallery { position: relative; left: 0; top: 0;}
 .gallery__item { float: left; list-style: none; margin-right: 20px; }
 .gallery__img { display: block; border: 4px solid #40331b; height: 100px; width: 100px; }
 
@@ -794,50 +802,50 @@ nav, article, nav ul li a,figure{
 
 /* -- [ IMAGE INFO ] -- */
 .container-img .imgInfo{
-	position: absolute;
-	margin-left: 700px;
-	width: 300px;
-	height: 400px;
-	background-color: black;
-	opacity: 0.42;
-	z-index: 10;
+    position: absolute;
+    margin-left: 700px;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    opacity: 0.42;
+    z-index: 10;
 }
 .imgInfo .imgInfoTitle {
-	z-index:2000;
-	color: white;
-	text-align: center;
-	margin-top:10px;
-	font-size:25px;
+    z-index:2000;
+    color: white;
+    text-align: center;
+    margin-top:10px;
+    font-size:25px;
 }
 .imgInfo .imgInfoDesc{
-	z-index:2000;
-	color: #DF4612;
-	text-align: center;
-	margin-top:10px;
-	font-size:16px;
+    z-index:2000;
+    color: #DF4612;
+    text-align: center;
+    margin-top:10px;
+    font-size:16px;
 }
 .container-img .imgInfo{
-	position: absolute;
-	margin-left: 700px;
-	width: 300px;
-	height: 400px;
-	background-color: black;
-	opacity: 0.42;
-	z-index: 10;
+    position: absolute;
+    margin-left: 700px;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    opacity: 0.42;
+    z-index: 10;
 }
 .imgInfo .imgInfoTitle {
-	z-index:2000;
-	color: white;
-	text-align: center;
-	margin-top:10px;
-	font-size:25px;
+    z-index:2000;
+    color: white;
+    text-align: center;
+    margin-top:10px;
+    font-size:25px;
 }
 .imgInfo .imgInfoDesc{
-	z-index:2000;
-	color: #DF4612;
-	text-align: center;
-	margin-top:10px;
-	font-size:16px;
+    z-index:2000;
+    color: #DF4612;
+    text-align: center;
+    margin-top:10px;
+    font-size:16px;
 }
 /* -- [ SERIOUS SAM ANIMATION ] -- */
 
