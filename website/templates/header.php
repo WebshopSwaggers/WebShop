@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/style.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/header.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/menu.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="<?php echo $link; ?>/assets/js/popup.js"></script>
 </head>
 <body>
 <div class="header">

@@ -92,4 +92,4 @@ if($item->getLeftOver() != 0){
 }
 
 ?>
-
+<script src="<?php echo $link; ?>/assets/js/recomendGaleryScript.js"></script>

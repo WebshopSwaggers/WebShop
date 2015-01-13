@@ -1,7 +1,5 @@
-    $(".top").click(function(){
-
-    
-    // Fancybox specific
+jQuery(window).ready(function($) {
+           // Fancybox specific
     $(".gallery__link").fancybox({
         'titleShow'     : false,
         'transitionIn'  : 'elastic',
@@ -58,10 +56,9 @@
     // Set the gallery width to the totalWidth. This allows all items to
     // be on one line.
     $(".gallery").width(totalWidth);
-    setTimeout(console.log(totalWidth), 1600);
     // Add active class to the first gallery item
     $(".gallery__item:first").addClass("gallery__item--active");
-
+    $(".gallery_item").f
     // When the prev button is clicked
     // ====================================================================
     $(".gallery__controls-prev").click(function(){
@@ -79,3 +76,4 @@
     });
 
 });
+ 

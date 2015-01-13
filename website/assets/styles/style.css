@@ -703,7 +703,7 @@ nav, article, nav ul li a,figure{
 }
 
 
-.gallery-wrap {display: table; margin: 0 auto; overflow: hidden; width: 732px; }
+.formformy-wrap {display: table; margin: 0 auto; overflow: hidden; width: 732px; }
 .gallery { position: relative; left: 0; top: 0;}
 .gallery__item { float: left; list-style: none; margin-right: 20px; }
 .gallery__img { display: block; border: 4px solid #40331b; height: 100px; width: 100px; }
@@ -750,7 +750,7 @@ nav, article, nav ul li a,figure{
     padding-bottom: 10px;
     margin-top: 25px;
 }
-.container .form input:focus{
+.container .formInput:focus{
     outline: none;
     border-color: #FFC891;
     background-color: white;
