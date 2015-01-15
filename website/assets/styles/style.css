@@ -43,6 +43,8 @@ body{
 /*=================================*/
 
 .navbar {
+
+  pointer-events:none;    
     background: url(../images/navbar.png) no-repeat;
     background-position: center;
     height: 97px;
