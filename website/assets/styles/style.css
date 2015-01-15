@@ -47,6 +47,7 @@ body{
     background-position: center;
     height: 97px;
     width: auto;
+    z-index: 99999;
     margin-top: -20px;
     margin-bottom: 20px;
     text-align: center;
@@ -64,14 +65,6 @@ body{
     margin-top: 31px;
     margin-left: 25px;
     margin-right: 25px;
-    font-size: 20px;
-    margin: 0;
-    padding-top: 8px;
-    display: inline-block;
-    color: white;
-    height: 32px;
-    margin-top: 31px;
-    margin-right: 70px;
 }
 
 .navbar li a, .navbar li a:visited{
