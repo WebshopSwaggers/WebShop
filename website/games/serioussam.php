@@ -3,6 +3,7 @@ $title = "Serious Sam";
 $cat = "ss";
 require '../includes/config.php';
 require '../templates/header.php';
+require './headers/header_ss.php';
 ?>
 
 <div class="ss_container">
