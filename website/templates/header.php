@@ -5,6 +5,7 @@
     <title><?php echo "Vlambeer | " . $title; ?></title>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/style.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/header.css"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/vlam_header.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/menu.css"/>
 </head>
 <body>
@@ -13,7 +14,9 @@
         <img src="assets/images/waves.gif" alt="">
     </div> -->
 </div>
-<div class="navbar">
+
+<div class="navbar"></div>
+<div class="nav_balk">
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="store.php">Games</a></li>

@@ -48,6 +48,7 @@ body{
     height: 97px;
     width: auto;
     margin-top: -20px;
+    z-index:99999;
     margin-bottom: 20px;
     text-align: center;
     position: relative;
@@ -57,8 +58,8 @@ body{
     font-family: 'ka1';
     font-size: 20px;
     margin: 0;
-    padding-top: 8px; 
-    display: inline-block;   
+    padding-top: 8px;
+    display: inline-block;
     color: white;
     height: 32px;
     margin-top: 31px;
@@ -86,56 +87,56 @@ body{
     margin-right: auto;
     margin-bottom: -240px;
 }
-.mask { 
+.mask {
     padding-top: 290px;
     margin-top: 40px;
     margin-left: auto;
-    margin-right: auto; 
-    width: 922px; 
-    height: 417px; 
-    overflow: hidden;  
+    margin-right: auto;
+    width: 922px;
+    height: 417px;
+    overflow: hidden;
 }
-ul.images { 
-    position: relative; 
+ul.images {
+    position: relative;
     top: 0px;
-    left: 0px; 
+    left: 0px;
 }
-ul.images li { 
-    float: left; 
+ul.images li {
+    float: left;
 }
-ul.triggers { 
+ul.triggers {
     position: relative;
     text-align: center;
     list-style: none;
     width: 12%;
-    margin-top: -60px; 
+    margin-top: -60px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
-ul.triggers li { 
+ul.triggers li {
     display: inline-block;
     float: left;
-    margin: 0 5px;  
+    margin: 0 5px;
     cursor:pointer;
-    background-color:#ccc; 
-    color:#000; 
+    background-color:#ccc;
+    color:#000;
     padding:10px;
 }
 ul.triggers li.selected {
-    background-color:red; 
+    background-color:red;
     color:#000;
 }
 .control {
-    position:absolute; 
-    top: 380px; 
-    color:#fff; 
+    position:absolute;
+    top: 380px;
+    color:#fff;
     cursor:pointer;
 }
-.prev { 
-    left:120px; 
+.prev {
+    left:120px;
 }
-.next { 
-    left:180px; 
+.next {
+    left:180px;
 }
 .image_ss{
     margin: 0 auto;
@@ -166,7 +167,7 @@ ul.triggers li.selected {
     text-align: center;
 }
 
-.h1Title h1{ 
+.h1Title h1{
     font-family: 'ka1';
     color: #db9b5c;
     margin: auto;
