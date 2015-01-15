@@ -60,25 +60,16 @@ $i        = 0;
 	<div class="recomendTitle">
 		<p>Recommendations</p>
 	</div>
+	<div class="recomendImg">
 	<?php for($count; $i < $count; $i++): ?>
-		<div class="gallery-wrap">
-		  <div class="gallery clearfix">
-		    <div class="gallery__item">
-		      <img src="<?php echo $getImage[$i]['item_image'] ?>" class="gallery__img" alt="" />
-		    </div>
-		  </div>
-		</div>
+			
+		    
+		      <div><img src="<?php echo $getImage[$i]['item_image'] ?>" class="gallery__img" alt="" /></div>
+		    
+			
 	
 	<?php endfor; ?>
-	  <div class="gallery__controls clearfix">
-	    <div href="#" class="gallery__controls-prev">
-	      <img src="images/prev1.png" alt="" />
-	    </div>
-	    <div href="#" class="gallery__controls-next">
-	      <img src="images/next1.png" alt="" />
-	    </div>
-	  </div>
-	
+	</div>	
 
 <?php
 if($item->getLeftOver() != 0){
@@ -92,4 +83,18 @@ if($item->getLeftOver() != 0){
 }
 
 ?>
-<script src="<?php echo $link; ?>/assets/js/recomendGaleryScript.js"></script>
+<script>
+	
+$(document).ready(function(){
+	$('.recomendImg').slick({
+	  infinite: true,
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  autoplay: true,
+  	  autoplaySpeed: 1500,
+  	  variableWidth: true,
+	  arrows: false
+	});
+});
+
+</script>

@@ -5,15 +5,19 @@
     <title><?php echo "Vlambeer | " . $title; ?></title>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/style.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/header.css"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/vlam_header.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/menu.css"/>
 </head>
 <body>
 <div class="header">
-    <!-- <div class="header_animation">
-        <img src="assets/images/waves.gif" alt="">
-    </div> -->
+  <div class="header_animation">
+        <img src="assets/images/waves.gif" style="
+        width: 937px;" alt="">
+    </div>
 </div>
-<div class="navbar">
+
+<div class="navbar"></div>
+<div class="nav_balk">
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="store.php">Games</a></li>
@@ -22,7 +26,4 @@
         <li><a href="login.php">Login</a></li>
         <li><a href="register.php">Register</a></li>
     </ul>
-</div>
-<div class="image_slider">
-    
 </div>
