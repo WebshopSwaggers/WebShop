@@ -28,35 +28,6 @@ body{
 
 /* -- [ HEADER ] -- */
 
-/*.header{
-    box-shadow: 0px 11px 25px 2px rgba(49, 50, 50, 0.69);
-    margin: 0 auto;
-    margin-bottom: 15px;
-    width: 1000px;
-    height: 115px;
-    background-color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-top: 20px;
-}
-
-.header img{
-    margin-left: 40px;
-}
-
-.header h1{
-    font: normal 35px 'ka1';
-    margin-top: -90px;
-    margin-left: 180px;
-    color: white;
-}
-
-.header p{
-    font: normal 17px 'ka1';
-    margin-left: 180px;
-    color: white;
-}*/
-
 .header {
     background: url(../images/header.png) no-repeat;
     background-position: center;
@@ -64,24 +35,8 @@ body{
     height: 404px;
     width: auto;
 }
-/*.header_animation {
-    z-index: 10000;
-}
-.header_animation img {
-    margin-left: 75px;
-    width: auto
-}
-*/
 
 /* -- [ NAVIGATION ] --*/
-
-/*.nav{
-    margin: 0 auto;
-    margin-bottom: 15px;
-    width: 1000px;
-    height: 50px;
-    background-color: white;
-}*/
 
 .navbar {
     background: url(../images/navbar.png) no-repeat;
@@ -114,52 +69,6 @@ body{
 .navbar li a:hover{
     color: white;
 }
-/*
-.navbar-left ul {
-    position: absolute;
-    font-family: 'ka1';
-    font-size: 20px;
-    padding-top: 40px;
-    margin: 0 auto;
-    padding-left: ;
-}
-
-.navbar-left li {
-    display: inline;
-    margin-right: 60px;
-}
-
-.navbar-left li:hover {
-    color: white;
-}
-
-.navbar-right ul {
-    position: absolute;
-    padding-left: 900px;
-    padding-top: 40px;
-}
-
-.navbar-right li {
-    font-family: 'ka1';
-    font-size: 20px;
-    margin: 0px 20px 0px 20px;
-    display: inline;
-}
-
-.navbar-left a, a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-.navbar-right a, a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-.navbar-right li:hover, a:hover {
-    color: white;
-    text-decoration: none;
-}*/
 
 /* --  [ IMAGE SLIDER ] --*/
 
@@ -224,14 +133,6 @@ ul.triggers li.selected {
 .next { 
     left:180px; 
 }
-
-/*.image_slider{
-    margin: 0 auto;
-    width: 1000px;
-    height: 400px;
-    background-color: white;
-
-}*/
 .image_ss{
     margin: 0 auto;
     margin-top: 0px;
@@ -515,73 +416,6 @@ ul.triggers li.selected {
     font-size: 24px;
     font-style: bold;
     color: black;
-}
-
-/*nav{
-    background: #f8f8f8;
-    padding:0 5px;
-    right:0;
-    top:4em;
-    position:fixed; top:0; left:50;
-    border:1px solid #FCFCFC;
-    -moz-box-shadow:0 1px 1px #333333;
-    -webkit-box-shadow:0 1px 1px #333333;
-    box-shadow:0 1px 1px #333333;
-}
-
-nav ul li{
-    display:inline;
-}
-
-nav ul li a, nav ul li a:visited{
-    color:#565656;
-    display:block;
-    float:left;
-    font-size:1.25em;
-    font-weight:bold;
-    margin:5px 2px;
-    padding:7px 10px 4px;
-    text-shadow:0 1px 1px white;
-    text-transform:uppercase;
-}
-
-de kleur als je over de buttons gaat
-nav ul li a:hover{
-    text-decoration:none;
-    background-color:#f0f0f0;
-}
-
-nav, article, nav ul li a,figure{
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    border-radius:10px;
-}*/
-
-/* -- [ SLIDESHOW ] -- */
-
-#slideshow {
-    position:relative;
-    height:133px;
-    width: 100px;
-
-}
-
-#slideshow IMG {
-    position:absolute;
-    margin-top:0px;
-    left:0;
-    z-index:8;
-    height: 400px;
-    width: 1000px;
-
-}
-
-#slideshow IMG.active {
-    z-index:10;
-}
-
-#slideshow IMG.last-active {
-    z-index:9;
 }
 
 /* -- [ FOOTER ] -- */
