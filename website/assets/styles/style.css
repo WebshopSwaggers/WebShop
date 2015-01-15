@@ -55,14 +55,15 @@ body{
 
 .navbar ul li{
     font-family: 'ka1';
-    font-size: 20px;
-    margin: 0;
+    font-size: 16px;
+    margin: 0 auto;
     padding-top: 8px; 
     display: inline-block;   
     color: white;
     height: 32px;
     margin-top: 31px;
-    margin-right: 70px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .navbar li a, .navbar li a:visited{
@@ -81,18 +82,18 @@ body{
     background-position: center;
     height: 1000px;
     width: auto;
-    margin-top: -270px;
+    margin-top: -300px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -240px;
+    margin-bottom: -280px;
 }
 .mask { 
-    padding-top: 290px;
-    margin-top: 40px;
+    padding-top: 323px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto; 
-    width: 922px; 
-    height: 417px; 
+    width: 786px; 
+    height: 354px; 
     overflow: hidden;  
 }
 ul.images { 
