@@ -21,6 +21,11 @@ ul{
   left: 30px;
 }
 
+.header_animation {
+  top: -20px;
+  position: relative;
+}
+
 .nav_balk ul li {
   font-family: 'ka1';
   font-size: 17px;
