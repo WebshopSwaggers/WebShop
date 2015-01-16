@@ -215,7 +215,7 @@ ul.triggers li.selected {
   background-position: left bottom;
 }
 .containerRegister {
-  height: 700px;
+  height: 750px;
   margin: 0 auto;
   top: -90px;
   background: rgb(166, 44, 3);
@@ -801,7 +801,7 @@ ul.triggers li.selected {
     }
     .containerRegister {
         width: 630px;
-        height: 700px;
+        height: 580px;
     }
     .containerRegister .form{
         margin-left: -20px;
