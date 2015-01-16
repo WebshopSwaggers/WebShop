@@ -37,6 +37,7 @@ body{
   width: 937px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -2px;
 }
 
 /*=================================*/
@@ -51,7 +52,7 @@ body{
   height: 68px;
   width: auto;
   z-index: 99999;
-  margin-top: -20px;
+  margin-top: 0px;
   margin-bottom: 20px;
   text-align: center;
   position: relative;
@@ -198,7 +199,7 @@ ul.triggers li.selected {
 /* -- [ CONTAINER PAGES ] -- */
 
 .container {
-  height: 900px;
+  height: 1290px;
   margin: 0 auto;
   top: -90px;
   background: rgb(166, 44, 3);
@@ -782,6 +783,55 @@ ul.triggers li.selected {
     }
     .container {
         width: 630px;
+        height: 970px;
+    }
+    .navbar {
+        margin-top: -20px;
+        background: url(../images/navbar2.png) no-repeat;
+        background-position: center;
+        height: 46px;
+        width: auto;
+    }
+    .mask {
+        /* padding-top: 0px; */
+        /* margin-top: -10px; */
+        /* margin-left: 0px; */
+        /* margin-right: auto; */
+        position: relative;
+        width: 630px;
+        height: 272px;
+        overflow: hidden;
+        /* left: -20px; */
+    }
+    .h1Title {
+        background: url(../images/titleFrame2.png) no-repeat center;
+        margin-top: 0px;
+        margin-left: 70px;
+        margin-bottom: 10px;
+        width: 500px;
+        height: 68px;
+        text-align: center;
+    }
+    .h1Title h1{
+        font-family: 'ka1';
+        color: #db9b5c;
+        margin: auto;
+        line-height: 65px;
+        font-size: 19px;
+    }
+    .contentContainer {
+        background: url(../images/frame2.png) no-repeat;
+        width: 550px;
+        height: 287px;
+        margin-top: auto;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .contentContainer p {
+        padding-top: 35px;
+        margin: 0px 35px 0px 35px;
+        font-size: 14px;
     }
 }
 
