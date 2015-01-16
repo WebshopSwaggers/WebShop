@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/header.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/vlam_header.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/menu.css"/>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
 </head>
 <body>
 <div class="header">
