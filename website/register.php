@@ -9,7 +9,11 @@
 	}
 ?>
 <body>
-	<div class="container">
+	<div class="containerRegister">
+		<div class="empty"></div>
+		<div class="h1Title">
+			<h1>Register</h1>
+		</div>
 		<div class="message">
 			<?php
 			if(isset($_SESSION['regError']))
@@ -25,11 +29,10 @@
 			?>
 		</div>
 
-		<form action="<?php echo $link; ?>/includes/controllers/registercontroller.php" method="POST">
-		<div class="formTitle"><h1>Basic Information</h1></div>
-		
+		<form action="<?php echo $link; ?>/includes/controllers/registercontroller.php" method="POST">		
             
 	<div class="form">
+		<div class="formTitle"><h1>Basic Information</h1></div>
         <label class="formLabel" for="firstname"></label>
 		<input class="formInput" id="margin" type="text" name="firstname" placeholder="First name" pattern="[a-zA-Z]{1,30}" title="Alphabetic characters only">
 

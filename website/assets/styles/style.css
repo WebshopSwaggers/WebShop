@@ -176,12 +176,17 @@ ul.triggers li.selected {
   text-align: center;
 }
 
-.h1Title h1{
+.h1Title h1 {
   font-family: 'ka1';
   color: #db9b5c;
   margin: auto;
   line-height: 90px;
   font-size: 23px;
+}
+/* Margin-top for h1title */
+.empty {
+    height: 15px;
+    background-color: #a62c03;
 }
 
 /* -- [ START OF CONTAINERS ] -- */
@@ -200,6 +205,17 @@ ul.triggers li.selected {
 
 .container {
   height: 1290px;
+  margin: 0 auto;
+  top: -90px;
+  background: rgb(166, 44, 3);
+  position: relative;
+  box-shadow: 0px 11px 25px 2px rgba(49, 50, 50, 0.69);
+  width: 940px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.containerRegister {
+  height: 700px;
   margin: 0 auto;
   top: -90px;
   background: rgb(166, 44, 3);
@@ -235,6 +251,15 @@ ul.triggers li.selected {
   margin: 10px 20px 10px 20px;
 }
 .container img{
+  margin: 10px 20px 10px 20px;
+}
+.containerRegister h1{
+  margin: 10px 20px 10px 20px;
+}
+.containerRegister p{
+  margin: 10px 20px 10px 20px;
+}
+.containerRegister img{
   margin: 10px 20px 10px 20px;
 }
 
@@ -616,38 +641,27 @@ ul.triggers li.selected {
   padding-bottom: 10px;
 }
 
-
-.formformy-wrap {display: table; margin: 0 auto; overflow: hidden; width: 732px; }.gallery { position: relative; left: 0; top: 0;}
-.gallery__item { float: left; list-style: none; margin-right: 20px; }
-.gallery__img { display: block; border: 4px solid #40331b; height: 100px; width: 100px; }
-
-.gallery__controls { margin-top: 10px; }
-.gallery__controls-prev { cursor: pointer; float: left; }
-.gallery__controls-next { cursor: pointer; float: right; }
-
 /*Start of form*/
 
 /* -- [ FORM ] --*/
 
-.container .form{
- margin-left 100px;
-
+.containerRegister .form{
+    margin-left: 145px;
 }
-.container .formTitle{
+.containerRegister .formTitle{
     font: normal 14px 'ka1';
-    
     font-size: 30px;
     padding-top: 20px;
     margin-left: 80px;
+    text-align: left;
 }
-.container .form .formLabel{
-    
+.containerRegister .form .formLabel{
     margin-top: 25px;
     padding-left: 20px;
     font-size: 18px;
     color: #8995A9;
 }
-.container .form .formInput{
+.containerRegister .form .formInput{
     background-color: #DBDFE6;
     border: 1px solid #DEE0E7;
     border-radius: 5px;
@@ -658,14 +672,14 @@ ul.triggers li.selected {
     padding-bottom: 10px;
     margin-top: 25px;
 }
-.container .form input:focus{
+.containerRegister .form input:focus{
     outline: none;
     border-color: #FFC891;
     background-color: white;
     box-shadow: 0 0px 0px 1px #ACB4C4 inset;
 }
-.container .form #formSubmit{
-    margin-top: 70px;
+.containerRegister .form #formSubmit{
+    margin-top: 40px;
     background-color: #B1F20C;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -674,7 +688,7 @@ ul.triggers li.selected {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
     border: 1px solid #7e1515;
     height: 30px;
-    margin-left: 420px;
+    margin-left: 350px;
     width: 200px;
     cursor: pointer;
     font: bold 20px 'ka1';
@@ -785,6 +799,37 @@ ul.triggers li.selected {
         width: 630px;
         height: 970px;
     }
+    .containerRegister {
+        width: 630px;
+        height: 700px;
+    }
+    .containerRegister .form{
+        margin-left: -20px;
+    }
+    .containerRegister .formTitle{
+        font-size: 20px;
+        padding-top: 5px;
+        margin-left: 80px;
+    }
+    .containerRegister .form .formLabel{
+        margin-top: 25px;
+        padding-left: 20px;
+        font-size: 18px;
+        color: #8995A9;
+    }
+    .containerRegister .form .formInput{
+        width: 200px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin-top: 15px;
+    }
+    .containerRegister .form #formSubmit{
+        margin-top: 40px;
+        height: 30px;
+        margin-left: 350px;
+        width: 200px;
+    }
     .navbar {
         margin-top: -20px;
         background: url(../images/navbar2.png) no-repeat;
@@ -806,7 +851,7 @@ ul.triggers li.selected {
     .h1Title {
         background: url(../images/titleFrame2.png) no-repeat center;
         margin-top: 0px;
-        margin-left: 70px;
+        margin-left: 66px;
         margin-bottom: 10px;
         width: 500px;
         height: 68px;
