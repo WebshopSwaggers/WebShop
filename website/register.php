@@ -26,28 +26,17 @@
 		</div>
 
 		<form action="<?php echo $link; ?>/includes/controllers/registercontroller.php" method="POST">
-		<div class="formTitle"><h1>Register to vlambeer!</h1></div>
-		<div class="formInfo"><p>Registering will grant you access to our webshop, exclusive news and you will be the first to know about the deals</p></div>
+		<div class="formTitle"><h1>Basic Information</h1></div>
+		
+            
 	<div class="form">
-		<label class="formLabel" for="email">E-mail address</label>
-		<input class="formInput" type="email" name="email" placeholder="E-mail address" required>
-		<br>
-		<label class="formLabel" for="emailConfirm">Confirm your email</label>
-		<input class="formInput" type="email" name="emailConfirm" placeholder="Confirm E-mail">
-		<br>
-		<label class="formLabel" for="password">Password</label>
-		<input class="formInput" type="password" name="password" placeholder="Password" required>
-		<br>
-		<label class="formLabel" for="passwordConfirm">Confirm your password</label>
-		<input class="formInput" type="password" name="passwordConfirm" placeholder="Confirm password">
-		<br>
-		<label class="formLabel" for="firstname">First name</label>
-		<input class="formInput" type="text" name="firstname" placeholder="First name" pattern="[a-zA-Z]{1,30}" title="Alphabetic characters only">
-		<br>
-		<label class="formLabel" for="lastname">Last name</label>
+        <label class="formLabel" for="firstname"></label>
+		<input class="formInput" id="margin" type="text" name="firstname" placeholder="First name" pattern="[a-zA-Z]{1,30}" title="Alphabetic characters only">
+
+		<label class="formLabel" for="lastname"></label>
 		<input class="formInput" type="text" name="lastname" placeholder="Last name" pattern="[a-zA-Z]{1,20}" title="Alphabetic characters only">
 		<br>
-		<label class="formLabel" for="zip">Country</label>
+		<label class="formLabel" for="country"></label>
 		<select class="formInput" id="country" name="country">
 		<option value="AF">Afghanistan</option>
 		<option value="AX">Åland Islands</option>
@@ -294,19 +283,32 @@
 		<option value="ZM">Zambia</option>
 		<option value="ZW">Zimbabwe</option>
 		</select>
+		
+        <label class="formLabel" for="city"></label>
+		<input class="formInput" id="" type="text" name="city" placeholder="City" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
 		<br>
-		<label class="formLabel" for="zip">City</label>
-		<input class="formInput" type="text" name="city" placeholder="City" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
+        <label class="formLabel" for="street"></label>
+		<input class="formInput" id="margin" type="text" name="street" placeholder="Street" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
+		<label class="formLabel" for="houseNumber"></label>
+		<input class="formInput" id="houseNumber" type="text" name="houseNumber" placeholder="NR" pattern="[0-9]{1,}" title="Numeric characters only">
+		<label class="formLabel" for="zip"></label>
+		<input class="formInput" id="zip" type="text" name="zip" placeholder="Zip code" pattern="[0-9]{4}\s[A-Z]{2}" title="e.g. 1111 AB">
+        
+        <div class="formTitle"><h1>Account Details</h1></div>
+        
+         <label class="formLabel" for="email"></label>
+		<input class="formInput" id="margin" type="email" name="email" placeholder="E-mail address" required>
+		<label class="formLabel" for="emailConfirm"></label>
+		<input class="formInput" type="email" name="emailConfirm" placeholder="Confirm E-mail">
 		<br>
-		<label class="formLabel" for="street">Street</label>
-		<input class="formInput" type="text" name="street" placeholder="Street" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
+        <label class="formLabel"  for="password"></label>
+		<input class="formInput" id="margin" type="password" name="password" placeholder="Password" required>
+		<label class="formLabel" id= for="Confirm"></label>
+		<input class="formInput" type="password" name="passwordConfirm" placeholder="Confirm password">
 		<br>
-		<label class="formLabel" for="number">House number</label>
-		<input class="formInput" type="text" name="houseNumber" placeholder="House number" pattern="[0-9]{1,}" title="Numeric characters only">
-		<br>
-		<label class="formLabel" for="zip">Zip code</label>
-		<input class="formInput" type="text" name="zip" placeholder="Zip code" pattern="[0-9]{4}\s[A-Z]{2}" title="e.g. 1111 AB">
-		<br>
+		
+		
+       
 		<input type="submit" id="formSubmit" name="submit" value="Submit">
 		<br>
 	</div>
@@ -314,3 +316,31 @@
 	</div>
 </body>
 <?php require 'templates/footer.php' ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

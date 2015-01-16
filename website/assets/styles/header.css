@@ -142,12 +142,6 @@ fieldset {
   border: none;
   padding: 0;
 }
-label {
-  float: right;
-  line-height: 30px;
-
-  font-size: 14px;
-}
 
 label input {
   position: relative;
