@@ -12,8 +12,6 @@
 <body>
 <div class="header">
   <div class="header_animation">
-        <img src="assets/images/waves.gif" style="
-        width: 937px;" alt="">
     </div>
 </div>
 
