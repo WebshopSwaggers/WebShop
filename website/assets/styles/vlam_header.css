@@ -1,7 +1,7 @@
 .nav_balk {
   width: 945px;
   height: 50px;
-  background: rgb(167, 59, 48);
+  background: rgb(70, 118, 117);
   position: relative;
   background-position: center;
   text-align: center;
@@ -33,7 +33,7 @@ ul{
 .nav_balk ul li {
   font-family: 'ka1';
   font-size: 17px;
-  background: rgb(147, 52, 42);
+  background: rgb(73, 109, 108);
   pointer-events: all;
   margin: 0;
   padding-top: 8px;
