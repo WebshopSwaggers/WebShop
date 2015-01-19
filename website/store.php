@@ -43,7 +43,7 @@ require 'templates/header.php';
 	</div>
 	
 	<div class="gameStoreContainer">
-	<br>
+	<div class="empty"></div>
 	<div class="h1Title">
 		<h1>Games</h1>
 	</div>

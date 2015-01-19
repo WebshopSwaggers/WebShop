@@ -44,7 +44,7 @@ $item = Item::getItems("music");
 	</div>
 	
 	<div class="musicStoreContainer">
-	<br>
+	<div class="empty"></div>
 	<div class="h1Title">
 		<h1>Music</h1>
 	</div>
