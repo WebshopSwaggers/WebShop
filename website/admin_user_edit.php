@@ -19,10 +19,10 @@ $row = DB::fetch_assoc($sql);
 }
 
 if (isset($_POST['submit'])){
-	$email 			= Security($con, $_POST['email']);
-	$password 		= Security($con, $_POST['password']);
-	$firstname 			= Security($con, $_POST['firstname']);
-	$lastname 	= Security($con, $_POST['lastname']);
+	$email 			= Security( $_POST['email']);
+	$password 		= Security( $_POST['password']);
+	$firstname 			= Security( $_POST['firstname']);
+	$lastname 	= Security( $_POST['lastname']);
 
 $sql = "UPDATE cms_users SET email = '$email', password = '$password', firstname = '$firstname', lastname = '$lastname'WHERE user_id = '$id'" or die(mysqli_error(DB::$con));
 

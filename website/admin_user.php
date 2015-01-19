@@ -10,18 +10,15 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 	
 	
 	
-	if (isset($_GET['user_id'])) //De functie isset() kijkt of een variabele bestaat
+	if (isset($_GET['id'])) //De functie isset() kijkt of een variabele bestaat
 							//Je kan het dus gebruiken in formulieren of er op de submitknop gedrukt is (dan is de waarde van die knop 'gezet')
 		{
 		
-			$id = $_GET['user_id'];
-			$sql= "DELETE FROM cms_user WHERE user_id = '$id'";  //verwijderen via het id
+			$id = $_GET['id'];
+			$sql= "DELETE FROM cms_users WHERE user_id = '$id'";  //verwijderen via het id
 		
-			if (!$query = DB::query( $sql) ){  		//kijkt of het verwijderen goed is gegaan.
-				echo 'delete query is niet goed gegaan';
-				die();
-				
-			}
+			DB::query( $sql) OR die(mysqli_error(DB::$con));  		//kijkt of het verwijderen goed is gegaan.
+			
 		header ('location: admin_user.php');	//verwijderen is gelukt, dan blijft hij op zelfde pagina.
 		}
 	
