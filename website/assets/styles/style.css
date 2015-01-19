@@ -114,6 +114,26 @@ ul.images li {
   left: -20px;
   position: relative;
 }
+.containerGames ul.images {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.containerGames ul.images li {
+  float: left;
+  left: 0px;
+  position: relative;
+}
+.containerMusic ul.images {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.containerMusic ul.images li {
+  float: left;
+  left: 0px;
+  position: relative;
+}
 ul.triggers {
   position: relative;
   text-align: center;
@@ -228,7 +248,19 @@ ul.triggers li.selected {
   background-position: left bottom;
 }
 .containerGames {
-  height: 1290px;
+  height: 1000px;
+  margin: 0 auto;
+  top: -95px;
+  background: rgb(166, 44, 3);
+  position: relative;
+  box-shadow: 0px 11px 25px 2px rgba(49, 50, 50, 0.69);
+  width: 940px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  border: 3px solid white;
+}
+.containerMusic {
+  height: 1000px;
   margin: 0 auto;
   top: -95px;
   background: rgb(166, 44, 3);
@@ -391,7 +423,7 @@ ul.triggers li.selected {
 }
 
 /* GAME STORE*/
-.containerGames .itemHolder{
+.gameStoreContainer .itemHolder{
   position: relative;
   float: left;
   margin-top: 30px;
@@ -866,17 +898,6 @@ ul.triggers li.selected {
         background-position: center;
         height: 46px;
         width: auto;
-    }
-    .mask {
-        /* padding-top: 0px; */
-        /* margin-top: -10px; */
-        /* margin-left: 0px; */
-        /* margin-right: auto; */
-        position: relative;
-        width: 630px;
-        height: 272px;
-        overflow: hidden;
-        /* left: -20px; */
     }
     .h1Title {
         background: url(../images/titleFrame2.png) no-repeat center;

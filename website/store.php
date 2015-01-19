@@ -9,7 +9,7 @@ require 'templates/header.php';
 		<div id="data"></div>
 	</div>
 
-<div class="container">
+<div class="containerGames">
 
 	<div class="image_slider">
 		<div class="mask">
@@ -41,6 +41,8 @@ require 'templates/header.php';
 		<span class="control prev"></span>
 		<span class="control next"></span>
 	</div>
+	
+	<div class="gameStoreContainer">
 
 	<?php
 	$item = Item::getItems("games");
@@ -74,7 +76,7 @@ require 'templates/header.php';
 		echo'</div>';
 	}
 	?>
-
+	</div>
 </div>
 
 <?php require 'templates/footer.php'; ?>
