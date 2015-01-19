@@ -59,6 +59,4 @@ require 'templates/header.php';
 	</div>
 </div>
 
-
-<script src="<?php echo $link; ?>/assets/js/walk.js"></script>
 <?php require 'templates/footer.php'; ?></div>
