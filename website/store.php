@@ -45,7 +45,17 @@ require 'templates/header.php';
 	<div class="gameStoreContainer">
 	<div class="empty"></div>
 	<div class="h1Title">
-		<h1>Games</h1>
+		<h1>Vlambeer Games</h1>
+	</div>
+	<div class="vlambeerGames">
+		<a href="games/serioussam.php">Test</a>
+		<a href="games/gungodz.php">Test</a>
+		<a href="games/supercratebox.php">Test</a>
+	</div>
+
+	<div class="empty"></div>
+	<div class="h1Title">
+		<h1>Not-Vlambeer Games</h1>
 	</div>
 
 	<?php
