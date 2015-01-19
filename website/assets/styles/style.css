@@ -107,7 +107,7 @@ color: white;
 ul.images {
   position: relative;
   top: -10px;
-  left: 30px;
+  left: 0px;
 }
 ul.images li {
   float: left;
