@@ -45,6 +45,8 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 
 
 	}
+	$query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); //welke tabel je wilt gebruiken uit de database
+
 ?>
 
 
