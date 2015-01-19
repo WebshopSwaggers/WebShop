@@ -11,7 +11,6 @@ require 'templates/header.php';
 
 <div class="containerGames">
 
-	<div class="musicStoreContainer">
 	<div class="image_slider">
 		<div class="mask">
 			<ul class="images">
@@ -44,6 +43,20 @@ require 'templates/header.php';
 	</div>
 	
 	<div class="gameStoreContainer">
+	<div class="empty"></div>
+	<div class="h1Title">
+		<h1>Vlambeer Games</h1>
+	</div>
+	<div class="vlambeerGames">
+		<a href="games/serioussam.php">Test</a>
+		<a href="games/gungodz.php">Test</a>
+		<a href="games/supercratebox.php">Test</a>
+	</div>
+
+	<div class="empty"></div>
+	<div class="h1Title">
+		<h1>Not-Vlambeer Games</h1>
+	</div>
 
 	<?php
 	$item = Item::getItems("games");
