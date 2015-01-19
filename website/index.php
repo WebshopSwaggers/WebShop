@@ -10,13 +10,13 @@ require 'templates/header.php';
 		<div class="mask">
 			<ul class="images">
 				<li>
-					<img width="940" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/270px-The_Earth_seen_from_Apollo_17.jpg" />
+					<img width="940" src="assets/images/sliderGunGodz.png" />
 				</li>
 				<li>
-					<img width="940" src="http://www.mallorcaweb.net/masm/Planetas/Jupiter.jpg" />
+					<img width="940" src="assets/images/sliderSeriousSam.png" />
 				</li>
 				<li>
-					<img width="940" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/280px-FullMoon2010.jpg" />
+					<img width="940" src="assets/images/sliderSuperCrateBox.png" />
 				</li>
 				<li>
 					<img width="940" src="http://static.ddmcdn.com/gif/sun-update-1.jpg" />
