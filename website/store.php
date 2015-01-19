@@ -43,6 +43,10 @@ require 'templates/header.php';
 	</div>
 	
 	<div class="gameStoreContainer">
+	<br>
+	<div class="h1Title">
+		<h1>Games</h1>
+	</div>
 
 	<?php
 	$item = Item::getItems("games");
