@@ -73,8 +73,8 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 						<th class="city">City</th>
 						<th class="country">Country</th>
 
-						<th class="bewerk">Bewerken</th>
-						<th class="verwijder">Verwijder</th>
+						<th class="bewerk">Edit</th>
+						<th class="verwijder">Delete</th>
 					</tr>
 				</thead>
 
@@ -93,7 +93,7 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 								echo '<td>' . $row['city'] . '</td>';
 								echo '<td>' . $row['country'] . '</td>';
 
-								echo '<td> <a href="admin_user_edit.php?user_id='. $row['user_id'].'"> Bewerk </a></td>';
+								echo '<td> <a href="admin_user_edit.php?user_id='. $row['user_id'].'"> edit </a></td>';
 								echo '<td> <a href="admin_user.php?id='. $row['user_id'].'"> X </a></td>';
 								echo '</tr>';
 							}
