@@ -2,33 +2,33 @@
 
 <?php
 
-require 'includes/config.php';
+require '../includes/config.php';
 
 
 $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); //welke tabel je wilt gebruiken uit de database
 
-	
-	
-	
+
+
+
 	if (isset($_GET['id'])) //De functie isset() kijkt of een variabele bestaat
 							//Je kan het dus gebruiken in formulieren of er op de submitknop gedrukt is (dan is de waarde van die knop 'gezet')
 		{
-		
-			$id = $_GET['id'];
+
+			$id = Security($_GET['id']);
 			$sql= "DELETE FROM cms_users WHERE user_id = '$id'";  //verwijderen via het id
-		
+
 			DB::query( $sql) OR die(mysqli_error(DB::$con));  		//kijkt of het verwijderen goed is gegaan.
-			
+
 		header ('location: admin_user.php');	//verwijderen is gelukt, dan blijft hij op zelfde pagina.
 		}
-	
-	
-	
-	
-	
-	
-	
-	if( isset($_POST['submit'])){				//isset $_POST voegt gegevens toe aan database  	
+
+
+
+
+
+
+
+	if( isset($_POST['submit'])){				//isset $_POST voegt gegevens toe aan database
 		$email 			= 			 Security($_POST['email']); //variabele aanmaken
 		$password 		= 	 		 Security($_POST['password']);//variabele aanmaken
 		$firstname 			= 		 Security($_POST['firstname']);//variabele aanmaken
@@ -39,10 +39,10 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 		$city 	=  					 Security($_POST['city']);//variabele aanmaken
 		$country 	=  				 Security($_POST['country']);//variabele aanmaken
 
-		
-		$sql = "INSERT INTO cms_users (email, password, firstname, lastname, street, zip, number, city, country ) 
-											VALUES ('$email', '$password','$firstname', '$lastname' '$street', '$zip', '$number', '$city', '$country')" or die(mysqli_error(DB::$con));  //hier voegt hij toe waar het precies inmoet in database.
-	
+
+		DB::query("INSERT INTO cms_users (email, password, firstname, lastname, street, zip, number, city, country )
+											VALUES ('$email', '$password','$firstname', '$lastname', '$street', '$zip', '$number', '$city', '$country')") or die(mysqli_error(DB::$con));  //hier voegt hij toe waar het precies inmoet in database.
+
 
 	}
 ?>
@@ -56,7 +56,7 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	
+
 	<div class="wrapper">
 		<h1>Admin Pagina Users</h1>
 
@@ -75,23 +75,23 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 
 						<th class="bewerk">Bewerken</th>
 						<th class="verwijder">Verwijder</th>
-					</tr>	
+					</tr>
 				</thead>
 
 				<tbody>
 					<tr>
 						<?php
-							while($row = DB::fetch_assoc($sql)){
+							while($row = DB::fetch_assoc($query)){
 								echo '<tr>';
 								echo '<td>' . $row['email'] . '</td>';
-								echo '<td>' . $row['password'] . '</td>'; 
-								echo '<td>' . $row['firstname'] . '</td>';  
-								echo '<td>' . $row['lastname'] . '</td>'; 
-								echo '<td>' . $row['street'] . '</td>'; 
-								echo '<td>' . $row['zip'] . '</td>'; 
-								echo '<td>' . $row['number'] . '</td>'; 
-								echo '<td>' . $row['city'] . '</td>'; 
-								echo '<td>' . $row['country'] . '</td>'; 
+								echo '<td>' . $row['password'] . '</td>';
+								echo '<td>' . $row['firstname'] . '</td>';
+								echo '<td>' . $row['lastname'] . '</td>';
+								echo '<td>' . $row['street'] . '</td>';
+								echo '<td>' . $row['zip'] . '</td>';
+								echo '<td>' . $row['number'] . '</td>';
+								echo '<td>' . $row['city'] . '</td>';
+								echo '<td>' . $row['country'] . '</td>';
 
 								echo '<td> <a href="admin_user_edit.php?user_id='. $row['user_id'].'"> Bewerk </a></td>';
 								echo '<td> <a href="admin_user.php?id='. $row['user_id'].'"> X </a></td>';
@@ -144,6 +144,4 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 
 	</div>
 </body>
-</html>	
-
-
+</html>

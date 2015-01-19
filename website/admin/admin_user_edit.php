@@ -1,6 +1,6 @@
 <?php
 
-require 'includes/config.php';
+require '../includes/config.php';
 
 
 $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); //welke tabel je wilt gebruiken uit de database
@@ -15,10 +15,14 @@ $row = DB::fetch_assoc($sql);
 
 
 
-} else { header("location: admin_user.php");
+}
+else
+{
+	header("location: admin_user.php");
 }
 
 if (isset($_POST['submit'])){
+
 	$email 			= Security( $_POST['email']);
 	$password 		= Security( $_POST['password']);
 	$firstname 			= Security( $_POST['firstname']);
@@ -27,15 +31,12 @@ if (isset($_POST['submit'])){
 $sql = "UPDATE cms_users SET email = '$email', password = '$password', firstname = '$firstname', lastname = '$lastname'WHERE user_id = '$id'" or die(mysqli_error(DB::$con));
 
 
-if (!$query = DB::query($sql)){
+$query = DB::query($sql) OR DIE (mysqli_error(DB::$con));
 
-	echo 'kan gegevens niet updaten';
-	die();
-}
 
 $msg = urlencode('User is succesvol upgedate');
 header('location: admin_user_edit.php?msg='. $msg);
-}	
+}
 ?>
 
 <h1>Edit Pagina</h1>
@@ -47,7 +48,7 @@ if (isset($_GET['msg'])){
 }
 ?>
 
-<form action="admin_user_edit.php" method="POST">
+<form action="admin_user_edit.php?user_id=<?php echo $id; ?>" method="POST">
 	<label for="email">email</label>
 	<input type="email"  value='<?php echo $row['email'];?>'name="email" id="email" required>
 
@@ -65,6 +66,6 @@ if (isset($_GET['msg'])){
 
 	<label for="lastname">lastname</label>
 	<input type="text" value='<?php echo $row['lastname'];?>'name="lastname" id="lastname" required>
-				
+
 	<input name="submit" type="submit" value="bewerken">
 </form>

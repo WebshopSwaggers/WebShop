@@ -11,6 +11,7 @@ require 'templates/header.php';
 
 <div class="containerGames">
 
+	<div class="musicStoreContainer">
 	<div class="image_slider">
 		<div class="mask">
 			<ul class="images">
