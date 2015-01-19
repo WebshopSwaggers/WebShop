@@ -29,27 +29,22 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 	
 	
 	if( isset($_POST['submit'])){				//isset $_POST voegt gegevens toe aan database  	
-		$email 			= 		$_POST['email']; //variabele aanmaken
-		$password 		= 	$_POST['password'];//variabele aanmaken
-		$firstname 			= 		$_POST['firstname'];//variabele aanmaken
-		$lastname 	= $_POST['lastname'];//variabele aanmaken
-		$street 	= $_POST['street'];//variabele aanmaken
-		$zip 	= $_POST['zip'];//variabele aanmaken
-		$number 	= $_POST['number'];//variabele aanmaken
-		$city 	= $_POST['city'];//variabele aanmaken
-		$country 	= $_POST['country'];//variabele aanmaken
+		$email 			= 			 Security($_POST['email']); //variabele aanmaken
+		$password 		= 	 		 Security($_POST['password']);//variabele aanmaken
+		$firstname 			= 		 Security($_POST['firstname']);//variabele aanmaken
+		$lastname 	=  				 Security($_POST['lastname']);//variabele aanmaken
+		$street 	=  				 Security($_POST['street']);//variabele aanmaken
+		$zip 	=  					 Security($_POST['zip']);//variabele aanmaken
+		$number 				=  	 Security($_POST['number']);//variabele aanmaken
+		$city 	=  					 Security($_POST['city']);//variabele aanmaken
+		$country 	=  				 Security($_POST['country']);//variabele aanmaken
 
 		
-		if (!$query 	= DB::query($con,"INSERT INTO cms_user(email, password, firstname, lastname) 
-											VALUES ('$email', '$password','$firstname', '$lastname')"))  //hier voegt hij toe waar het precies inmoet in database.
-		{
-			echo 'kan data niet toevoegen aan database'; //alshet niet lukt krijg je dit 
-		}else{
-			header('location: admin_user.php');   //blijft op zelfde pagina.
-		}
+		$sql = "INSERT INTO cms_users (email, password, firstname, lastname, street, zip, number, city, country ) 
+											VALUES ('$email', '$password','$firstname', '$lastname' '$street', '$zip', '$number', '$city', '$country')" or die(mysqli_error(DB::$con));  //hier voegt hij toe waar het precies inmoet in database.
+	
+
 	}
-
-
 ?>
 
 
@@ -86,7 +81,7 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 				<tbody>
 					<tr>
 						<?php
-							while($row = mysqli_fetch_assoc($query)){
+							while($row = DB::fetch_assoc($sql)){
 								echo '<tr>';
 								echo '<td>' . $row['email'] . '</td>';
 								echo '<td>' . $row['password'] . '</td>'; 
@@ -109,6 +104,7 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 			</table>
 
 			<form action="" method="POST">
+				<br>
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email" required>
 
@@ -126,7 +122,22 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 
 				<label for="lastname">Last Name</label>
 				<input type="text" name="lastname" id="lastname" required>
-
+				<br>
+				<label for="street">street</label>
+				<input type="text" name="street" id="street" required>
+				<br>
+				<label for="zip">zip </label>
+				<input type="text" name="zip" id="zip" required>
+				<br>
+				<label for="number">number </label>
+				<input type="text" name="number" id="number" required>
+				<br>
+				<label for="city">city</label>
+				<input type="text" name="city" id="city" required>
+				<br>
+				<label for="country">country</label>
+				<input type="text" name="country" id="country" required>
+<br>
 				<input name="submit" type="submit" value="toevoegen">
 			</form>
 
