@@ -227,6 +227,18 @@ ul.triggers li.selected {
   background-repeat: no-repeat;
   background-position: left bottom;
 }
+.containerGames {
+  height: 1290px;
+  margin: 0 auto;
+  top: -95px;
+  background: rgb(166, 44, 3);
+  position: relative;
+  box-shadow: 0px 11px 25px 2px rgba(49, 50, 50, 0.69);
+  width: 940px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  border: 3px solid white;
+}
 .containercart{
   height: 900px;
   margin: 0 auto;
@@ -376,6 +388,21 @@ ul.triggers li.selected {
   margin: 0 auto;
   margin-top: 20px;
   font: normal 15px 'Calibri';
+}
+
+/* GAME STORE*/
+.containerGames .itemHolder{
+  position: relative;
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 22px 3px rgba(50, 50, 50, 0.45);
+  -moz-box-shadow:    0px 0px 22px 3px rgba(50, 50, 50, 0.45);
+  box-shadow:         0px 0px 22px 3px rgba(50, 50, 50, 0.45);
 }
 
 /* -- [ CLOTHES STORE ] -- */

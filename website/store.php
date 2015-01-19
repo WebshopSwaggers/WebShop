@@ -9,8 +9,41 @@ require 'templates/header.php';
 		<div id="data"></div>
 	</div>
 
-<div class="container">
-<div class="musicStoreContainer">
+<div class="containerGames">
+
+<div class="image_slider">
+	<div class="mask">
+		<ul class="images">
+			<li>
+				<img width="940" src="assets/images/sliderGunGodz.png" />
+			</li>
+			<li>
+				<img width="940" src="assets/images/sliderSeriousSam.png" />
+			</li>
+			<li>
+				<img width="940" src="assets/images/sliderSuperCrateBox.png" />
+			</li>
+			<li>
+				<img width="940" src="http://static.ddmcdn.com/gif/sun-update-1.jpg" />
+			</li>
+			<li>
+				<img width="940" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Neptune.jpg/240px-Neptune.jpg" />
+			</li>
+		</ul>
+	</div>
+
+	<ul class="triggers">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<span class="control prev"></span>
+	<span class="control next"></span>
+
+</div>
 
 <?php
 $item = Item::getItems("games");
