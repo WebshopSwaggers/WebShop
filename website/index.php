@@ -5,7 +5,6 @@ require 'templates/header.php';
 ?>
 
 <div class="container">
-
 	<div class="image_slider">
 		<div class="mask">
 			<ul class="images">
@@ -26,7 +25,6 @@ require 'templates/header.php';
 				</li>
 			</ul>
 		</div>
-
 		<ul class="triggers">
 			<li></li>
 			<li></li>
@@ -34,10 +32,8 @@ require 'templates/header.php';
 			<li></li>
 			<li></li>
 		</ul>
-
 		<span class="control prev"></span>
 		<span class="control next"></span>
-
 	</div>
 
 <div class="news">
