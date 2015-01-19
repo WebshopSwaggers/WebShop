@@ -135,13 +135,14 @@ ul.images li {
   position: relative;
 }
 ul.triggers {
-  position: relative;
+  position: absolute;
   text-align: center;
   list-style: none;
-  width: 12%;
-  margin-top: -60px;
+  width: auto;
+  margin-top: -110px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50px;
 }
 ul.triggers li {
   display: inline-block;
@@ -149,12 +150,15 @@ ul.triggers li {
   margin: 0 5px;
   cursor:pointer;
   background-color:#ccc;
-  color:#000;
+  color: white;
   padding:10px;
+  border-radius: 50px;
+  border: 3px solid black;
 }
 ul.triggers li.selected {
-  background-color:red;
+  background-color:#a62c03;
   color:#000;
+  border-radius: 50px;
 }
 .control {
   position:absolute;
