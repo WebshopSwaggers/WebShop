@@ -174,8 +174,7 @@ ul.triggers li.selected {
 }
 .image_ss{
   margin: 0 auto;
-  margin-top: 0px;
-  margin-left: auto;
+margin-top: -89px;  margin-left: auto;
   margin-right: auto;
   width: 1000px;
   height: 600px;
