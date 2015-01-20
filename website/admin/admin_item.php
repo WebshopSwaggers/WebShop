@@ -118,8 +118,9 @@ require '../includes/config.php';
 				<label for="description">description</label>
 				<input type="text" name="description" id="description" required>
 				<br>
-				<label for="image">image</label>
-				<input type="text" name="image" id="image" required>
+				  <label for="image">image*</label>
+          <div class="col-lg-10">
+        <input type="file" class="form-control" id="image" name="image" required>
 				<br>
 				<label for="catagory">catagory </label>
 				<input type="text" name="catagory" id="catagory" required>

@@ -68,9 +68,11 @@ if (isset($_GET['msg'])){
 	<input type="hidden" value='<?php echo $row['item_id'];?>'>
 	<br>
 
-	<label for="image">image</label>
-	<input type="text" value='<?php echo $row['image'];?>'name="image" id="image" required>
-	<br>
+  <label for="image" class="col-lg-2 control-label">image*</label>
+          <div class="col-lg-10">
+        <input type="file" class="form-control" id="image" name="image" required>
+        
+        <br>
 
 	<label for="catagory">catagory</label>
 	<input type="text" value='<?php echo $row['catagory'];?>'name="catagory" id="catagory" required>
