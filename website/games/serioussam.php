@@ -68,8 +68,7 @@ which.style.left=0
 which.style.top=0
 }
 </script>
-
-<!-- Container -->
+<div class="containerserioussam">
 <h1>About This Game</h1>
 <p>The legendary Serious Sam reloads and rearms in an explosive, turn-based RPG developed by indie developer Vlambeer (Super Crate Box, Ridiculous Fishing). Serious Sam: The Random Encounter follows Sam and his band of oddball mercenaries as they battle across a pixilated world teeming chaotic battles, hordes of bizarre creatures, and mysterious secrets. Choose your weapons and take aim at the most random Serious Sam adventure yet! </p>
 <br>

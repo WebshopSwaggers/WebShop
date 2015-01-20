@@ -964,3 +964,11 @@ ul.triggers li.selected {
 @media screen and (max-width: 320px) {
 
 }
+
+
+.containerserioussam{
+height: 1000px;
+        width: 1000px;
+	
+background-color:#D4B484;
+}
