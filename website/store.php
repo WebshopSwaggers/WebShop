@@ -66,7 +66,6 @@ require 'templates/header.php';
 
 	for($count; $i < $count; $i++)
 	{
-
 		echo'<div class="itemHolder">';
 		echo'<div class="itemPic">';
 		echo'<img class="bottom" src="'.$item[$i]['item_image'].'" alt="itemPlaceholder">';
