@@ -698,7 +698,12 @@ ul.triggers li.selected {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
 }
 
+.recomend{
+  margin-top: 10px;
+}
+
 .recomendTitle{
+  font: normal 15px 'ka1';
   margin-left: 170px;
   padding-bottom: 10px;
 }

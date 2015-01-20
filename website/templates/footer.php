@@ -80,17 +80,5 @@
 	<script src="<?php echo $link; ?>/assets/js/popup.js"></script>
 	<script src="<?php echo $link; ?>/assets/js/imageSlider.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<script>
-		$(document).ready(function() {		
-			$('.banner_h').slick({
-				arrows: false,
-				dots: false,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				autoplay: true,
-				autoplaySpeed: 1500
-			});		
-		});
-	</script>	
 </body>
 </html>
