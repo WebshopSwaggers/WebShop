@@ -34,7 +34,7 @@
 	<div class="form">
 		<div class="formTitle"><h1>Basic Information</h1></div>
         <label class="formLabel" for="firstname"></label>
-		<input class="formInput" id="margin" type="text" name="firstname" placeholder="First name" pattern="[a-zA-Z]{1,30}" title="Alphabetic characters only">
+		<input class="formInput" id="firtName" type="text" name="firstname" placeholder="First name" pattern="[a-zA-Z]{1,30}" title="Alphabetic characters only">
 
 		<label class="formLabel" for="lastname"></label>
 		<input class="formInput" type="text" name="lastname" placeholder="Last name" pattern="[a-zA-Z]{1,20}" title="Alphabetic characters only">
@@ -291,7 +291,7 @@
 		<input class="formInput" id="" type="text" name="city" placeholder="City" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
 		<br>
         <label class="formLabel" for="street"></label>
-		<input class="formInput" id="margin" type="text" name="street" placeholder="Street" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
+		<input class="formInput" id="street" type="text" name="street" placeholder="Street" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
 		<label class="formLabel" for="houseNumber"></label>
 		<input class="formInput" id="houseNumber" type="text" name="houseNumber" placeholder="NR" pattern="[0-9]{1,}" title="Numeric characters only">
 		<label class="formLabel" for="zip"></label>
@@ -300,14 +300,14 @@
         <div class="formTitle"><h1>Account Details</h1></div>
         
          <label class="formLabel" for="email"></label>
-		<input class="formInput" id="margin" type="email" name="email" placeholder="E-mail address" required>
+		<input class="formInput" id="email" type="email" name="email" placeholder="E-mail address" required>
 		<label class="formLabel" for="emailConfirm"></label>
 		<input class="formInput" type="email" name="emailConfirm" placeholder="Confirm E-mail">
 		<br>
         <label class="formLabel"  for="password"></label>
-		<input class="formInput" id="margin" type="password" name="password" placeholder="Password" required>
+		<input class="formInput" id="password" type="password" name="password" placeholder="Password" required>
 		<label class="formLabel" id= for="Confirm"></label>
-		<input class="formInput" type="password" name="passwordConfirm" placeholder="Confirm password">
+		<input class="formInput " id="zwart" type="password" name="passwordConfirm" placeholder="Confirm password">
 		<br>
 		
 		
@@ -319,31 +319,3 @@
 	</div>
 </body>
 <?php require 'templates/footer.php' ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
