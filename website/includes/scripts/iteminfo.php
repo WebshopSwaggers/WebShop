@@ -61,13 +61,8 @@ $i        = 0;
 			<p>Recommendations</p>
 		</div>
 		<div class="recomendImg">
-		<?php for($count; $i < $count; $i++): ?>
-				
-			    
-			      <div><img src="<?php echo $getImage[$i]['item_image'] ?>" class="gallery__img" alt="" /></div>
-			    
-				
-		
+		<?php for($count; $i < $count; $i++): ?>	    
+			<div><img src="<?php echo $getImage[$i]['item_image'] ?>" class="gallery__img" alt="" /></div>
 		<?php endfor; ?>
 		</div>	
 	</div>

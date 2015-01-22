@@ -78,6 +78,10 @@ $item = Item::getItems("music");
 					echo'<i>Price: &euro;'.$item[$i]['item_price'].'</i>';
 				echo'</div>';
 			echo'</div>';
+			?>
+				<div class="popupKarate"><img src="<?php echo $link ?>/assets/images/itemGuy.png" alt=""></div>
+				<div class="popupKarateFlip"><img src="<?php echo $link ?>/assets/images/itemGuyFlip.png" alt=""></div>
+				<?php
 	}
 	?>
 	</div>

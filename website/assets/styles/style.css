@@ -459,15 +459,15 @@ margin-top: -89px;  margin-left: auto;
   border-bottom: 1px solid black;
 }
 
-/* -- [ MUSIC SECTION ] -- */
+/* -- [ ITEM HOLDER ] -- */
 
-
-.musicStoreContainer .itemHolder{
+.itemHolder{
+  font: normal 15px 'ka1';
   position: relative;
   float: left;
   margin-top: 30px;
   margin-left: 30px;
-  background-color: white;
+  background-color: black;
   border-radius: 10px;
   width: 200px;
   height: 300px;
@@ -475,8 +475,6 @@ margin-top: -89px;  margin-left: auto;
   -moz-box-shadow:    0px 0px 22px 3px rgba(50, 50, 50, 0.45);
   box-shadow:         0px 0px 22px 3px rgba(50, 50, 50, 0.45);
 }
-
-/* -- [ ITEM HOLDER ] -- */
 
 .itemHolder .itemPic img{
   position: absolute;
@@ -495,30 +493,30 @@ margin-top: -89px;  margin-left: auto;
 }
 .itemHolder .itemTitle{
   margin-top: 135px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+  color: white;
 }
 .itemHolder .itemDesc{
+  text-align: center;
   margin-top: 15px;
-  margin-left: 15px;
-  font-size: 12px;
+  margin-left: -2px;
+  font-size: 11px;
   font-style: oblique;
   color: #b8b6b6;
 
 }
 .itemHolder .itemPrice{
-  margin-top: 30px;
   text-align: center;
-  font-size: 24px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
   font-style: bold;
-  color: #DEE0E7;
+  color: #4A4A4A;
 }
 .itemHolder:hover .itemPrice{
-  margin-top: 30px;
-  text-align: center;
-  font-size: 24px;
-  font-style: bold;
-  color: black;
+  color: white;
+
 }
 
 /* -- [ FOOTER ] -- */
@@ -698,7 +696,7 @@ margin-top: -89px;  margin-left: auto;
 }
 
 .recomend{
-  margin-top: 10px;
+  margin-top: 70px;
 }
 
 .recomendTitle{
