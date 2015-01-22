@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 session_start();
 
 $url = "http://localhost/";
-$dir = "/git/WebShop/website";
+$dir = "/GitHub/WebShop/website";
 $link = $url.$dir;
 
 require("classes/class.mysqli.php");

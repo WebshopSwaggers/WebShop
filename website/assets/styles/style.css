@@ -780,11 +780,11 @@ margin-top: -89px;  margin-left: auto;
 
 
 .form .formInput[placeholder]{
-    font: normal 14px 'ka1';
+    font: normal 14px '';
     color: #a9a9a9;
 }
 .form .formInput{
-    font: normal 14px 'ka1';
+    font: normal 14px '';
     color: #a9a9a9;
 }
 
