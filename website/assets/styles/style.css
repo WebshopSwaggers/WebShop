@@ -425,20 +425,6 @@ margin-top: -89px;  margin-left: auto;
   font: normal 15px 'Calibri';
 }
 
-/* GAME STORE*/
-.gameStoreContainer .itemHolder{
-  position: relative;
-  float: left;
-  margin-top: 30px;
-  margin-left: 30px;
-  background-color: white;
-  border-radius: 10px;
-  width: 200px;
-  height: 300px;
-  -webkit-box-shadow: 0px 0px 22px 3px rgba(50, 50, 50, 0.45);
-  -moz-box-shadow:    0px 0px 22px 3px rgba(50, 50, 50, 0.45);
-  box-shadow:         0px 0px 22px 3px rgba(50, 50, 50, 0.45);
-}
 
 /* -- [ CLOTHES STORE ] -- */
 
@@ -516,6 +502,7 @@ margin-top: -89px;  margin-left: auto;
 }
 .itemHolder:hover .itemPrice{
   color: white;
+
 }
 
 /* -- [ FOOTER ] -- */
@@ -631,31 +618,34 @@ margin-top: -89px;  margin-left: auto;
   margin-top: -180px;
 }
 .popupTitle{
+  font: normal 27px 'ka1';
   text-align: center;
   margin-top: -150px;
   margin-left: 180px;
-  font-size: 33px;
+  margin-bottom: 20px;
 }
 .popupDesc{
+  font: normal 15px 'ka1';
   text-align: center;
   width: 350px;
   margin-top: -35px;
   margin-left: 270px;
-  font-size: 23px;
   color: #919191;
+  margin-bottom: 20px;
 }
 .popupPrice{
+  font: normal 22px 'ka1';
   text-align: center;
   margin-top: -20px;
   margin-left: 180px;
-  font-size: 28px;
 }
+
 .popupLeft{
+  font: normal 18px 'ka1';
   text-align: center;
   margin-left: 180px;
   margin-top: -20px;
-  color: black;
-}
+  }
 #popupAddToCart{
   position: absolute;
   font: normal 18px 'ka1';
@@ -706,7 +696,7 @@ margin-top: -89px;  margin-left: auto;
 
 .recomendTitle{
   font: normal 15px 'ka1';
-  margin-left: 170px;
+  margin-left: 255px;
   padding-bottom: 10px;
 }
 
@@ -759,7 +749,7 @@ margin-top: -89px;  margin-left: auto;
     box-shadow: 0 0px 0px 1px #ACB4C4 inset;
 }
 .containerRegister .form #formSubmit{
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: #B1F20C;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -782,14 +772,35 @@ margin-top: -89px;  margin-left: auto;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
 }
 
-
+.containerRegister .form #formSubmit2{
+    background-color: #B1F20C;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 5px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    border: 1px solid #7e1515;
+    height: 30px;
+    margin-left: 380px;
+    width: 200px;
+    cursor: pointer;
+    font: bold 20px 'ka1';
+    color: #fff;
+}
+.form #formSubmit2:hover{
+    background-color: #ff5e27;
+}
+.form #formSubmit2:active{
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
 
 .form .formInput[placeholder]{
-    font: normal 14px '';
+    font: normal 14px ;
     color: #a9a9a9;
 }
 .form .formInput{
-    font: normal 14px '';
+    font: normal 14px ;
     color: #a9a9a9;
 }
 
@@ -823,6 +834,14 @@ margin-top: -89px;  margin-left: auto;
 
 #street{
     margin-left: 80px;
+}
+
+#loginmargin {
+  margin-left: 40px !important;
+}
+
+#logincheck {
+  margin-left: 62px;
 }
 
 #firtName{
@@ -936,6 +955,12 @@ margin-top: -89px;  margin-left: auto;
         margin-top: 15px;
     }
     .containerRegister .form #formSubmit{
+        margin-top: 40px;
+        height: 30px;
+        margin-left: 350px;
+        width: 200px;
+    }
+      .containerRegister .form #formSubmit2{
         margin-top: 40px;
         height: 30px;
         margin-left: 350px;
