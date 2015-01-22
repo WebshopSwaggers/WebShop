@@ -54,17 +54,18 @@ Class Item
     $sql   = DB::query("SELECT image,item_id FROM cms_items WHERE tags = '".$tg."' AND catagory = '".$cat."'");
     $array = array();
     while($row = DB::fetch($sql))
-    { 
+    {
 
          $Item        = new Item($row->item_id);
          $itemImage   = $Item->getImage();
-         $images      = array("item_image" => $itemImage);
+         $itemId   = $Item->getId();
+         $images      = array("item_image" => $itemImage, "item_id" => $itemId);
          array_push($array,$images);
 
 
 
     }
-    return $array;      
+    return $array;
   }
 
 	// Get functies

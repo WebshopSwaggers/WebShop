@@ -24,7 +24,7 @@ $item = Item::getItems("clothes");
 					echo'<div class="itemPic">';
 						echo'<img class="bottom" src="'.$item[$i]['item_image'].'" alt="itemPlaceholder">';
 				?>
-			<img class="top" onclick="realTime('<?php echo $item[$i]['item_id'];?>', '<?php echo $dir; ?>');" src="assets/images/buyme.png">
+			<img class="top" onclick="realTime('<?php echo $item[$i]['item_id'];?>', '<?php echo $dir; ?>', 0);" src="assets/images/buyme.png">
 			<?php
 			echo'</div>';
 
@@ -46,5 +46,4 @@ $item = Item::getItems("clothes");
 	</div>
 </div>
 
-<?php require 'templates/footer.php'; ?>	
-
+<?php require 'templates/footer.php'; ?>
