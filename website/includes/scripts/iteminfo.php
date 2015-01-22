@@ -61,10 +61,10 @@ $i        = 0;
 			<p>Recommendations</p>
 		</div>
 		<div class="recomendImg">
-		<?php for($count; $i < $count; $i++): ?>
-			<div><img src="<?php echo $getImage[$i]['item_image'] ?>" onlick="realTime('<?php echo $item[$i]['item_id'];?>', '<?php echo $dir; ?>');" class="gallery__img" alt="" /></div>
+		<?php for($count; $i < $count; $i++): ?>	    
+			<div><img src="<?php echo $getImage[$i]['item_image'] ?>" class="gallery__img" alt="" /></div>
 		<?php endfor; ?>
-		</div>
+		</div>	
 	</div>
 
 <?php
@@ -74,13 +74,13 @@ if($item->getLeftOver() != 0){
 <?php
 }else{
 	?>
-	<a href="./add/<?php echo $item->getId() ?>"><button id="popupAddToCartDisabled" disabled>Add to cart</button></a>
+	<a href="./add/<?php echo $item->getId() ?>"><button id="popupAddToCartDisabled" disabled>Add to cart</button></a>	
 	<?php
 }
 
 ?>
 <script>
-
+	
 $(document).ready(function(){
 	$('.recomendImg').slick({
 	  infinite: true,
