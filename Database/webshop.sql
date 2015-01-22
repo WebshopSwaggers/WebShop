@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Machine: localhost
--- Genereertijd: 16 dec 2014 om 14:19
--- Serverversie: 5.5.24-log
--- PHP-versie: 5.3.13
+-- Machine: 127.0.0.1
+-- Gegenereerd op: 22 jan 2015 om 09:38
+-- Serverversie: 5.6.17
+-- PHP-versie: 5.5.12
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `cms_invoice_items` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden uitgevoerd voor tabel `cms_invoice_items`
+-- Gegevens worden geëxporteerd voor tabel `cms_invoice_items`
 --
 
 INSERT INTO `cms_invoice_items` (`inv_item_id`, `inv_id`, `item_id`, `count`) VALUES
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `cms_invoice_templates` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden uitgevoerd voor tabel `cms_invoice_templates`
+-- Gegevens worden geëxporteerd voor tabel `cms_invoice_templates`
 --
 
 INSERT INTO `cms_invoice_templates` (`inv_id`, `user_id`, `start_date`, `end_date`) VALUES
@@ -85,14 +85,18 @@ CREATE TABLE IF NOT EXISTS `cms_items` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden uitgevoerd voor tabel `cms_items`
+-- Gegevens worden geëxporteerd voor tabel `cms_items`
 --
 
 INSERT INTO `cms_items` (`item_id`, `name`, `price`, `description`, `image`, `catagory`, `leftover`, `tags`) VALUES
-(1, 'COD MW2', 50, 'Call of duty MW2', 'http://upload.wikimedia.org/wikipedia/en/d/db/Modern_Warfare_2_cover.PNG', 'games', 0, 'games,shooter'),
-(2, 'SMB 3', 10, 'Super Mario Bros 3', 'http://upload.wikimedia.org/wikipedia/en/a/a5/Super_Mario_Bros._3_coverart.png', 'games', 0, 'games,platform'),
-(3, 'Transistor OST', 10, 'This pack contains all soundtracks out of Transistor', 'http://i.imgur.com/vmSCZzU.png', 'music', 0, 'music,sountrack'),
-(4, 'Bastion OST', 15, 'This pack contains all soundtracks out of Bastion.', 'http://i.imgur.com/fwLjweV.png', 'music', 1, 'music,soundtrack');
+(1, 'COD MW2', 50, 'Call of duty MW2', 'http://upload.wikimedia.org/wikipedia/en/d/db/Modern_Warfare_2_cover.PNG', 'games', 0, 'shooter'),
+(2, 'SMB 3', 10, 'Super Mario Bros 3', 'http://upload.wikimedia.org/wikipedia/en/a/a5/Super_Mario_Bros._3_coverart.png', 'games', 0, 'platform'),
+(3, 'Transistor OST', 10, 'This pack contains all soundtracks out of Transistor', 'http://i.imgur.com/vmSCZzU.png', 'music', 0, 'soundtrack'),
+(4, 'Bastion OST', 15, 'This pack contains all soundtracks out of Bastion.', 'http://i.imgur.com/fwLjweV.png', 'music', 1, 'soundtrack'),
+(5, 'Bit.trip OST', 15, 'Bit.trip OST', 'http://i.imgur.com/UsCfAC2.jpg', 'music', 2, 'soundtrack'),
+(6, 'Minecraft OST', 20, 'Minecraft OST', 'http://i.imgur.com/SSmuhtk.jpg', 'music', 2, 'soundtrack'),
+(7, 'Don''t starve OST', 10, 'Don''t starve OST', 'http://i.imgur.com/xjaOyWe.jpg', 'music', 5, 'soundtrack'),
+(8, 'T-shirt 1', 10, 'Uno tshierto', 'http://i.imgur.com/YAqMgRH.png', 'clothes', 69, 'tshirt');
 
 -- --------------------------------------------------------
 
@@ -101,7 +105,7 @@ INSERT INTO `cms_items` (`item_id`, `name`, `price`, `description`, `image`, `ca
 --
 
 CREATE TABLE IF NOT EXISTS `cms_users` (
-  `user_id` int(11) NOT NULL DEFAULT '0',
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(255) DEFAULT '',
   `password` varchar(255) DEFAULT '',
   `firstname` varchar(50) DEFAULT '',
@@ -112,15 +116,15 @@ CREATE TABLE IF NOT EXISTS `cms_users` (
   `city` varchar(100) DEFAULT '',
   `country` varchar(100) DEFAULT '',
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Gegevens worden uitgevoerd voor tabel `cms_users`
+-- Gegevens worden geëxporteerd voor tabel `cms_users`
 --
 
 INSERT INTO `cms_users` (`user_id`, `email`, `password`, `firstname`, `lastname`, `street`, `zip`, `number`, `city`, `country`) VALUES
-(0, 'slawor4@live.nl', '123', '', '', '', '', 0, '', ''),
-(1, 'jiojio@ge.nl', 'llllll', 'jordy', 'visser', 'jiojo', '989', 89, 'jiojjio', 'jiojio');
+(1, 'safhdgjfk@sfhgvdsjk.nl', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'asdasd', 'asdasd', 'sadasd', '1111 AA', 1121, 'Breda', 'NL'),
+(2, 'slawor4@live.nl', '8cb2237d0679ca88db6464eac60da96345513964', 'S', 'Pelka', 'Waterloostraat', '5555 AA', 10, 'Breda', 'NL');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

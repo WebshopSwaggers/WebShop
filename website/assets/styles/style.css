@@ -516,7 +516,6 @@ margin-top: -89px;  margin-left: auto;
 }
 .itemHolder:hover .itemPrice{
   color: white;
-
 }
 
 /* -- [ FOOTER ] -- */
@@ -650,6 +649,10 @@ margin-top: -89px;  margin-left: auto;
   margin-top: -20px;
   margin-left: 180px;
   font-size: 28px;
+}
+.popupLeft{
+  text-align: center;
+  color: black;
 }
 #popupAddToCart{
   position: absolute;
