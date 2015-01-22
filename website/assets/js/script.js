@@ -18,7 +18,7 @@
 
 function realTime(itemid, link) {
 
-	$('#data').load('./includes/scripts/iteminfo.php?itemid=' + itemid);
+	$('#data').load(link + '/includes/scripts/iteminfo.php?itemid=' + itemid);
 
 	popup('popUpDiv');
 };
