@@ -652,6 +652,8 @@ margin-top: -89px;  margin-left: auto;
 }
 .popupLeft{
   text-align: center;
+  margin-left: 180px;
+  margin-top: -20px;
   color: black;
 }
 #popupAddToCart{

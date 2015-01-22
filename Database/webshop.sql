@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: 127.0.0.1
--- Gegenereerd op: 22 jan 2015 om 09:38
+-- Gegenereerd op: 22 jan 2015 om 09:50
 -- Serverversie: 5.6.17
 -- PHP-versie: 5.5.12
 
