@@ -1,37 +1,42 @@
 <?php
-$title = "Home";
-require 'includes/config.php';
-require 'templates/header.php';
+	$title = "Register";
+	require 'includes/config.php';
+	require 'templates/header.php';
 ?>
-
-<div class="container">
-	<div class="container">
-   <?php
+<body>
+	<div class="containerRegister">
+		<div class="empty"></div>
+		<div class="h1Title">
+			<h1>Login</h1>
+		</div>
+		<?php
 
 
     if(!isset($_SESSION['userdata']))
     {
 		
-       echo"<a href='".$link."/register'>Register</a></li>";
+       echo"";
 
 
       if(isset($_SESSION['error']))
       {
-        echo "<FONT color='white'>".$_SESSION['error']."</FONT><br>";
+        echo "<div class='form'><FONT color='black'>".$_SESSION['error']."</FONT></div><br>";
         unset($_SESSION['error']);
       }
 
       echo'<form action="'.$link.'/includes/controllers/authcontroller.php" METHOD="POST">';
-      echo' <fieldset id="inputs">';
-      echo'<input id="username" type="email" name="email" placeholder="Your email address" required>';
-      echo'<input id="password" type="password" name="password" placeholder="Password" required>';
+      echo'<div class="form"><br><br><fieldset id="inputs">';
+      echo'<label class="formLabel" for="username"></label><input class="formInput" id="loginmargin" type="email" name="email" placeholder="Your email address" required>';
+      echo'<label class="formLabel" for="password"></label><input class="formInput" id="password" type="password" name="password" placeholder="Password" required>';
       echo'<input type="hidden" name="link" value="'.$_SERVER['REQUEST_URI'].'">';
       echo'</fieldset>';
       echo'<fieldset id="actions">';
-      echo'<input type="submit" 		 name="login" value="Log in">';
+      echo'<label><input id="logincheck" type="checkbox" checked="checked"> Keep me signed in</label><br>';
+      echo'<input  id="formSubmit2" type="submit" name="login" value="Log in">';
+       
 
-      echo'<label><input type="checkbox" checked="checked"> Keep me signed in</label>';
-      echo'</fieldset>';
+     
+      echo'</fieldset></div>';
       echo'</form>';
     }
 //		else
@@ -44,9 +49,8 @@ require 'templates/header.php';
 //		  echo"</li>";
 //		}
     ?>
-</div>
-<script src="<?php echo $link; ?>/assets/js/walk.js"></script>
-<?php require 'templates/footer.php'; ?></div>
 
-
-
+	
+	</div>
+</body>
+<?php require 'templates/footer.php' ?>
