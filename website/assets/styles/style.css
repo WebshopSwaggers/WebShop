@@ -425,20 +425,6 @@ margin-top: -89px;  margin-left: auto;
   font: normal 15px 'Calibri';
 }
 
-/* GAME STORE*/
-.gameStoreContainer .itemHolder{
-  position: relative;
-  float: left;
-  margin-top: 30px;
-  margin-left: 30px;
-  background-color: white;
-  border-radius: 10px;
-  width: 200px;
-  height: 300px;
-  -webkit-box-shadow: 0px 0px 22px 3px rgba(50, 50, 50, 0.45);
-  -moz-box-shadow:    0px 0px 22px 3px rgba(50, 50, 50, 0.45);
-  box-shadow:         0px 0px 22px 3px rgba(50, 50, 50, 0.45);
-}
 
 /* -- [ CLOTHES STORE ] -- */
 
