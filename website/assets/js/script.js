@@ -16,16 +16,11 @@
 //
 //});
 
-function realTime(itemid, link, isrec) {
+function realTime(itemid, link) {
 
 	$('#data').load(link + '/includes/scripts/iteminfo.php?itemid=' + itemid);
 
- if(isrec == 1) {
 	popup('popUpDiv');
-}
-	popup('popUpDiv');
-
-	
 };
 
 // function slideSwitch() {  //Functie is slideshow

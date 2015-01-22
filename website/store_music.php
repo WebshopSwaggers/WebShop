@@ -42,7 +42,7 @@ $item = Item::getItems("music");
 		<span class="control prev"></span>
 		<span class="control next"></span>
 	</div>
-
+	
 	<div class="musicStoreContainer">
 	<div class="empty"></div>
 	<div class="h1Title">
@@ -61,7 +61,7 @@ $item = Item::getItems("music");
 				echo'<div class="itemPic">';
 					echo'<img class="bottom" src="'.$item[$i]['item_image'].'" alt="itemPlaceholder">';
 			?>
-		<img class="top" onclick="realTime('<?php echo $item[$i]['item_id'];?>', '<?php echo $dir; ?>', 0);" src="assets/images/buyme.png">
+		<img class="top" onclick="realTime('<?php echo $item[$i]['item_id'];?>', '<?php echo $dir; ?>');" src="assets/images/buyme.png">
 		<?php
 		echo'</div>';
 
