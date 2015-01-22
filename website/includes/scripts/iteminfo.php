@@ -22,22 +22,22 @@ $i        = 0;
 
 ?>
 	<div class="popupImg">
-		<img src="<?php echo $item->getImage()?>">
+		<img src="<?php echo $item->getImage();?>">
 	</div>
 
 <div class="popupInfo">
 	<div class="popupTitle">
-		<p><?php echo $item->getName()?></p>
+		<p><?php echo $item->getName(); ?></p>
 		<br>
 	</div>
 
 	<div class="popupDesc">
-		<p><?php echo $item->getDescription()?></p>
+		<p><?php echo $item->getDescription(); ?></p>
 		<br>
 	</div>
 
 	<div class="popupPrice">
-		<p>Price: € <?php echo $item->getPrice()?></p>
+		<p>Price: € <?php echo $item->getPrice(); ?></p>
 		<br>
 	</div>
 
@@ -45,7 +45,7 @@ $i        = 0;
 		<?php
 		if($item->getLeftOver() != 0){
 			?>
-		<p>Still <?php echo $item->getLeftOver()?> over!!</p>
+		<p>Still <?php echo $item->getLeftOver(); ?> over!!</p>
 		<?php
 	}else{
 		?>
@@ -60,9 +60,11 @@ $i        = 0;
 			<p>Recommendations</p>
 		</div>
 		<div class="recomendImg">
-		<?php for($count; $i < $count; $i++): ?>
+		<?php for($count; $i < $count; $i++):
+      if($item->getId() != $getImage[$i]['item_id']):
+      ?>
 			<div><img src="<?php echo $getImage[$i]['item_image'] ?>" onclick="realTime('<?php echo $getImage[$i]['item_id'];?>', '<?php echo $dir; ?>' , 1);" class="gallery__img" alt="" /></div>
-		<?php endfor; ?>
+		<?php endif; endfor; ?>
 		</div>
 	</div>
 
