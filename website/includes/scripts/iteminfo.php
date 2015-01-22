@@ -60,11 +60,15 @@ $i        = 0;
 			<p>Recommendations</p>
 		</div>
 		<div class="recomendImg">
-		<?php for($count; $i < $count; $i++):
-      if($item->getId() != $getImage[$i]['item_id']):
-      ?>
-			<div><img src="<?php echo $getImage[$i]['item_image'] ?>" onclick="realTime('<?php echo $getImage[$i]['item_id'];?>', '<?php echo $dir; ?>' , 1);" class="gallery__img" alt="" /></div>
-		<?php endif; endfor; ?>
+		<?php
+    for($count; $i < $count; $i++):
+    if($item->getId() != $getImage[$i]['item_id']):
+    ?>
+		  <div><img src="<?php echo $getImage[$i]['item_image'] ?>" onclick="realTime('<?php echo $getImage[$i]['item_id'];?>', '<?php echo $dir; ?>' , 1);" class="gallery__img" alt="" /></div>
+		<?php
+    endif;
+    endfor;
+    ?>
 		</div>
 	</div>
 
