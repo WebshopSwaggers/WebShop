@@ -2,9 +2,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>zoekfunctie resultaat</title>
-     <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/style.css"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/header.css"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/vlam_header.css"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/menu.css"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/footer.css"/>
+    <link rel="stylesheet" href="<?php echo $link; ?>/slick/slick.css"/>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
 </head>
 <body>
   <div id='header_zoekpagina'>
@@ -12,31 +18,31 @@
             <input type='text' name='k' id='search_veld' size='10' />
             <input type='submit' id='search_icon' value=''>
             <input type="button" id='back_button_home' value="Terug naar home" onclick="window.location.href='index.php'" />
-        </form> 
-           
+        </form>
+
     <hr />
-    
+
     <?php
         $k = $_POST['k'];
         $i = 0;
         $terms = explode(",", $k);
         $sql = DB::query("SELECT * FROM cms_items WHERE name OR price OR description OR image OR catagory OR tags LIKE '%".$k."%'") OR  die ('query werkt niet.');
-       
 
-       
+
+
         echo '<h1> Zoekresultaten: </h1>';
 
-       
-       
-        
-        
+
+
+
+
         // connect
-        
-        
+
+
         $numrows = DB::num_rows($sql);
-        
+
         if ( $numrows > 0) {
-            while ($row = DB:: fetch_assoc($sql) ) 
+            while ($row = DB:: fetch_assoc($sql) )
             {
 //                echo '<a href="">' . $row['name'] .  '</a>';
 //                echo '<a href="">' . $row['price'] .  '</a>';
@@ -67,12 +73,12 @@
 				echo'</div>';
 			echo'</div>';
 
-            }            
+            }
         }
         else {
             echo "No results found for \"<b>$k</b>\"";
         }
-        // disconnect  
+        // disconnect
     ?>
 </body>
 </html>
