@@ -5,6 +5,12 @@ require 'templates/header.php';
 ?>
 
 <div class="container">
+    <div id="zoekfunctie">
+        <form action='search.php' method='POST'>
+        <input type='text' name='k' id='search_veld' size='10' placeholder="search" />
+        <input type='submit' id='search_icon' value=''>
+      </form> 
+</div> 
 	<div class="image_slider">
 		<div class="mask">
 			<ul class="images">
