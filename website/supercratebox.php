@@ -1,8 +1,8 @@
 <?php
 $title = "Supercratebox ";
 $cat = "scb";
-require '../includes/config.php';
-require '../templates/header.php';
+require 'includes/config.php';
+require 'templates/header.php';
 ?>
 
 <div class="ss_container">
@@ -32,5 +32,5 @@ The game supports joypad controls
 </div>
 
 <?php
-require '../templates/footer.php';
+require 'templates/footer.php';
 ?>

@@ -566,7 +566,10 @@ margin-top: -89px;  margin-left: auto;
   height: 500px;
   background-color: white;
 }
-
+.vlambeerGames a {
+  margin-left: 25px;
+  margin-right: 25px;
+}
 .gameslider {
   display:inline-block;
   float:left;

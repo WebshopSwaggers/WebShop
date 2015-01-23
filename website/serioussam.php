@@ -1,9 +1,9 @@
 <?php
 $title = "Serious Sam";
 $cat = "ss";
-require '../includes/config.php';
-require '../templates/header.php';
-require './headers/header_ss.php';
+require 'includes/config.php';
+require 'templates/header.php';
+require 'templates/header_ss.php';
 ?>
 
 <div class="ss_container">
@@ -87,5 +87,5 @@ which.style.top=0
 </div>
 
 <?php
-require '../templates/footer.php';
+require 'templates/footer.php';
 ?>

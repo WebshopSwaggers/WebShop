@@ -48,9 +48,9 @@ require 'templates/header.php';
 		<h1>Vlambeer Games</h1>
 	</div>
 	<div class="vlambeerGames">
-		<a href="games/serioussam.php">Test</a>
-		<a href="games/gungodz.php">Test</a>
-		<a href="games/supercratebox.php">Test</a>
+		<a href="gungodz.php"><img src="assets/images/button_gungodz.png" width="250"></a>
+		<a href="supercratebox.php"><img src="assets/images/button_SCB.png" width="250"></a>
+		<a href="serioussam.php"><img src="assets/images/button_sirious_sam.png" width="250"></a>
 	</div>
 
 	<div class="empty"></div>

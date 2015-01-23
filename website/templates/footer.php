@@ -3,40 +3,20 @@
 	<div class="friends_t"><strong>FRIENDS OF VLAMBEER</strong></div>
 			<div class="footer_new_all">
 	<div class="contact">
-		<div class="contactTop"><strong>VLAMBEER IS A DUTCH INDEPENDENT GAME STUDIO</strong><br>
-		<br>Made up of Rami Ismail and Jan Willem Nijman, bringing back arcade games since 1764.
-		</div>
-		<br>info@vlambeer.com | Neude 5, 3512 AD, Utrecht, the Netherlands | +31621206363
+		<div class="contactTop"><strong>VLAMBEER IS A DUTCH INDEPENDENT GAME STUDIO</strong></div>
+		<div class="contactMid">Made up of Rami Ismail and Jan Willem Nijman, bringing back arcade games since 1764.</div>
+		<div class="contactBtm">info@vlambeer.com | Neude 5, 3512 AD, Utrecht, the Netherlands | +31621206363</div>
 	</div>
 	<div class="owners">
-		<div class="teamRami">
-			<div class="ramiPic">
-				<img src="<?php echo $link; ?>/assets/images/team_rami.png" alt="team_rami">
-			</div>
-			<strong>Rami Ismail</strong>
-			<br>
-			<i>Business and Development</i>
-			<br>
-			rami@vlambeer.com
-			<br>
-			<a href="http://twitter.com/tha_rami">@tha_rami</a>
-			<br>
+		<div class="ownerPic">
+			<img src="<?php echo $link; ?>/assets/images/team_jw.png" alt="team_jw">
 		</div>
-		<div class="teamJw">
-			<div class="jwPic">
-				<img src="<?php echo $link; ?>/assets/images/team_jw.png" alt="team_jw">
-			</div>
-			<strong>Jan Willem Nijman</strong>
-			<br>
-			<i>Game Design</i>
-			<br>
-			jw@vlambeer.com
-			<br>
-			<a href="http://twitter.com/jwaaaap">@jwaaaap</a>
-			<br>
-		</div>
+		<h2>Quincy Soeliman</h2><br>
+		<p>Business and Development</p><br>
+		<p>quincy@vlambeer.com</p><br>
+		<p><a href="http://twitter.com/krytiv">@Krytiv</a></p>
 	</div>
-	<div class="friends">
+<!-- 	<div class="friends">
 		
 	    <ul>
 	    	<li>
@@ -74,7 +54,7 @@
 	</div>				
 			</div>
 
-	</div>
+	</div> -->
 	<script src="<?php echo $link; ?>/assets/js/jquery-2.1.3.min.js"></script>
 	<script src="<?php echo $link; ?>/assets/js/script.js"></script>
 	<script src="<?php echo $link; ?>/assets/js/popup.js"></script>
