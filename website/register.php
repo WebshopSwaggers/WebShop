@@ -311,6 +311,13 @@
 		<br>
 		
 		
+       <FORM METHOD="post" ACTION="bestemming">
+<BR><div class="formTitle"><h1>Wilt u de nieuwsbrief?</h1></div>
+<INPUT TYPE="checkbox" NAME="nieuws" VALUE="nieuwsbrief" CHECKED>Ja ik wil elke week een nieuwsbrief
+
+
+
+</FORM>
        
 		<input type="submit" id="formSubmit" name="submit" value="Submit">
 		<br>

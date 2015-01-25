@@ -79,8 +79,6 @@ $item = Item::getItems("music");
 				echo'</div>';
 			echo'</div>';
 			?>
-				<div class="popupKarate"><img src="<?php echo $link ?>/assets/images/itemGuy.png" alt=""></div>
-				<div class="popupKarateFlip"><img src="<?php echo $link ?>/assets/images/itemGuyFlip.png" alt=""></div>
 				<?php
 	}
 	?>

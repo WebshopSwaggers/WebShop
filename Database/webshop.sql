@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: 127.0.0.1
--- Gegenereerd op: 22 jan 2015 om 09:53
+-- Gegenereerd op: 23 jan 2015 om 11:55
 -- Serverversie: 5.6.17
 -- PHP-versie: 5.5.12
 
@@ -96,7 +96,10 @@ INSERT INTO `cms_items` (`item_id`, `name`, `price`, `description`, `image`, `ca
 (5, 'Bit.trip OST', 15, 'Bit.trip OST', 'http://i.imgur.com/UsCfAC2.jpg', 'music', 2, 'soundtrack'),
 (6, 'Minecraft OST', 20, 'Minecraft OST', 'http://i.imgur.com/SSmuhtk.jpg', 'music', 2, 'soundtrack'),
 (7, 'Don''t starve OST', 10, 'Don''t starve OST', 'http://i.imgur.com/xjaOyWe.jpg', 'music', 5, 'soundtrack'),
-(8, 'T-shirt 1', 10, 'Uno tshierto', 'http://i.imgur.com/YAqMgRH.png', 'clothes', 69, 'tshirt');
+(8, 'SCB ninja t-shirt', 15, 'Super crate box ninja t-shirt', 'http://i.imgur.com/KVDgPE6.jpg', 'clothes', 22, 'tshirt'),
+(9, 'Karate guy t-shirt', 20, 'Karate black guy t-shirt ', 'http://i.imgur.com/NTBTPWD.jpg', 'clothes', 15, 'tshirt'),
+(10, 'Luftrausers t-shirt', 20, 'Luftrausers enginer guy t-shirt', 'http://i.imgur.com/o74immZ.jpg', 'clothes', 10, 'tshirt'),
+(11, 'Nuclear throne t-shirt', 15, 'Nuclear throne t-shirt with all monsters on it', 'http://i.imgur.com/H7zZPyL.jpg', 'clothes', 5, 'tshirt');
 
 -- --------------------------------------------------------
 
