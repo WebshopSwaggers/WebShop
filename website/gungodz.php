@@ -4,6 +4,12 @@ $cat = "gg";
 require 'includes/config.php';
 require 'templates/header.php';
 ?>
+<div class="gungodzSWF">
+<object width="1000" height="1000">
+	<param name="movie" value="gungodz.swf">
+	<embed src="<?php echo $link ?>/assets/flash/gungodz.swf" width="890" height="500">
+</object>	
+</div>
 
 <div class="gg_container">
 	<h1>About This Game</h1>
