@@ -8,7 +8,7 @@ require 'templates/header_ss.php';
 
 <div class="ss_container">
 <div class="ss_bomb">
-	<img src="../assets/images/ss_bomb.png" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()">
+	<img src="assets/images/ss_bomb.png" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()">
 </div>
 
 <!-- JQuery for Shake -->
@@ -69,7 +69,11 @@ which.style.top=0
 }
 </script>
 <div class="containerserioussam">
-<h1>About This Game</h1>
+
+<div class="h1Title">
+	<h1>About this Game</h1>
+</div>
+<br>
 <p>The legendary Serious Sam reloads and rearms in an explosive, turn-based RPG developed by indie developer Vlambeer (Super Crate Box, Ridiculous Fishing). Serious Sam: The Random Encounter follows Sam and his band of oddball mercenaries as they battle across a pixilated world teeming chaotic battles, hordes of bizarre creatures, and mysterious secrets. Choose your weapons and take aim at the most random Serious Sam adventure yet! </p>
 <br>
 <h2>Serious Sam Indie Series</h2>

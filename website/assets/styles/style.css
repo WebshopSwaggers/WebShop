@@ -174,10 +174,11 @@ ul.triggers li.selected {
 }
 .image_ss{
   margin: 0 auto;
-margin-top: -89px;  margin-left: auto;
+  margin-top: -89px;
+  margin-left: auto;
   margin-right: auto;
-  width: 1000px;
-  height: 600px;
+  width: 940px;
+  height: 564px;
   background-color: white;
 }
 .image_gg{
@@ -251,7 +252,7 @@ margin-top: -89px;  margin-left: auto;
   background-position: left bottom;
 }
 .containerGames {
-  height: 1000px;
+  height: 1300px;
   margin: 0 auto;
   top: -95px;
   background: rgb(166, 44, 3);
@@ -331,32 +332,27 @@ margin-top: -89px;  margin-left: auto;
 /* -- [ CONTAINER OF SERIOUS SAM ] -- */
 
 .ss_container{
-  height: 650px;
+  height: 600px;
   margin: 0 auto;
   position: relative;
-  width: 1000px;
+  width: 940px;
   background: #d4b484;
   background-repeat: no-repeat;
   background-position: left bottom;
-}
-.ss_container h1{
-  font: normal 35px 'ka1';
-  margin: 0px 20px 10px 20px;
-  border-bottom: 1px solid black;
 }
 .ss_container h2{
   font: normal 25px 'ka1';
   margin: 0px 20px 10px 20px;
 }
 .ss_container p{
-  font: normal 17px 'ka1';
+  font: normal 17px 'ChampLimo';
   margin: 0px 20px 10px 20px;
 }
 .ss_container ul{
   margin: 0px 20px 10px 20px;
 }
 .ss_container li{
-  font: normal 17px 'ka1';
+  font: normal 17px 'ChampLimo';
   margin: 0px 20px 10px 20px;
 }
 .ss_container img{
@@ -396,6 +392,35 @@ margin-top: -89px;  margin-left: auto;
 }
 .gungodzSWF{
   margin-left: 500px;
+}
+
+/* Container of SCB*/
+
+.scb_container {
+  height: 700px;
+  margin: 0 auto;
+  width: 940px;
+  background: #f1d38f;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.scb_container h2{
+  font: normal 25px 'ka1';
+  margin: 0px 20px 10px 20px;
+}
+.scb_container p{
+  font: normal 17px 'ChampLimo';
+  margin: 0px 20px 10px 20px;
+}
+.scb_container ul{
+  margin: 0px 20px 10px 20px;
+}
+.scb_container li{
+  font: normal 17px 'ChampLimo';
+  margin: 0px 20px 10px 20px;
+}
+.scb_container img{
+  margin: 0px 20px 10px 20px;
 }
 
 /* -- [ NEWS SECTION ] -- */
@@ -910,8 +935,8 @@ margin-top: -89px;  margin-left: auto;
 /* -- [ SERIOUS SAM ANIMATION ] -- */
 
 .ss_bomb{
-  margin-top: -563px;
-  margin-left: 545px;
+  margin-top: -533px;
+  margin-left: 509px;
   position: absolute;
   transform: scale(1.1);
 }
@@ -1028,8 +1053,7 @@ margin-top: -89px;  margin-left: auto;
 
 
 .containerserioussam{
-height: 1000px;
-        width: 1000px;
-	
-background-color:#D4B484;
+  height: 850px;
+  width: 940px;
+  background-color:#D4B484;
 }

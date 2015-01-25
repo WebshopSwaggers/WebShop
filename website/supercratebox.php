@@ -3,13 +3,14 @@ $title = "Supercratebox ";
 $cat = "scb";
 require 'includes/config.php';
 require 'templates/header.php';
+require 'templates/header_scb.php';
 ?>
 
-<div class="ss_container">
-
+<div class="scb_container">
 
 <!-- Container -->
-<h1>About This Game</h1>
+<br>
+<div class="h1Title"><h1>About This Game</h1></div><br>
 <p>Super Crate Box is a freeware indie game released by Vlambeer on May 11, 2010.  It is an arcade action game. It is available on Steam, on the website for download, iOS, with multiplayer as Super Crate Box Versus on the Winnitron  and as Super Bread Box on the Commodore 64. </p>
 <br>
 <h2>Gameplay</h2>
@@ -27,7 +28,7 @@ The game supports joypad controls
 	<li>Normal - enemies spawn at a consistent rate</li>
 	<li>SFMT - more enemies spawn as more crates are collected (unlocked after scoring 40 on normal mode) </li>
 	<li>SAmbush - enemies spawn anywhere in the map (unlocked after scoring 20 on SFMT mode) </li>
-	
+
 </ul>
 </div>
 
