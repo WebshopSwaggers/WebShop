@@ -174,11 +174,10 @@ ul.triggers li.selected {
 }
 .image_ss{
   margin: 0 auto;
-  margin-top: -89px;
-  margin-left: auto;
+margin-top: -89px;  margin-left: auto;
   margin-right: auto;
-  width: 940px;
-  height: 564px;
+  width: 1000px;
+  height: 600px;
   background-color: white;
 }
 .image_gg{
@@ -252,7 +251,7 @@ ul.triggers li.selected {
   background-position: left bottom;
 }
 .containerGames {
-  height: 1300px;
+  height: 1000px;
   margin: 0 auto;
   top: -95px;
   background: rgb(166, 44, 3);
@@ -332,26 +331,32 @@ ul.triggers li.selected {
 /* -- [ CONTAINER OF SERIOUS SAM ] -- */
 
 .ss_container{
-  height: 600px;
+  height: 650px;
   margin: 0 auto;
-  width: 940px;
+  position: relative;
+  width: 1000px;
   background: #d4b484;
   background-repeat: no-repeat;
   background-position: left bottom;
+}
+.ss_container h1{
+  font: normal 35px 'ka1';
+  margin: 0px 20px 10px 20px;
+  border-bottom: 1px solid black;
 }
 .ss_container h2{
   font: normal 25px 'ka1';
   margin: 0px 20px 10px 20px;
 }
 .ss_container p{
-  font: normal 17px 'ChampLimo';
+  font: normal 17px 'ka1';
   margin: 0px 20px 10px 20px;
 }
 .ss_container ul{
   margin: 0px 20px 10px 20px;
 }
 .ss_container li{
-  font: normal 17px 'ChampLimo';
+  font: normal 17px 'ka1';
   margin: 0px 20px 10px 20px;
 }
 .ss_container img{
@@ -387,35 +392,6 @@ ul.triggers li.selected {
   margin: 0px 20px 10px 20px;
 }
 .gg_container img{
-  margin: 0px 20px 10px 20px;
-}
-
-/* Container of SCB*/
-
-.scb_container {
-  height: 700px;
-  margin: 0 auto;
-  width: 940px;
-  background: #f1d38f;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-.scb_container h2{
-  font: normal 25px 'ka1';
-  margin: 0px 20px 10px 20px;
-}
-.scb_container p{
-  font: normal 17px 'ChampLimo';
-  margin: 0px 20px 10px 20px;
-}
-.scb_container ul{
-  margin: 0px 20px 10px 20px;
-}
-.scb_container li{
-  font: normal 17px 'ChampLimo';
-  margin: 0px 20px 10px 20px;
-}
-.scb_container img{
   margin: 0px 20px 10px 20px;
 }
 
@@ -931,8 +907,8 @@ ul.triggers li.selected {
 /* -- [ SERIOUS SAM ANIMATION ] -- */
 
 .ss_bomb{
-  margin-top: -533px;
-  margin-left: 509px;
+  margin-top: -563px;
+  margin-left: 545px;
   position: absolute;
   transform: scale(1.1);
 }
@@ -1049,7 +1025,8 @@ ul.triggers li.selected {
 
 
 .containerserioussam{
-  height: 850px;
-  width: 940px;
-	background-color:#D4B484;
+height: 1000px;
+        width: 1000px;
+
+background-color:#D4B484;
 }
