@@ -24,10 +24,10 @@ require 'templates/header.php';
 					<img width="940" src="assets/images/sliderSuperCrateBox.png" />
 				</li>
 				<li>
-					<img width="940" src="http://static.ddmcdn.com/gif/sun-update-1.jpg" />
+					<img width="940" src="assets/images/sliderMerchandise.png" />
 				</li>
 				<li>
-					<img width="940" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Neptune.jpg/240px-Neptune.jpg" />
+					<img width="940" src="assets/images/sliderMusic.png" />
 				</li>
 			</ul>
 		</div>
