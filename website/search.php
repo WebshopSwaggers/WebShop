@@ -26,7 +26,11 @@
         $k = $_POST['k'];
         $i = 0;
         $terms = explode(",", $k);
-        $sql = DB::query("SELECT * FROM cms_items WHERE name OR price OR description OR image OR catagory OR tags LIKE '%".$k."%'") OR  die ('query werkt niet.');
+        $sql = DB::query("SELECT * FROM cms_items WHERE name LIKE '%".$k."%'
+                                                     OR price LIKE '%".$k."%'
+                                                     OR description LIKE '%".$k."%'
+                                                     OR catagory LIKE '%".$k."%'
+                                                     OR tags LIKE '%".$k."%'") OR  die ('query werkt niet.');
 
 
 
