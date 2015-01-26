@@ -14,7 +14,7 @@
 
     if(!isset($_SESSION['userdata']))
     {
-		
+
        echo"";
 
 
@@ -28,14 +28,21 @@
       echo'<div class="form"><br><br><fieldset id="inputs">';
       echo'<label class="formLabel" for="username"></label><input class="formInput" id="loginmargin" type="email" name="email" placeholder="Your email address" required>';
       echo'<label class="formLabel" for="password"></label><input class="formInput" id="password" type="password" name="password" placeholder="Password" required>';
-      echo'<input type="hidden" name="link" value="'.$_SERVER['REQUEST_URI'].'">';
+			if(isset($_GET['cart']))
+		  {
+        echo'<input type="hidden" name="link" value="'.$dir.'/cart">';
+		  }
+			else
+			{
+				echo'<input type="hidden" name="link" value="'.$dir.'/index">';
+			}
       echo'</fieldset>';
       echo'<fieldset id="actions">';
       echo'<label><input id="logincheck" type="checkbox" checked="checked"> Keep me signed in</label><br>';
       echo'<input  id="formSubmit2" type="submit" name="login" value="Log in">';
-       
 
-     
+
+
       echo'</fieldset></div>';
       echo'</form>';
     }
@@ -50,7 +57,7 @@
 //		}
     ?>
 
-	
+
 	</div>
 </body>
 <?php require 'templates/footer.php' ?>

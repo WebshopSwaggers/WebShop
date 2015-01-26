@@ -1,14 +1,14 @@
-<?php include "includes/config.php"; ?>
+<?php include "../includes/config.php"; ?>
 <!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrapStyle.css">
 	<title>Vlambeer - Product toevoegen</title>
-</head>    
+</head>
 <body>
 <div class="container">
-<form action="includes/controllers/productController.php" method="POST" class="form-horizontal" roll="form">
+<form action="../includes/controllers/productController.php" method="POST" class="form-horizontal" roll="form">
         <div class="form-group">
             <label for="name" class="col-lg-2 control-label">Name*</label>
           <div class="col-lg-10">
@@ -38,7 +38,7 @@
           <div class="col-lg-10">
         <input type="text" class="form-control" id="catagory" name="catagory">
       </div>
-   </div>  
+   </div>
   <div class="form-group">
             <label for="createProduct" class="col-lg-2 control-label"></label>
           <div class="col-lg-10">

@@ -4,12 +4,6 @@
 
 require '../includes/config.php';
 
-
-
-
-
-
-
 	if (isset($_GET['id'])) //De functie isset() kijkt of een variabele bestaat
 							//Je kan het dus gebruiken in formulieren of er op de submitknop gedrukt is (dan is de waarde van die knop 'gezet')
 		{
@@ -22,12 +16,6 @@ require '../includes/config.php';
 		header ('location: admin_item.php');	//verwijderen is gelukt, dan blijft hij op zelfde pagina.
 		}
 
-
-
-
-
-
-
 	if( isset($_POST['submit'])){				//isset $_POST voegt gegevens toe aan database
 		$name 			= 			 Security($_POST['name']); //variabele aanmaken
 		$price 		= 	 		 Security($_POST['price']);//variabele aanmaken
@@ -36,7 +24,7 @@ require '../includes/config.php';
 		$catagory 	=  				 Security($_POST['catagory']);//variabele aanmaken
 		$leftover 	=  					 Security($_POST['leftover']);//variabele aanmaken
 		$tags 				=  	 Security($_POST['tags']);//variabele aanmaken
-		
+
 
 
 		DB::query("INSERT INTO cms_items (name, price, description, image, catagory, leftover, tags)
@@ -44,107 +32,84 @@ require '../includes/config.php';
 
 
 	}
-	
-	$query = DB::query( "SELECT * FROM cms_items") or die(mysqli_error(DB::$con)); //welke tabel je wilt gebruiken uit de database
+
+$query = DB::query( "SELECT * FROM cms_items") or die(mysqli_error(DB::$con)); //welke tabel je wilt gebruiken uit de database
+REQUIRE "/templates/header.php";
+
 ?>
+<div class="row">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Een overzicht van uw VPS servers</h3>
+
+      <div class="panel-options">
+        <a href="#" data-toggle="panel">
+          <span class="collapse-icon">–</span>
+          <span class="expand-icon">+</span>
+        </a>
+        <a href="#" data-toggle="remove">
+          ×
+        </a>
+      </div>
+    </div>
+    <div class="panel-body">
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Admin Pagina Items</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+      <div id="example-2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><table class="table table-bordered table-striped dataTable no-footer" id="example-2" role="grid" aria-describedby="example-2_info">
+        <thead>
+          <tr role="row">
 
-	<div class="wrapper">
-		<h1>Admin Pagina Items</h1>
+            <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Student Name: activate to sort column ascending" style="width: auto;">name</th>
+            <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Average Grade: activate to sort column ascending" style="width: auto;">price</th>
+            <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Curriculum / Occupation: activate to sort column ascending" style="width: auto;">description</th>
+            <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Curriculum / Occupation: activate to sort column ascending" style="width: auto;">image</th>
+            <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Curriculum / Occupation: activate to sort column ascending" style="width: auto;">catagory</th>
+            <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">leftover</th>
 
-			<table>
-				<thead>
-					<tr>
-						<th class="name">name</th>
-						<th class="price">price</th>
-						<th class="description">description</th>
-						<th class="image">image</th>
-						<th class="catagory">catagory</th>
-						<th class="leftover">leftover</th>
-						<th class="tags">tags</th>
-						
+            <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">tags</th>
+            <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">Edit</th>
+            <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">Delete</th></tr>
+          </thead>
 
-						<th class="bewerk">Edit</th>
-						<th class="verwijder">Delete</th>
-					</tr>
-				</thead>
+          <tbody class="middle-align">
 
-				<tbody>
-					<tr>
-						<?php
-							while($row = DB::fetch_assoc($query)){
-								echo '<tr>';
-								echo '<td>' . $row['name'] . '</td>';
-								echo '<td>' . $row['price'] . '</td>';
-								echo '<td>' . $row['description'] . '</td>';
-								echo '<td>' . $row['image'] . '</td>';
-								echo '<td>' . $row['catagory'] . '</td>';
-								echo '<td>' . $row['leftover'] . '</td>';
-								echo '<td>' . $row['tags'] . '</td>';
-								
+            <?php
 
-								echo '<td> <a href="admin_item_edit.php?item_id='. $row['item_id'].'"> edit </a></td>';
-								echo '<td> <a href="admin_item.php?id='. $row['item_id'].'"> X </a></td>';
-								echo '</tr>';
-							}
-						?>
+              echo'<tr role="row" class="odd">';
 
-					</tr>
-				</tbody>
-			</table>
-
-			<form action="" method="POST">
-				<br>
-				<label for="name">name</label>
-				<input type="text" name="name" id="name" required>
-
-				<br>
+              while($row = DB::fetch_assoc($query)){
+                echo '<tr>';
+                echo '<td>' . $row['name'] . '</td>';
+                echo '<td>' . $row['price'] . '</td>';
+                echo '<td>' . $row['description'] . '</td>';
+                echo '<td>' . $row['image'] . '</td>';
+                echo '<td>' . $row['catagory'] . '</td>';
+                echo '<td>' . $row['leftover'] . '</td>';
+                echo '<td>' . $row['tags'] . '</td>';
 
 
-				<label for="price">price</label>
-				<input type="text" name="price" id="price" required>
+                echo '<td> <a href="admin_item_edit.php?item_id='. $row['item_id'].'"> edit </a></td>';
+                echo '<td> <a href="admin_item.php?id='. $row['item_id'].'"> X </a></td>';
+                echo '</tr>';
+              }
 
-				<br>
+                    echo'</tr>';
 
-				<label for="description">description</label>
-				<input type="text" name="description" id="description" required>
-				<br>
-				  
-				  
-				  
-				  <label for="image">image*</label>
-          <div class="col-lg-10">
-        <input type="file" class="form-control" id="image" name="image" required>
-				<br>
-				
-				
-				
-				
-				
-				<label for="catagory">catagory </label>
-				<input type="text" name="catagory" id="catagory" required>
-				<br>
-				<label for="leftover">leftover </label>
-				<input type="text" name="leftover" id="leftover" required>
-				<br>
-				<label for="tags">tags</label>
-				<input type="text" name="tags" id="tags" required>
-				<br>
-				
-
-				<input name="submit" type="submit" value="toevoegen">
-			</form>
+                  ?>
 
 
-	</div>
-</body>
-</html>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+        </tbody>
+
+      </div>
+    </div>
+    <?php
+    require "/templates/footer.php";
+    ?>

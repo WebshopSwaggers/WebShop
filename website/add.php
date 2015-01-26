@@ -5,21 +5,24 @@ require 'includes/config.php';
 
 if(!isset($_SESSION['userdata']))
 {
-  header("location: ../login.php?add = '".Security($_GET['id']));
-  die();
+  $userid = $_SESSION['key'];
+}
+else
+{
+  $userid = User::GetUserData("user_id");
 }
 
 $item = new Item(Security($_GET['id']));
 //echo 'Je wilt: '.$item->getDescription(). " kopen...";
 
-$sql = DB::query("SELECT item_id FROM cms_cart WHERE user_id = '".User::GetUserData("user_id")."' AND item_id = '".$item->getId()."'");
+$sql = DB::query("SELECT item_id FROM cms_cart WHERE user_id = '".$userid."' AND item_id = '".$item->getId()."'");
 if(DB::num_rows($sql) > 0)
 {
-  DB::query("UPDATE cms_cart SET count = count + 1 WHERE user_id = '".User::GetUserData("user_id")."' AND item_id = '".$item->getId()."' LIMIT 1");
+  DB::query("UPDATE cms_cart SET count = count + 1 WHERE user_id = '".$userid."' AND item_id = '".$item->getId()."' LIMIT 1");
 }
 else
 {
-  DB::query("INSERT into cms_cart (user_id, item_id, count) VALUES ('".User::GetUserData("user_id")."','".$item->getId()."','1')");
+  DB::query("INSERT into cms_cart (user_id, item_id, count) VALUES ('".$userid."','".$item->getId()."','1')");
 }
 
 header("location: ../cart.php");

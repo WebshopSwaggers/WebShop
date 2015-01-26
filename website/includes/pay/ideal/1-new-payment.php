@@ -4,6 +4,7 @@
  */
 require_once dirname(__FILE__) . "/../src/Mollie/API/Autoloader.php";
 
+require '../../../includes/config.php';
 
 define("IN_INDEX", true);
 //include("../core.php");
@@ -43,7 +44,7 @@ try
 	 //$naamvanpakket = $row->orderid;
 
 	$payment = $mollie->payments->create(array(
-		"amount"       => "20.00",
+		"amount"       => $_SESSION['amounth'],
 		"description"  => "Betaling aan vlambeer",
 		"redirectUrl"  => "{$protocol}://{$hostname}{$path}/3-return-page.php?order_id={$order_id}",
 		"metadata"     => array(

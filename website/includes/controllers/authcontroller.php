@@ -23,6 +23,7 @@ if(isset($_POST['login']))
   }
 
 $_SESSION['userdata'] = DB::fetch($sql);
+DB::query("UPDATE cms_cart SET user_id = '".User::GetUserData("user_id")."' WHERE user_id = '".$_SESSION['key']."'");
 header("location: ".$url."/".Security($_POST['link']));
 }
 

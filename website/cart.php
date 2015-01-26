@@ -4,22 +4,25 @@ $title = "Home";
 $noheader=1;
 require 'includes/config.php';
 require 'templates/header.php';
-
+if(!isset($_SESSION['userdata']))
+{
+  $userid = $_SESSION['key'];
+}
+else
+{
+  $userid = User::GetUserData("user_id");
+}
 ?>
 <div class="containercart">
 
 <?php
-if(!isset($_SESSION['userdata']))
-{
-  header("location: ./index.php");
-}
 
 if(isset($_GET['delete']))
 {
   if(!empty($_GET['itemid']))
   {
     $itemid = Security($_GET['itemid']);
-    DB::query("DELETE FROM cms_cart WHERE item_id = '" . $itemid . "' AND user_id = '".User::GetUserData("user_id")."'") OR DIE (mysqli_error(DB::$con));
+    DB::query("DELETE FROM cms_cart WHERE item_id = '" . $itemid . "' AND user_id = '".$userid."'") OR DIE (mysqli_error(DB::$con));
   }
 }
 
@@ -27,13 +30,13 @@ if(isset($_POST['count']))
 {
   if($_POST['item_id'] > 0)
   {
-    DB::query("UPDATE cms_cart SET count = '".Security($_POST['count'])."' WHERE item_id = '".Security($_POST['item_id'])."' AND user_id = '".User::GetUserData("user_id")."' LIMIT 1") OR DIE (mysqli_error(DB::$con));
+    DB::query("UPDATE cms_cart SET count = '".Security($_POST['count'])."' WHERE item_id = '".Security($_POST['item_id'])."' AND user_id = '".$userid."' LIMIT 1") OR DIE (mysqli_error(DB::$con));
   }
 }
 
 
 $bedrag = 0;
-$sql = DB::query("SELECT * FROM cms_cart WHERE user_id = '".User::GetUserData("user_id")."'");
+$sql = DB::query("SELECT * FROM cms_cart WHERE user_id = '".$userid."'");
 $count = DB::num_rows($sql);
 
 if($count == 0)
@@ -77,7 +80,8 @@ echo "Totaal: ". number_format(($bedrag + $btw), 2, ',', ' ');
         <li><a href="#">Shipping</a></li>
         <li><a href="#">Payment</a></li>
       </ul>
-
+      <br>
+      <br>
       <h3>Your Cart</h3>
       <hr>
 
@@ -133,8 +137,18 @@ echo "Totaal: ". number_format(($bedrag + $btw), 2, ',', ' ');
           </tr>
         </tbody>
       </table>
-      <a href="categories.html" class="btn btn-default">Continue Shopping</a>
-      <a href="login.html" class="btn btn-primary pull-right">Next</a>
+      <a href="index" class="btn btn-default">Continue Shopping</a>
+      <?php
+      $_SESSION['amounth'] = ($bedrag + $btw);
+      if(isset($_SESSION['userdata']))
+      {
+         echo'<a href="includes/pay/ideal/1-new-payment.php" class="btn btn-primary pull-right">Next</a>';
+      }
+      else
+      {
+         echo'<a href="login.php?cart=1" class="btn btn-primary pull-right">Next</a>';
+      }
+      ?>
     </div>
   </div>
 </div>

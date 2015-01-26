@@ -46,104 +46,87 @@ $query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); /
 
 	}
 	$query = DB::query( "SELECT * FROM cms_users") or die(mysqli_error(DB::$con)); //welke tabel je wilt gebruiken uit de database
+  REQUIRE "/templates/header.php";
 
+  ?>
+  <div class="row">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Users</h3>
+
+        <div class="panel-options">
+          <a href="#" data-toggle="panel">
+            <span class="collapse-icon">–</span>
+            <span class="expand-icon">+</span>
+          </a>
+          <a href="#" data-toggle="remove">
+            ×
+          </a>
+        </div>
+      </div>
+      <div class="panel-body">
+
+
+
+        <div id="example-2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><table class="table table-bordered table-striped dataTable no-footer" id="example-2" role="grid" aria-describedby="example-2_info">
+          <thead>
+            <tr role="row">
+
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Student Name: activate to sort column ascending" style="width: auto;">Email</th>
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Average Grade: activate to sort column ascending" style="width: auto;">Password</th>
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Curriculum / Occupation: activate to sort column ascending" style="width: auto;">Firstname</th>
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Curriculum / Occupation: activate to sort column ascending" style="width: auto;">Lastname</th>
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Curriculum / Occupation: activate to sort column ascending" style="width: auto;">Street</th>
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">Zip</th>
+
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">Number</th>
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">City</th>
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">Country</th>
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">Edit</th>
+              <th class="sorting" tabindex="0" aria-controls="example-2" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: auto;">Delete</th></tr>
+            </thead>
+
+            <tbody class="middle-align">
+
+              <?php
+
+              echo'<tr role="row" class="odd">';
+
+
+              while($row = DB::fetch_assoc($query)){
+                echo '<tr>';
+                echo '<td>' . $row['email'] . '</td>';
+                echo '<td>' . $row['password'] . '</td>';
+                echo '<td>' . $row['firstname'] . '</td>';
+                echo '<td>' . $row['lastname'] . '</td>';
+                echo '<td>' . $row['street'] . '</td>';
+                echo '<td>' . $row['zip'] . '</td>';
+                echo '<td>' . $row['number'] . '</td>';
+                echo '<td>' . $row['city'] . '</td>';
+                echo '<td>' . $row['country'] . '</td>';
+
+                echo '<td> <a href="admin_user_edit.php?user_id='. $row['user_id'].'"> edit </a></td>';
+                echo '<td> <a href="admin_user.php?id='. $row['user_id'].'"> X </a></td>';
+                echo '</tr>';
+              }
+
+
+              echo'</tr>';
+
+              ?>
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+    </tbody>
+
+  </div>
+</div>
+<?php
+require "/templates/footer.php";
 ?>
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Admin Pagina Users</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-
-	<div class="wrapper">
-		<h1>Admin Pagina Users</h1>
-
-			<table>
-				<thead>
-					<tr>
-						<th class="email">Email</th>
-						<th class="password">Password</th>
-						<th class="firstname">Firstname</th>
-						<th class="lastname">Lastname</th>
-						<th class="street">Street</th>
-						<th class="zip">Zip</th>
-						<th class="number">Number</th>
-						<th class="city">City</th>
-						<th class="country">Country</th>
-
-						<th class="bewerk">Edit</th>
-						<th class="verwijder">Delete</th>
-					</tr>
-				</thead>
-
-				<tbody>
-					<tr>
-						<?php
-							while($row = DB::fetch_assoc($query)){
-								echo '<tr>';
-								echo '<td>' . $row['email'] . '</td>';
-								echo '<td>' . $row['password'] . '</td>';
-								echo '<td>' . $row['firstname'] . '</td>';
-								echo '<td>' . $row['lastname'] . '</td>';
-								echo '<td>' . $row['street'] . '</td>';
-								echo '<td>' . $row['zip'] . '</td>';
-								echo '<td>' . $row['number'] . '</td>';
-								echo '<td>' . $row['city'] . '</td>';
-								echo '<td>' . $row['country'] . '</td>';
-
-								echo '<td> <a href="admin_user_edit.php?user_id='. $row['user_id'].'"> edit </a></td>';
-								echo '<td> <a href="admin_user.php?id='. $row['user_id'].'"> X </a></td>';
-								echo '</tr>';
-							}
-						?>
-
-					</tr>
-				</tbody>
-			</table>
-
-			<form action="" method="POST">
-				<br>
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" required>
-
-				<br>
-
-				<label for="password">Password</label>
-				<input type="text" name="password" id="password" required>
-
-				<br>
-
-				<label for="firstname">First Name</label>
-				<input type="text" name="firstname" id="firstname" required>
-
-				<br>
-
-				<label for="lastname">Last Name</label>
-				<input type="text" name="lastname" id="lastname" required>
-				<br>
-				<label for="street">street</label>
-				<input type="text" name="street" id="street" required>
-				<br>
-				<label for="zip">zip </label>
-				<input type="text" name="zip" id="zip" required>
-				<br>
-				<label for="number">number </label>
-				<input type="text" name="number" id="number" required>
-				<br>
-				<label for="city">city</label>
-				<input type="text" name="city" id="city" required>
-				<br>
-				<label for="country">country</label>
-				<input type="text" name="country" id="country" required>
-<br>
-				<input name="submit" type="submit" value="toevoegen">
-			</form>
-
-
-	</div>
-</body>
-</html>
