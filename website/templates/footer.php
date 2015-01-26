@@ -1,11 +1,5 @@
 	<div class="footer_new">
-			<div class="clear"></div>
-	<div class="friends_t"><strong>FRIENDS OF VLAMBEER</strong></div>
-			<div class="footer_new_all">
-	<div class="contact">
-		<div class="contactTop"><strong>VLAMBEER IS A DUTCH INDEPENDENT GAME STUDIO</strong></div>
-		<div class="contactMid">Made up of Rami Ismail and Jan Willem Nijman, bringing back arcade games since 1764.</div>
-		<div class="contactBtm">info@vlambeer.com | Neude 5, 3512 AD, Utrecht, the Netherlands | +31621206363</div>
+		<img src="<?php echo $link ?>/assets/images/footer.jpg" alt="">
 	</div>
 	<div class="owners">
 		<div class="ownerPic">
