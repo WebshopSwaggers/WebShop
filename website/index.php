@@ -9,8 +9,8 @@ require 'templates/header.php';
         <form action='search.php' method='POST'>
         <input type='text' name='k' id='search_veld' size='10' placeholder="search" />
         <input type='submit' id='search_icon' value=''>
-      </form> 
-</div> 
+      </form>
+</div>
 	<div class="image_slider">
 		<div class="mask">
 			<ul class="images">

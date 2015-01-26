@@ -84,6 +84,3 @@ $item = Item::getItems("clothes");
 	?>
 	</div>
 </div>
-
-<?php require 'templates/footer.php'; ?>
-</div>

@@ -29,8 +29,8 @@
 			?>
 		</div>
 
-		<form action="<?php echo $link; ?>/includes/controllers/registercontroller.php" method="POST">		
-            
+		<form action="<?php echo $link; ?>/includes/controllers/registercontroller.php" method="POST">
+
 	<div class="form">
 		<div class="formTitle"><h1>Basic Information</h1></div>
         <label class="formLabel" for="firstname"></label>
@@ -286,7 +286,7 @@
 		<option value="ZM">Zambia</option>
 		<option value="ZW">Zimbabwe</option>
 		</select>
-		
+
         <label class="formLabel" for="city"></label>
 		<input class="formInput" id="" type="text" name="city" placeholder="City" pattern="[a-zA-Z]{1,40}" title="Alphabetic characters only">
 		<br>
@@ -296,9 +296,9 @@
 		<input class="formInput" id="houseNumber" type="text" name="houseNumber" placeholder="NR" pattern="[0-9]{1,}" title="Numeric characters only">
 		<label class="formLabel" for="zip"></label>
 		<input class="formInput" id="zip" type="text" name="zip" placeholder="Zip code" pattern="[0-9]{4}\s[A-Z]{2}" title="e.g. 1111 AB">
-        
+
         <div class="formTitle"><h1>Account Details</h1></div>
-        
+
          <label class="formLabel" for="email"></label>
 		<input class="formInput" id="email" type="email" name="email" placeholder="E-mail address" required>
 		<label class="formLabel" for="emailConfirm"></label>
@@ -309,8 +309,8 @@
 		<label class="formLabel" id= for="Confirm"></label>
 		<input class="formInput " id="zwart" type="password" name="passwordConfirm" placeholder="Confirm password">
 		<br>
-		
-		
+
+
        <FORM METHOD="post" ACTION="bestemming">
 <BR><div class="formTitle"><h1>Wilt u de nieuwsbrief?</h1></div>
 <INPUT TYPE="checkbox" NAME="nieuws" VALUE="nieuwsbrief" CHECKED>Ja ik wil elke week een nieuwsbrief
@@ -318,11 +318,10 @@
 
 
 </FORM>
-       
+
 		<input type="submit" id="formSubmit" name="submit" value="Submit">
 		<br>
 	</div>
 </form>
 	</div>
 </body>
-<?php require 'templates/footer.php' ?>

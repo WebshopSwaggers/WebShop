@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/menu.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/assets/styles/footer.css"/>
     <link rel="stylesheet" href="<?php echo $link; ?>/slick/slick.css"/>
+    <script src="<?php echo $link; ?>/assets/js/jquery-2.1.3.min.js"></script>
+    <script src="<?php echo $link; ?>/assets/js/script.js"></script>
+    <script src="<?php echo $link; ?>/assets/js/popup.js"></script>
+    <script src="<?php echo $link; ?>/assets/js/imageSlider.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <meta name="viewport" content="width=device-width, initial scale=1.0">
 </head>
 <body>
@@ -58,9 +63,15 @@
         {
           echo "<FONT color='white'>Hello, <br></font>";
           }
-            echo "<FONT color='white'>You have ".$superitems." items in your shopping cart</font>";
+            echo "<FONT color='white'>You have ".$superitems." items in your <a href='cart.php' style='color:white;'> shopping cart</a></font>";
             echo "<br>";
             echo "<FONT color='white'>A total of: &euro; ".number_format($bedrag, 2, ',', ' ')."</font>";
+              echo "<br>";
+
+              if(isset($_SESSION['userdata']))
+              {
+              echo "<a href='invoices.php' style='color:white;'>click here to show your invoices</a>";
+              }
       echo "</div><br>";
 
 
@@ -86,6 +97,7 @@
         else
         {
 
+          echo'<li><a href="twitter.php">Tweets</a></li>';
           echo'<li><a href="includes/controllers/authcontroller.php?logout">Log out</a></li>';
         }
         ?>

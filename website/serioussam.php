@@ -69,27 +69,15 @@ which.style.top=0
 }
 </script>
 <div class="containerserioussam">
+	<div class="h1Title">
+		<h1>About this Game</h1>
+	</div>
 
-<div class="h1Title">
-	<h1>About this Game</h1>
-</div>
-<br>
-<p>The legendary Serious Sam reloads and rearms in an explosive, turn-based RPG developed by indie developer Vlambeer (Super Crate Box, Ridiculous Fishing). Serious Sam: The Random Encounter follows Sam and his band of oddball mercenaries as they battle across a pixilated world teeming chaotic battles, hordes of bizarre creatures, and mysterious secrets. Choose your weapons and take aim at the most random Serious Sam adventure yet! </p>
-<br>
-<h2>Serious Sam Indie Series</h2>
-<p>The Serious Sam Indie Series is an extraordinary program launched by Croteam and Devolver Digital to partner with gaming's most creative independent developers and design radically unique Serious Sam games in a variety of styles and genres. </p>
-<br>
-<h2>Key Feautures:</h2>
-<ul>
-	<li>Turn-Based Awesome: Battle across three worlds of pandemonium with Serious Sam and his band of quirky commandos as they clash with legions of relentless creatures hell-bent on ruining your day. Choose your weapons and prepare for an absolute onslaught of merciless enemies charging from every direction. </li>
-	<li>Extraordinary Visual Design: Behold the pixilated brutality of Serious Sam’s struggle against evil in glorious retro-styled graphics. Visit the exotic locals of Egypt and dangerous caverns overrun by Mental’s twisted horde. Battle by land or take on all-new aquatic variations of classic Serious Sam baddies in underwater skirmishes unlike anything Sam has faced before! </li>
-	<li>Serious Strategy: No magic here, son. Select from a variety of dynamic items to increase your party’s stats, toss out some Headless Kamikaze bait, or bring everything to a devastating halt with the all-powerful Serious Bomb. </li>
-	<li>Challenge Mode: Take on a never-ending wave of Mental’s most fearsome minions and attempt to post the best score to win the admiration of your friends and family. </li>
-</ul>
-<br>
-<p>Serious Sam: The Random Encounter was created by Dutch indie duo Rami Ismail & Jan Willem Nijman and features crisp pixel art by Roy Nathan de Groot & pixel-animator Paul Veer. The game had its chiptune music created by Alex Mauer and the trailers were produced by Canadian video-magician Kert Gartner.</p>
+	<?php
+	$homepage = file_get_contents('http://www.giantbomb.com/api/search/?api_key=e80f8937d3736bd5034b5240d9836c3cbec07fea&format=json&query=Serious Sam.');
+	$code = json_decode($homepage,true);
+	echo "<p>". $code['results'][0]['description']. "</p>";
+	?>
 </div>
 
-<?php
-require 'templates/footer.php';
-?>
+<script src="js/script.js" charset="utf-8">

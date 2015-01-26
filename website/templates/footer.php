@@ -17,7 +17,7 @@
 		<p><a href="http://twitter.com/krytiv">@Krytiv</a></p>
 	</div>
 <!-- 	<div class="friends">
-		
+
 	    <ul>
 	    	<li>
 		    	<a href="http://www.pietepiet.net/"><li>Paul Veer</li></a>
@@ -51,7 +51,7 @@
             	<a href="http://www.glitchhiker.com/"><li>Aardbever</li></a>
 			</li>
 		</ul>
-	</div>				
+	</div>
 			</div>
 
 	</div> -->

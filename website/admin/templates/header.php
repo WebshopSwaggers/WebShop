@@ -47,16 +47,7 @@
 
         <header class="logo-env">
 
-          <!-- logo -->
-          <div class="logo">
-            <a href="dashboard-1.html" class="logo-expanded">
-              <img src="assets/images/logo@2x.png" width="80" alt="" />
-            </a>
 
-            <a href="dashboard-1.html" class="logo-collapsed">
-              <img src="assets/images/logo-collapsed@2x.png" width="40" alt="" />
-            </a>
-          </div>
 
           <!-- This will toggle the mobile menu and will be visible only on mobile devices -->
           <div class="mobile-menu-toggle visible-xs">
@@ -82,6 +73,12 @@
           <!-- add class "multiple-expanded" to allow multiple submenus to open -->
           <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
           <li class="">
+            <a href="<?php echo $link; ?>/index.php">
+              <i class="linecons-cog"></i>
+              <span class="title">Homepage</span>
+            </a>
+
+          </li>  <li class="">
             <a href="admin_item.php">
               <i class="linecons-cog"></i>
               <span class="title">Items</span>
@@ -95,10 +92,23 @@
             </a>
           </li>
           <li>
-            <a href="carts.php">
+            <a href="cartspaid.php">
               <i class="linecons-cloud"></i>
-              <span class="title">Carts not paid</span>
+              <span class="title">Carts</span>
             </a>
+            <ul>
+              <li>
+                <a href="cartspaid.php">
+                  <span class="title">Payed carts</span>
+                </a>
+              </li>
+              <li>
+                <a href="cartsnopay.php">
+                  <span class="title">Carts not paid</span>
+                </a>
+              </li>
+
+            </ul>
           </li>
           <li>
             <a href="create_product.php">
@@ -136,73 +146,10 @@
           </li>
 
 
-          <li class="dropdown hover-line">
-            <a href="#" data-toggle="dropdown">
-              <i class="fa-bell-o"></i>
-
-            </a>
-
-
-          </li>
 
         </ul>
 
 
-        <!-- Right links for user info navbar -->
-        <ul class="user-info-menu right-links list-inline list-unstyled">
-
-          <li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
-
-
-
-          </li>
-
-          <li class="dropdown user-profile">
-            <a href="#" data-toggle="dropdown">
-              <img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
-              <span>
-                Arlind Nushi
-                <i class="fa-angle-down"></i>
-              </span>
-            </a>
-
-            <ul class="dropdown-menu user-profile-menu list-unstyled">
-              <li>
-                <a href="#edit-profile">
-                  <i class="fa-edit"></i>
-                  New Post
-                </a>
-              </li>
-              <li>
-                <a href="#settings">
-                  <i class="fa-wrench"></i>
-                  Settings
-                </a>
-              </li>
-              <li>
-                <a href="#profile">
-                  <i class="fa-user"></i>
-                  Profile
-                </a>
-              </li>
-              <li>
-                <a href="#help">
-                  <i class="fa-info"></i>
-                  Help
-                </a>
-              </li>
-              <li class="last">
-                <a href="extra-lockscreen.html">
-                  <i class="fa-lock"></i>
-                  Logout
-                </a>
-              </li>
-            </ul>
-          </li>
-
-
-
-        </ul>
 
       </nav>
 

@@ -153,4 +153,3 @@ echo "Totaal: ". number_format(($bedrag + $btw), 2, ',', ' ');
   </div>
 </div>
 </div>
-<?php require 'templates/footer.php'; ?></div>

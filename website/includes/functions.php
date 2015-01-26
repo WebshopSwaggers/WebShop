@@ -5,7 +5,7 @@
 	$output = addslashes($output);
 	$output = DB::escape($output);
 	$output = htmlspecialchars($output);
-	
+
 	return $output;
 }
 
@@ -17,11 +17,24 @@
 	$_SESSION['userdata'] = $data;
 	return true;
 	}
-	
+  
+ function getUserInvoices($user_id)
+  {
+    $sql = DB::query("SELECT inv_id,user_id FROM cms_invoice_templates WHERE user_id = '".$user_id."'");
+    if(DB::num_rows($sql) > 0)
+    {
+      return $sql;
+    }
+    else
+    {
+      return 0;
+    }
+  }
+
 	//hash
 function Passhash($string) {
 	$output = sha1($string);
-	
+
 	return $output;
 }
 
@@ -35,17 +48,17 @@ function welkom($name)
 function redirect($rank)
 {
 	$rank = strtolower($rank);
-	if (strpos($rank,'sales') !== false) 
+	if (strpos($rank,'sales') !== false)
 	{
        header("location: http://127.0.0.1/toets/level/sales/index.php");
 	   die();
     }
-	elseif (strpos($rank,'finance') !== false) 
+	elseif (strpos($rank,'finance') !== false)
 	{
        header("location: http://127.0.0.1/toets/level/finance/index.php");
 	   die();
     }
-    elseif (strpos($rank,'president') !== false) 
+    elseif (strpos($rank,'president') !== false)
 	{
        header("location: http://127.0.0.1/toets/level/admin/index.php");
 	   die();
@@ -58,7 +71,7 @@ function redirect($rank)
 	    header("location: http://127.0.0.1/toets/index.php");
 		die();
 	}
- 
+
 }
 
 ?>

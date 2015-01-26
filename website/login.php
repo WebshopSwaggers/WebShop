@@ -60,4 +60,3 @@
 
 	</div>
 </body>
-<?php require 'templates/footer.php' ?>

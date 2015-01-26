@@ -31,7 +31,3 @@ The game supports joypad controls
 
 </ul>
 </div>
-
-<?php
-require 'templates/footer.php';
-?>

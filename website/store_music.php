@@ -10,7 +10,8 @@ $item = Item::getItems("music");
 		<div id="data"></div>
 	</div>
 
-<div class="containerMusic">
+<div class="containerMusic" style = "
+height: 1200px;">
 
 	<div class="image_slider">
 		<div class="mask">
@@ -83,7 +84,4 @@ $item = Item::getItems("music");
 	}
 	?>
 	</div>
-</div>
-
-<?php require 'templates/footer.php'; ?>
 </div>

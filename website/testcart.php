@@ -12,16 +12,11 @@ require 'templates/header.php';
     <link rel="stylesheet" href="" />
 </head>
 <div class="container">
-	
-	
-	
+
+
+
 </div>
 <body>
     <script src=""></script>
 </body>
 </html>
-
-
-
-
-<?php require 'templates/footer.php'; ?></div>
