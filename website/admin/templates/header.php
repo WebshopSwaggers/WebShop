@@ -1,3 +1,10 @@
+
+<?php
+if(User::GetUserData('admin') == 0)
+{
+  die("You are not allowed to acces this page.");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +15,7 @@
   <meta name="description" content="Xenon Boostrap Admin Panel" />
   <meta name="author" content="" />
 
-  <title>Xenon - Dashboard</title>
+  <title>Vlambeer - Dashboard</title>
 
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
   <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">

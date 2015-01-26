@@ -77,7 +77,12 @@
 
 
             ?>
+<div id="headerSlogan" style="
+color: black;
+top: 80px;
+position: relative;">
 
+</div>
     </div>
 </div>
 

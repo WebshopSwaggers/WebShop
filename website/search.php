@@ -1,4 +1,5 @@
 <?php include'includes/config.php'?>
+<?php include 'templates/header.php' ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -83,6 +84,9 @@
             echo "No results found for \"<b>$k</b>\"";
         }
         // disconnect
+
+        include 'templates/footer.php'
     ?>
+
 </body>
 </html>

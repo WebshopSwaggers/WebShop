@@ -1,5 +1,5 @@
 	<div class="footer_new">
-		<img src="<?php echo $link ?>/assets/images/footer.jpg" alt="">
+		<img src="<?php echo $link ?>/assets/images/footer.jpg" alt="" width="900">
 	</div>
 	<div class="owners">
 		<div class="ownerPic">
