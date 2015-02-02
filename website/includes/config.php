@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 session_start();
 
 $url = "http://localhost/";
-$dir = "GitHub/WebShop/website/";
+$dir = "/WebShop/website/";
 $link = $url.$dir;
 
 require("classes/class.mysqli.php");
@@ -13,12 +13,12 @@ $host = "127.0.0.1";
 //Database gebruikersnaam
 $dbuser = "root";
 //Database wachtwoord
-$dbpass = "1234";
+$dbpass = "";
 //Database naam
 $dbname = "webshop";
 
 $con = new DB($host,$dbuser,$dbpass,$dbname);
-$con2 = mysqli_connect('localhost','root','1234','webshop');
+$con2 = mysqli_connect('localhost','root','','webshop');
 
 //connectie error?
 if (mysqli_connect_error(DB::$con))

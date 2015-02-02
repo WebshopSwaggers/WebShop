@@ -24,10 +24,10 @@ require 'templates/header.php';
 					<img width="940" src="assets/images/sliderSuperCrateBox.png" />
 				</li>
 				<li>
-					<img width="940" src="assets/images/sliderMerchandise.png" />
+					<img width="940" src="assets/images/sliderMerchandise.jpg" />
 				</li>
 				<li>
-					<img width="940" src="assets/images/sliderMusic.png" />
+					<img width="940" src="assets/images/sliderMusic.jpg" />
 				</li>
 			</ul>
 		</div>
